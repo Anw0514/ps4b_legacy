@@ -36,7 +36,7 @@ class Home extends Component {
 
         return (
           <Fragment>
-            <div className="bg-wh">
+            <div className="bg-white">
                 <h3 className="fs-3">Welcome To PSI</h3>
                 <p>
                 Since 1997, Practical Solutions, Inc. (PSI) has been turning chaos
