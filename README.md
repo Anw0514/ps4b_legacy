@@ -1,9 +1,9 @@
 # Practical Solutions For Business Website
 
-## I ACTUALLY PUT EFFORT INTO MAKING THE README HELPFUL
+### I ACTUALLY PUT EFFORT INTO MAKING THE README HELPFUL
 *please read it*
 
-![alt text](./src/assets/media/spongebob_computer.jpg "It me")
+<img src="./src/assets/media/spongebob_computer.jpg" width="200">
 
 This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019. If there's a bug you're stuck on for this website, [This](https://www.reddit.com/r/wholesomememes/) is a very good resource.
 
