@@ -4,25 +4,23 @@ This is the react app for the Practical Solutions Inc website. Begun by Andrea W
 
 ## File Structure
 
-#### `containers`
+#### `/containers`
 
-For large container components with many children
+For large container components with many children, such as App.js
 
-#### `constants`
+#### `/constants`
 
-For components that are present on almost every page, if not all
+For components that are present on almost every page, such as the header and footer
 
-#### `pages`
+#### `/pages`
 
 For components that are specific to a certain route or page
 
-#### `reusable`
+#### `/reusable`
 
 For Components that are mainly stylistic and can change their content in order to be reused within different components/pages
 
-
-
-
+---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
