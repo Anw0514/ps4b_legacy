@@ -1,3 +1,28 @@
+# Practical Solutions For Business Website
+
+This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019.
+
+## File Structure
+
+#### `containers`
+
+For large container components with many children
+
+#### `constants`
+
+For components that are present on almost every page, if not all
+
+#### `pages`
+
+For components that are specific to a certain route or page
+
+#### `reusable`
+
+For Components that are mainly stylistic and can change their content in order to be reused within different components/pages
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
