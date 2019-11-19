@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/App.css';
+import "../assets/iconsmind/iconsmind.css";
 import NavBar from '../constants/NavBar';
 import Content from './Content';
 import Footer from '../constants/Footer';
