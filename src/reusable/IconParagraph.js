@@ -5,7 +5,7 @@ class IconParagraph extends Component {
     return (
       <div>
         <span className={`icon-${this.props.iconName} fs-5`}></span>
-        <h5>{this.props.title}</h5>
+        <h4>{this.props.title}</h4>
         <p>{this.props.content}</p>
       </div>
     );

@@ -1,6 +1,6 @@
 # Practical Solutions For Business Website
 
-This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019.
+This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019. If there's a bug you're stuck on for this website, [This](https://www.reddit.com/r/wholesomememes/) is a very good resource.
 
 ## File Structure
 
@@ -19,6 +19,17 @@ For components that are specific to a certain route or page
 #### `/reusable`
 
 For Components that are mainly stylistic and can change their content in order to be reused within different components/pages
+
+## Navigating CSS files
+
+#### `App.css`
+The custom css written entirely by yours truly. Includes workarounds for weird Semantic-UI things, defaults for certain elements, and component-specific styling. Organized **alphabetically**
+
+#### `basic.css`
+classes that are really just css shorthands. Very generic and some was copied and pasted from the old site. If there's a class that's abbreviated or doesn't make much sense, it can probably be found here. There are subtitle comments for easier navigation.
+
+#### `index.css`
+It's just that one cousin that shows up to all the family functions but doesn't talk to anyone. Is it contributing? who knows. Am I gonna go and tell it to leave? nah
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
