@@ -10,6 +10,14 @@ import Header from "../reusable/Header";
 
 class App extends Component {
 
+  constructor() {
+    super()
+    this.state = {
+      page: "home",
+      lastPage: null
+    }
+  }
+
   render () {
     return (
       <div className="App">
