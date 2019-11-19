@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Contact extends Component {
+class Dynamics365 extends Component {
     render() {
         return (
             <div>
-                Contact
+                Dynamics365
             </div>
         )
     }
 }
 
-export default Contact
+export default Dynamics365

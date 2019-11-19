@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Contact extends Component {
+class NetworkTransformation extends Component {
     render() {
         return (
             <div>
-                Contact
+                NetworkTransformation
             </div>
         )
     }
 }
 
-export default Contact
+export default NetworkTransformation

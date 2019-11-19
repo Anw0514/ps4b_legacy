@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Contact extends Component {
+class Microsoft365 extends Component {
     render() {
         return (
             <div>
-                Contact
+                Microsoft365
             </div>
         )
     }
 }
 
-export default Contact
+export default Microsoft365

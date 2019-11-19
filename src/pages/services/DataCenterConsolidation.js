@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Contact extends Component {
+class DataCenterConsolidation extends Component {
     render() {
         return (
             <div>
-                Contact
+                DataCenterConsolidation
             </div>
         )
     }
 }
 
-export default Contact
+export default DataCenterConsolidation

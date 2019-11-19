@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-class Contact extends Component {
+class SecurityOptimization extends Component {
     render() {
         return (
             <div>
-                Contact
+                SecurityOptimization
             </div>
         )
     }
 }
 
-export default Contact
+export default SecurityOptimization
