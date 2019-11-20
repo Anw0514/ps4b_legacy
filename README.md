@@ -1,11 +1,16 @@
 # Practical Solutions For Business Website
 
-### I ACTUALLY PUT EFFORT INTO MAKING THE README HELPFUL
+This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019.
+
+### *I ACTUALLY PUT EFFORT INTO MAKING THE README HELPFUL*
 *please read it*
 
-<img src="./src/assets/media/spongebob_computer.jpg" width="200">
+<img src="./src/assets/media/spongebob_computer.jpg" width="400">
 
-This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019. If there's a bug you're stuck on for this website, [This](https://www.reddit.com/r/wholesomememes/) is a very good resource.
+## Resources / Documentation
+- [Semantic UI React](https://react.semantic-ui.com/)
+- [React Router Dom](https://reacttraining.com/react-router/web/example/basic)
+- [Click this one when you get too frustrated](https://www.reddit.com/r/wholesomememes/)
 
 ## File Structure
 
