@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6, a, a:hover, a:checked {
   color: #2a3855 !important;
 }
 
+.ui.dropdown .menu {
+  margin-top: 10px;
+}
+
 .pageTitle {
   background-image: url("../assets/backgrounds/background-2.jpg");
   width: 100vw;
