@@ -5,7 +5,7 @@ This is the react app for the Practical Solutions Inc website. Begun by Andrea W
 ### *I ACTUALLY PUT EFFORT INTO MAKING THE README HELPFUL*
 *please read it*
 
-<img src="./src/assets/media/spongebob_computer.jpg" width="400">
+<img src="./src/assets/spongebob_computer.jpg" width="400">
 
 ## Resources / Documentation
 - [Semantic UI React](https://react.semantic-ui.com/)

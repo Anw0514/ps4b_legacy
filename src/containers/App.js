@@ -6,6 +6,7 @@ import NavBar from '../constants/NavBar';
 import Content from './Content';
 import Footer from '../constants/Footer';
 import Header from "../reusable/Header";
+import { BrowserRouter as Router } from 'react-router-dom'
 
 
 class App extends Component {
@@ -13,19 +14,27 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      page: "home",
+      page: "/",
       lastPage: null
     }
   }
 
+  componentDidMount() {
+    this.setState({
+      page: window.location.pathname
+    })
+  }
+
   render () {
     return (
-      <div className="App">
-        <NavBar />
-        <Header />
-        <Content />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <NavBar />
+          <Header page={this.state.page} />
+          <Content />
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

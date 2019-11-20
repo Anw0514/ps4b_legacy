@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pageTitle {
-  background-image: url("../assets/media/backgrounds/background-2.jpg");
+  background-image: url("../assets/backgrounds/background-2.jpg");
   width: 100vw;
   min-height: 100%;
   top: 0;
@@ -35,6 +35,10 @@ h1, h2, h3, h4, h5, h6 {
   padding:5rem 5vw;
   align-items: center;
   display: flex;
+}
+
+.pageTitle.home {
+  background-image: url("../assets/backgrounds/background_video.gif");
 }
 
 

@@ -30,7 +30,6 @@ class Content extends Component {
 
     render() {
         return (
-          <Router>
             <div className="content">
               <Switch>
                 <Route exact path="/">
@@ -77,7 +76,6 @@ class Content extends Component {
                 </Route>
               </Switch>
             </div>
-          </Router>
         );
     }
 }
