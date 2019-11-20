@@ -21,13 +21,11 @@ class Header extends Component {
       "/security-optimization": "Security Optimization",
       "/workplace-modernization": "Workplace Modernization"
     }
-    this.state = {
-      pageName: this.locationObj[window.location.pathname]
-    }
+    this.pageName = this.locationObj[window.location.pathname]
   }
 
   render() {
-      return this.state.pageName === "Home" ? (
+      return this.pageName === "Home" ? (
         <div className="pageTitle home">
           <div className="text-left">
             <h1 className="fs-4 white">Practical Solutions, Inc.</h1>
@@ -41,7 +39,7 @@ class Header extends Component {
       ) : (
         <div className="pageTitle">
           <div className="text-left">
-            <h1 className="fs-4 white">{this.state.pageName}</h1>
+            <h1 className="fs-4 white">{this.pageName}</h1>
           </div>
         </div>
       );
