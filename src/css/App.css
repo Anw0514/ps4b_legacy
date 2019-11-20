@@ -26,8 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
   border-width: 0px !important;
   border-radius: 0 !important;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -44,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   z-index: 0;
   overflow: hidden;
-  padding:5rem 5vw;
+  padding:7rem 5vw;
   align-items: center;
   display: flex;
 }
@@ -61,6 +60,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10vw;
   }
   .pageTitle {
-    padding: 7rem 10vw;
+    padding: 10rem 10vw 7rem;
+  }
+  .navbar {
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
