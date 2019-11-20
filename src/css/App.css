@@ -3,10 +3,12 @@ body {
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a, a:hover, a:checked {
   color: #2a3855;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
+
 
 .App {
   background-color: white;
@@ -31,6 +33,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100%;
   z-index: 5;
+  font-weight: 600;
+  color: #2a3855;
+}
+
+.nav-dropdown-item {
+  padding: .78571429rem 1.14285714rem!important;
+  font-weight: 600 !important;
+  color: #2a3855 !important;
 }
 
 .pageTitle {
@@ -43,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   z-index: 0;
   overflow: hidden;
-  padding:7rem 5vw;
+  padding: 7rem 5vw 5rem;
   align-items: center;
   display: flex;
 }
@@ -60,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 10vw;
   }
   .pageTitle {
-    padding: 10rem 10vw 7rem;
+    padding: 10rem 10vw 5rem;
   }
   .navbar {
     padding-left: 10vw;

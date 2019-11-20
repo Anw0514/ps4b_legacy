@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Menu, Grid, Image, Dropdown } from 'semantic-ui-react'
+import { Link as NavLink } from 'react-router-dom'
 
 class NavBar extends Component {
 
@@ -27,7 +28,9 @@ class NavBar extends Component {
           <div className="navbar">
             <Grid>
               <Grid.Column floated="left" width={6}>
-                <Image src={require("../assets/PSI_Logo_Blue.png")} />
+                <NavLink to='/'>
+                  <Image src={require("../assets/PSI_Logo_Blue.png")} />
+                </NavLink>
               </Grid.Column>
               <Grid.Column
                 floated="right"
@@ -37,46 +40,60 @@ class NavBar extends Component {
               >
                 <Grid columns={4}>
                   <Grid.Column>
-                    <Dropdown pointing text="Company">
-                      <Dropdown.Menu>
-                        <Dropdown.Item text="About" />
-                        <Dropdown.Item text="Partners" />
-                        <Dropdown.Item text="Certifications" />
-                        <Dropdown.Item text="Contract Vehicles" />
-                        <Dropdown.Item text="Our Team" />
-                        <Dropdown.Item text="Careers" />
-                        <Dropdown.Item text="Contact" />
-                      </Dropdown.Menu>
-                    </Dropdown>
+                    <NavLink to='/company'>
+                      <Dropdown pointing text="Company">
+                        <Dropdown.Menu>
+                          <Dropdown.Item className='nav-dropdown-item' text="About" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Partners" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Certifications" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Contract Vehicles" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Our Team" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Careers" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Contact" />
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </NavLink>
                   </Grid.Column>
                   <Grid.Column>
                     <Dropdown pointing text="Services">
                       <Dropdown.Menu>
-                        <Dropdown.Item text="Security Optimization" />
-                        <Dropdown.Item text="Workplace Modernization" />
-                        <Dropdown.Item text="Network Transformation" />
-                        <Dropdown.Item text="Data Center Consolidation" />
-                        <Dropdown.Item text="e-Learning" />
+                        <NavLink to='/security-optimization'>
+                          <Dropdown.Item className='nav-dropdown-item' text="Security Optimization" />
+                        </NavLink>
+                        <NavLink to='/workplace-modernization'>
+                          <Dropdown.Item className='nav-dropdown-item' text="Workplace Modernization" />
+                        </NavLink>
+                        <NavLink to='/network-transformation'>
+                          <Dropdown.Item className='nav-dropdown-item' text="Network Transformation" />
+                        </NavLink>
+                        <NavLink to='/data-center-consolidation'>
+                          <Dropdown.Item className='nav-dropdown-item' text="Data Center Consolidation" />
+                        </NavLink>
+                        <NavLink to='/e-learning'>
+                          <Dropdown.Item className='nav-dropdown-item' text="e-Learning" />
+                        </NavLink>
                       </Dropdown.Menu>
                     </Dropdown>
                   </Grid.Column>
                   <Grid.Column>
-                    <Dropdown pointing text="Solutions">
-                      <Dropdown.Menu>
-                        <Dropdown.Item text="Microsoft 365" />
-                        <Dropdown.Item text="Business Apps" />
-                        <Dropdown.Item text="Data and BI" />
-                        <Dropdown.Item text="Apps & Infrastructure" />
-                      </Dropdown.Menu>
-                    </Dropdown>
+                    <NavLink to='/solutions'>
+                      <Dropdown pointing text="Solutions">
+                        <Dropdown.Menu>
+                          <Dropdown.Item className='nav-dropdown-item' text="Microsoft 365" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Business Apps" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Data and BI" />
+                          <Dropdown.Item className='nav-dropdown-item' text="Apps & Infrastructure" />
+                        </Dropdown.Menu>
+                      </Dropdown>
+                    </NavLink>
                   </Grid.Column>
                   <Grid.Column>
                     <Dropdown pointing text="Products">
                       <Dropdown.Menu>
-                        <Dropdown.Item text="Exchange Online" />
-                        <Dropdown.Item text="Microsoft 365" />
-                        <Dropdown.Item text="Office 365" />
-                        <Dropdown.Item text="Dynamics 365" />
+                        <Dropdown.Item className='nav-dropdown-item' text="Exchange Online" />
+                        <Dropdown.Item className='nav-dropdown-item' text="Microsoft 365" />
+                        <Dropdown.Item className='nav-dropdown-item' text="Office 365" />
+                        <Dropdown.Item className='nav-dropdown-item' text="Dynamics 365" />
                       </Dropdown.Menu>
                     </Dropdown>
                   </Grid.Column>

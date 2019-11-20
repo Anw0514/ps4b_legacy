@@ -4,6 +4,9 @@ import './css/index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
 import "semantic-ui-css/semantic.min.css";
+import "./css/App.css";
+import "./css/basic.css";
+import "./assets/iconsmind/iconsmind.css";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
