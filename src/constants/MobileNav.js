@@ -34,49 +34,49 @@ class MobileNav extends Component {
             <Item.Group divided>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
                     About
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
                     Partners
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
                     Certifications
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
                     Contract Vehicles
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
                     Our Team
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
                     Careers
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
                     Contact
                   </NavLink>
                 </Item.Content>
@@ -96,33 +96,33 @@ class MobileNav extends Component {
             <Item.Group divided>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/security-optimization" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/security-optimization")} to="/security-optimization" className="mobile-accordion">
                     Security Optimization
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
-                <NavLink to="/workplace-modernization" className="mobile-accordion">
+                <NavLink onClick={() => this.props.goToPage("/workplace-modernization")} to="/workplace-modernization" className="mobile-accordion">
                   Workplace Modernization
                 </NavLink>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/network-transformation" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/network-transformation")} to="/network-transformation" className="mobile-accordion">
                     Network Transformation
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/data-center-consolidation" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/data-center-consolidation")} to="/data-center-consolidation" className="mobile-accordion">
                     Data Center Consolidation
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/e-learning" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/e-learning")} to="/e-learning" className="mobile-accordion">
                     E-Learning
                   </NavLink>
                 </Item.Content>
@@ -142,28 +142,28 @@ class MobileNav extends Component {
             <Item.Group divided>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/solutions" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions" className="mobile-accordion">
                     Microsoft 365
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/solutions" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions" className="mobile-accordion">
                     Business Apps
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/solutions" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions" className="mobile-accordion">
                     Data and BI
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/solutions" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions" className="mobile-accordion">
                     Apps & Infrostructure
                   </NavLink>
                 </Item.Content>
@@ -183,28 +183,28 @@ class MobileNav extends Component {
             <Item.Group divided>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/exchange-online" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/exchange-online")} to="/exchange-online" className="mobile-accordion">
                     Exchange Online
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/microsoft365" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/microsoft365")} to="/microsoft365" className="mobile-accordion">
                     Microsoft 365
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/office365" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/office365")} to="/office365" className="mobile-accordion">
                     Office 365
                   </NavLink>
                 </Item.Content>
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink to="/dynamics365" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/dynamics365")} to="/dynamics365" className="mobile-accordion">
                     Dynamics 365
                   </NavLink>
                 </Item.Content>

@@ -11,7 +11,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      page: "/",
+      page: window.location.pathname,
       lastPage: null,
       mobile: true,
       dropdown: ""
@@ -19,9 +19,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      page: window.location.pathname
-    });
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();
   }
@@ -35,7 +32,7 @@ class App extends Component {
 
   goToPage = (page) => {
     // Function to be clicked when moving to different path
-    this.setState({ page });
+    this.setState({ page, dropdown: "" });
   }
 
   //  Functions to show the Nav dropdowns on hover
@@ -63,6 +60,7 @@ class App extends Component {
             dropdown={dropdown}
             dropdownNav={this.dropdownNav}
             closeNav={this.closeNav}
+            goToPage={this.goToPage}
           />
           <div onClick={this.closeNav}>
           {page === "/" ? (
@@ -70,7 +68,7 @@ class App extends Component {
           ) : (
             <Header page={page} />
           )}
-            <Content goToPage={this.goToPage} />
+            <Content />
             <Footer />
           </div>
         </div>
