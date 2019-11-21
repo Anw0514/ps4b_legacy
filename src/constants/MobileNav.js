@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+import { Icon } from "semantic-ui-react";
 
 class MobileNav extends Component {
   render() {
-    return <div>MobileNav</div>;
+    return <Icon name="list ul" size="large" />
   }
 }
 
