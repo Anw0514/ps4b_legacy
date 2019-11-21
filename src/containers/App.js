@@ -50,7 +50,6 @@ class App extends Component {
 
   closeNav = () => {
     // onMouseLeave for each dropdown
-    console.log("closed the nav")
     this.setState({ dropdown: "" });
   }
 
