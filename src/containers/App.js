@@ -50,6 +50,7 @@ class App extends Component {
 
   closeNav = () => {
     // onMouseLeave for each dropdown
+    console.log("closed the nav")
     this.setState({ dropdown: "" });
   }
 
@@ -64,13 +65,15 @@ class App extends Component {
             dropdownNav={this.dropdownNav}
             closeNav={this.closeNav}
           />
+          <div onClick={this.closeNav}>
           {page === "/" ? (
             <HomeHeader />
           ) : (
             <Header page={page} />
           )}
-          <Content goToPage={this.goToPage} />
-          <Footer />
+            <Content goToPage={this.goToPage} />
+            <Footer />
+          </div>
         </div>
       </Router>
     );
