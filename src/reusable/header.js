@@ -10,6 +10,7 @@ class Header extends Component {
       "/contact": "Contact",
       "/solutions": "Solutions",
       "/products": "Products",
+      "/exchange-online": "Exchange Online",
       "/dynamics365": "Dynamics 365",
       "/microsoft365": "Microsoft 365",
       "/office365": "Office 365",

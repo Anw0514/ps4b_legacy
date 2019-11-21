@@ -5,37 +5,37 @@ import MobileNav from './MobileNav'
 
 class NavBar extends Component {
 
-    constructor() {
-        super()
-        this.state = {
-            mobile: true,
-            dropdown: ""
-        }
-    }
+    // constructor() {
+    //     super()
+    //     this.state = {
+    //         mobile: true,
+    //         dropdown: ""
+    //     }
+    // }
 
-    componentDidMount() {
-        window.addEventListener("resize", this.resize.bind(this))
-        this.resize()
-    }
+    // componentDidMount() {
+    //     window.addEventListener("resize", this.resize.bind(this))
+    //     this.resize()
+    // }
 
-    resize() {
-        this.setState({
-            mobile: window.innerWidth < 760
-        })
-    }
+    // resize() {
+    //     this.setState({
+    //         mobile: window.innerWidth < 760
+    //     })
+    // }
 
-    //  Methods to show the dropdowns on hover
-    dropdown(dropdown) {
-        // onMouseEnter for each dropdown
-        this.setState({ dropdown })
-    }
-    close() {
-        // onMouseLeave for each dropdown
-        this.setState({ dropdown: "" })
-    }
+    // //  Methods to show the dropdowns on hover
+    // dropdown(dropdown) {
+    //     // onMouseEnter for each dropdown
+    //     this.setState({ dropdown })
+    // }
+    // close() {
+    //     // onMouseLeave for each dropdown
+    //     this.setState({ dropdown: "" })
+    // }
 
     render() {
-      const { mobile, dropdown } = this.state
+      const { mobile, dropdown } = this.props
 
       return (
         <div className="navbar">
@@ -58,8 +58,9 @@ class NavBar extends Component {
                   floated="right"
                   textAlign="right"
                   verticalAlign="middle"
+                  onClick={() => this.props.dropdownNav("mobile")}
                 >
-                  <Icon className="mobile-dropdown" name="list ul" size="large" />
+                  <Icon className="mobile-dropdown clickable" name="list ul" size="large" />
                 </Grid.Column>
               ) : (
                 <Grid.Column
@@ -73,8 +74,8 @@ class NavBar extends Component {
                 >
                   <Grid columns={4}>
                     <Grid.Column
-                      onMouseEnter={() => this.dropdown("Company")}
-                      onMouseLeave={() => this.close()}
+                      onMouseEnter={() => this.props.dropdownNav("Company")}
+                      onMouseLeave={() => this.props.closeNav()}
                     >
                       <NavLink to="/company">
                         <Dropdown open={dropdown === "Company"} text="Company">
@@ -112,8 +113,8 @@ class NavBar extends Component {
                       </NavLink>
                     </Grid.Column>
                     <Grid.Column
-                      onMouseEnter={() => this.dropdown("Services")}
-                      onMouseLeave={() => this.close()}
+                      onMouseEnter={() => this.props.dropdownNav("Services")}
+                      onMouseLeave={() => this.props.closeNav()}
                     >
                       <Dropdown open={dropdown === "Services"} text="Services">
                         <Dropdown.Menu>
@@ -151,8 +152,8 @@ class NavBar extends Component {
                       </Dropdown>
                     </Grid.Column>
                     <Grid.Column
-                      onMouseEnter={() => this.dropdown("Solutions")}
-                      onMouseLeave={() => this.close()}
+                      onMouseEnter={() => this.props.dropdownNav("Solutions")}
+                      onMouseLeave={() => this.props.closeNav()}
                     >
                       <NavLink to="/solutions">
                         <Dropdown
@@ -181,27 +182,35 @@ class NavBar extends Component {
                       </NavLink>
                     </Grid.Column>
                     <Grid.Column
-                      onMouseEnter={() => this.dropdown("Products")}
-                      onMouseLeave={() => this.close()}
+                      onMouseEnter={() => this.props.dropdownNav("Products")}
+                      onMouseLeave={() => this.props.closeNav()}
                     >
                       <Dropdown open={dropdown === "Products"} text="Products">
                         <Dropdown.Menu>
-                          <Dropdown.Item
-                            className="nav-dropdown-item"
-                            text="Exchange Online"
-                          />
-                          <Dropdown.Item
-                            className="nav-dropdown-item"
-                            text="Microsoft 365"
-                          />
-                          <Dropdown.Item
-                            className="nav-dropdown-item"
-                            text="Office 365"
-                          />
-                          <Dropdown.Item
-                            className="nav-dropdown-item"
-                            text="Dynamics 365"
-                          />
+                          <NavLink to="exchange-online">
+                            <Dropdown.Item
+                                className="nav-dropdown-item"
+                                text="Exchange Online"
+                            />
+                          </NavLink>
+                          <NavLink to="microsoft365">
+                            <Dropdown.Item
+                                className="nav-dropdown-item"
+                                text="Microsoft 365"
+                            />
+                          </NavLink>
+                          <NavLink to="office365">
+                            <Dropdown.Item
+                                className="nav-dropdown-item"
+                                text="Office 365"
+                            />
+                          </NavLink>
+                          <NavLink to="dynamics365">
+                            <Dropdown.Item
+                                className="nav-dropdown-item"
+                                text="Dynamics 365"
+                            />
+                          </NavLink>
                         </Dropdown.Menu>
                       </Dropdown>
                     </Grid.Column>
@@ -209,7 +218,7 @@ class NavBar extends Component {
                 </Grid.Column>
               )}
             </Grid.Row>
-            { mobile ?
+            { mobile && dropdown === "mobile" ?
               <MobileNav />
             : null }
           </Grid>

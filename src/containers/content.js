@@ -47,6 +47,9 @@ class Content extends Component {
                 <Route exact path="/products">
                   <Products />
                 </Route>
+                <Route exact path="/exchange-online">
+                  <ExchangeOnline />
+                </Route>
                 <Route exact path="/dynamics365">
                   <Dynamics365 />
                 </Route>

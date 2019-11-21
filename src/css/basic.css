@@ -66,3 +66,10 @@
 .text-left {
     text-align: left;
 }
+
+
+/* Miscellaneous */
+
+.clickable {
+  cursor: pointer;
+}

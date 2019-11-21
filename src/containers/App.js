@@ -8,34 +8,67 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 
 class App extends Component {
-
   constructor() {
-    super()
+    super();
     this.state = {
       page: "/",
-      lastPage: null
-    }
+      lastPage: null,
+      mobile: true,
+      dropdown: ""
+    };
   }
 
   componentDidMount() {
     this.setState({
       page: window.location.pathname
-    })
+    });
+    window.addEventListener("resize", this.resize.bind(this));
+    this.resize();
   }
 
-  goToPage(page) {
-    this.setState({ page })
+  resize() {
+    // Manages mobile state for conditional rendering
+    this.setState({
+      mobile: window.innerWidth < 760
+    });
   }
 
-  render () {
+  goToPage = (page) => {
+    // Function to be clicked when moving to different path
+    this.setState({ page });
+  }
+
+  //  Functions to show the Nav dropdowns on hover
+  dropdownNav = (dropdown) => {
+    // onMouseEnter for each dropdown
+    if (this.state.dropdown === "mobile" && dropdown === "mobile") {
+      this.closeNav() 
+    } else {
+      this.setState({ dropdown });
+    }
+  }
+
+  closeNav = () => {
+    // onMouseLeave for each dropdown
+    this.setState({ dropdown: "" });
+  }
+
+  render() {
+    const { page, mobile, dropdown } = this.state
     return (
       <Router>
         <div className="App">
-          <NavBar />
-          {this.state.page === '/' ? 
-            <HomeHeader /> : 
-            <Header page={this.state.page} />
-          }
+          <NavBar 
+            mobile={mobile}
+            dropdown={dropdown}
+            dropdownNav={this.dropdownNav}
+            closeNav={this.closeNav}
+          />
+          {page === "/" ? (
+            <HomeHeader />
+          ) : (
+            <Header page={page} />
+          )}
           <Content goToPage={this.goToPage} />
           <Footer />
         </div>
