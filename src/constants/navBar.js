@@ -39,8 +39,6 @@ class NavBar extends Component {
 
         return (
           <div className="navbar">
-            { mobile ?
-            <MobileNav /> :
             <Grid>
               <Grid.Column
                 floated="left"
@@ -53,6 +51,15 @@ class NavBar extends Component {
                   <Image src={require("../assets/PSI_Logo_Blue.png")} />
                 </NavLink>
               </Grid.Column>
+              { mobile ?
+              <Grid.Column 
+                width={10} 
+                floated='right' 
+                textAlign='right'
+                verticalAlign='middle'
+              >
+                  <MobileNav />
+              </Grid.Column> :
               <Grid.Column
                 floated="right"
                 width={10}
@@ -183,8 +190,8 @@ class NavBar extends Component {
                   </Grid.Column>
                 </Grid>
               </Grid.Column>
-            </Grid>
             }
+            </Grid>
           </div>
         );
     }
