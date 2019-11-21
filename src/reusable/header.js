@@ -6,7 +6,6 @@ class Header extends Component {
   constructor() {
     super()
     this.locationObj  = {
-      "/": "Home",
       "/company": "About",
       "/contact": "Contact",
       "/solutions": "Solutions",
@@ -21,28 +20,17 @@ class Header extends Component {
       "/security-optimization": "Security Optimization",
       "/workplace-modernization": "Workplace Modernization"
     }
-    this.pageName = this.locationObj[window.location.pathname]
   }
 
   render() {
-      return this.pageName === "Home" ? (
-        <div className="pageTitle home">
-          <div className="text-left">
-            <h1 className="fs-4 white">Practical Solutions, Inc.</h1>
-            <h5 className="fs-2 white">
-              Over 20 years of experience in helping clients
-              <br />
-              Turn Chaos to Order
-            </h5>
-          </div>
+    const pageName = this.locationObj[this.props.page];
+    return (
+      <div className="pageTitle">
+        <div className="text-left">
+          <h1 className="fs-4 white">{pageName}</h1>
         </div>
-      ) : (
-        <div className="pageTitle">
-          <div className="text-left">
-            <h1 className="fs-4 white">{this.pageName}</h1>
-          </div>
-        </div>
-      );
+      </div>
+    )
   }
 }
 

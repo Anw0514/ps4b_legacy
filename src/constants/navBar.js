@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Menu, Grid, Image, Dropdown } from 'semantic-ui-react'
 import { Link as NavLink } from 'react-router-dom'
+import MobileNav from './MobileNav'
 
 class NavBar extends Component {
 
@@ -18,17 +19,18 @@ class NavBar extends Component {
     }
 
     resize() {
-        console.log(this)
         this.setState({
             mobile: window.innerWidth < 760
         })
     }
 
+    //  Methods to show the dropdowns on hover
     dropdown(dropdown) {
+        // onMouseEnter for each dropdown
         this.setState({ dropdown })
     }
-
     close() {
+        // onMouseLeave for each dropdown
         this.setState({ dropdown: "" })
     }
 
@@ -37,6 +39,8 @@ class NavBar extends Component {
 
         return (
           <div className="navbar">
+            { mobile ?
+            <MobileNav /> :
             <Grid>
               <Grid.Column
                 floated="left"
@@ -59,14 +63,9 @@ class NavBar extends Component {
                 textAlign="right"
               >
                 <Grid columns={4}>
-                  <Grid.Column>
+                  <Grid.Column onMouseEnter={() => this.dropdown("Company")} onMouseLeave={() => this.close()}>
                     <NavLink to="/company">
-                      <Dropdown
-                        open={dropdown === "Company"}
-                        text="Company"
-                        onMouseEnter={() => this.dropdown("Company")}
-                        onMouseLeave={() => this.close()}
-                      >
+                      <Dropdown open={dropdown === "Company"} text="Company" >
                         <Dropdown.Menu>
                           <Dropdown.Item
                             className="nav-dropdown-item"
@@ -100,13 +99,8 @@ class NavBar extends Component {
                       </Dropdown>
                     </NavLink>
                   </Grid.Column>
-                  <Grid.Column>
-                    <Dropdown
-                      open={dropdown === "Services"}
-                      text="Services"
-                      onMouseEnter={() => this.dropdown("Services")}
-                      onMouseLeave={() => this.close()}
-                    >
+                  <Grid.Column onMouseEnter={() => this.dropdown("Services")} onMouseLeave={() => this.close()}>
+                    <Dropdown open={dropdown === "Services"} text="Services">
                       <Dropdown.Menu>
                         <NavLink to="/security-optimization">
                           <Dropdown.Item
@@ -141,14 +135,9 @@ class NavBar extends Component {
                       </Dropdown.Menu>
                     </Dropdown>
                   </Grid.Column>
-                  <Grid.Column>
+                  <Grid.Column onMouseEnter={() => this.dropdown("Solutions")} onMouseLeave={() => this.close()}>
                     <NavLink to="/solutions">
-                      <Dropdown
-                        open={dropdown === "Solutions"}
-                        text="Solutions"
-                        onMouseEnter={() => this.dropdown("Solutions")}
-                        onMouseLeave={() => this.close()}
-                      >
+                      <Dropdown open={dropdown === "Solutions"} text="Solutions">
                         <Dropdown.Menu>
                           <Dropdown.Item
                             className="nav-dropdown-item"
@@ -170,13 +159,8 @@ class NavBar extends Component {
                       </Dropdown>
                     </NavLink>
                   </Grid.Column>
-                  <Grid.Column>
-                    <Dropdown
-                      open={dropdown === "Products"}
-                      text="Products"
-                      onMouseEnter={() => this.dropdown("Products")}
-                      onMouseLeave={() => this.close()}
-                    >
+                  <Grid.Column onMouseEnter={() => this.dropdown("Products")} onMouseLeave={() => this.close()}>
+                    <Dropdown open={dropdown === "Products"} text="Products" >
                       <Dropdown.Menu>
                         <Dropdown.Item
                           className="nav-dropdown-item"
@@ -200,6 +184,7 @@ class NavBar extends Component {
                 </Grid>
               </Grid.Column>
             </Grid>
+            }
           </div>
         );
     }

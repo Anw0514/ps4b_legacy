@@ -33,7 +33,7 @@ For Components that are mainly stylistic and can change their content in order t
 ## Navigating CSS files
 
 #### `App.css`
-The custom css written entirely by me. Includes workarounds for weird Semantic-UI things, defaults for certain elements, and component-specific styling. Organized **alphabetically**
+The custom css written entirely by me. Includes workarounds for weird Semantic-UI things, defaults for certain elements, and component-specific styling. Organized **alphabetically**, with the exception of having the general styling before the class styling. The default styles are for mobile, and the media queries are to apply to screens that are tablet and larger.
 
 #### `basic.css`
 classes that are really just css shorthands. Very generic and some was copied and pasted from the old site. If there's a class that's abbreviated or doesn't make much sense, it can probably be found here. There are subtitle comments for easier navigation.
