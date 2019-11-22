@@ -50,6 +50,10 @@
   background-color: #f2f2f2;
 }
 
+.bg-light-grey {
+  background-color: #fafafa;
+}
+
 /* Text Colors */
 
 .white {
@@ -60,6 +64,21 @@
     color: #2a3855;
 }
 
+/* Corners */
+
+.rounded-corners {
+  border-radius: 5px;
+}
+
+.rounded-left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.rounded-right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 /* Alignment */
 
@@ -80,6 +99,16 @@
     text-align: left;
 }
 
+/* Padding */
+
+.left-padded {
+  padding-left: 1em;
+}
+
+.noPadding {
+  padding: 0 !important;
+  overflow: hidden;
+}
 
 /* Miscellaneous */
 
@@ -99,5 +128,11 @@
 @media only screen and (min-width: 770px) {
   .regular-section {
     margin: 2rem 10vw !important;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .regular-section {
+    margin: 2rem 20vw !important;
   }
 }
