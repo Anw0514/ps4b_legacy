@@ -87,6 +87,20 @@ class Home extends Component {
                 );
               })}
             </Grid>
+            <div className='bg-grey'>
+              <Grid>
+                <Grid.Row>
+                  <Grid.Column className='center-items' width={16}>
+                    <Image className='item' src={require('../assets/logos/MSLogoGIFfinal.gif')} />
+                  </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                  <Grid.Column width={16}>
+                    Carousel
+                  </Grid.Column>
+                </Grid.Row>
+              </Grid>
+            </div>
             <h3 className="fs-3">Who We Are</h3>
             <Grid className="regular-section" doubling stackable columns={4}>
               {iconObjects[2].map(iconObj => {

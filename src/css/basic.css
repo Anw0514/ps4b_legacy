@@ -43,7 +43,11 @@
 /* Background Colors */
 
 .bg-white {
-    background-color: white;
+  background-color: white;
+}
+
+.bg-grey {
+  background-color: #f2f2f2;
 }
 
 /* Text Colors */
@@ -57,7 +61,16 @@
 }
 
 
-/* Text Align */
+/* Alignment */
+
+.center-items {
+  display: flex;
+  align-items: center;
+}
+
+.center-items > .item {
+  display: inline !important;
+}
 
 .text-center {
     text-align: center;
