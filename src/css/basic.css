@@ -77,3 +77,16 @@
 .fluid {
   width: 100%;
 }
+
+.regular-section {
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+
+
+@media only screen and (min-width: 770px) {
+  .regular-section {
+    margin-right: 10vw !important;
+    margin-left: 10vw !important;
+  }
+}

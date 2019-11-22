@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6, a, a:hover, a:checked {
   text-decoration: none;
 }
 
+p {
+  color: #6a6a6a;
+}
+
 
 .App {
   background-color: white;
@@ -20,7 +24,7 @@ h1, h2, h3, h4, h5, h6, a, a:hover, a:checked {
 }
 
 .content {
-  padding: 0 5vw;
+  width: 100vw;
   position: relative;
 }
 
@@ -49,9 +53,6 @@ h1, h2, h3, h4, h5, h6, a, a:hover, a:checked {
   font-family: "Montserrat", sans-serif !important;
 }
 
-.ui.dropdown .menu {
-  margin-top: 10px;
-}
 
 .pageTitle {
   background-image: url("../assets/backgrounds/background-2.jpg");
@@ -72,18 +73,55 @@ h1, h2, h3, h4, h5, h6, a, a:hover, a:checked {
   background-image: url("../assets/backgrounds/background_video.gif");
 }
 
+.text-section {
+  margin: 3rem 5vw;
+}
+
+.track-record {
+  background-image: url("../assets/backgrounds/track_record_for_index.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 10vw;
+  text-align: left;
+}
+
+.tr-h3 {
+  color: #FDD428 !important;
+  margin-bottom: 1.5rem;
+}
+
+.ui.dropdown .menu {
+  margin-top: 10px;
+}
 
 /*Media Queries */
 
 @media only screen and (min-width: 770px) {
-  .content {
-    padding: 0 10vw;
+  p, h6 {
+    font-size: 1.2rem;
+    margin-top: 0em;
   }
-  .pageTitle {
-    padding: 10rem 10vw 5rem;
-  }
+
   .navbar {
     padding-left: 10vw;
     padding-right: 10vw;
+  }
+
+  .pageTitle {
+    padding: 10rem 10vw 5rem;
+  }
+
+  .text-section {
+    margin: 3rem 20vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .text-section {
+    margin: 3rem 30vw;
+  }
+  p, h6 {
+    font-size: 1.5rem;
+    margin-top: 0em;
   }
 }

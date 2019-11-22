@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Grid } from 'semantic-ui-react'
+import { Grid, Image } from 'semantic-ui-react'
 import IconParagraph from '../reusable/IconParagraph';
 
 class Home extends Component {
@@ -62,7 +62,7 @@ class Home extends Component {
 
         return (
           <Fragment>
-            <div className="bg-white">
+            <div className="bg-white text-section">
               <h3 className="fs-3">Welcome To PSI</h3>
               <p>
                 Since 1997, Practical Solutions, Inc. (PSI) has been turning
@@ -73,7 +73,7 @@ class Home extends Component {
                 cybersecurity or cloud solutions.
               </p>
             </div>
-            <Grid doubling stackable columns={4}>
+            <Grid className="regular-section" doubling stackable columns={4}>
               {iconObjects[1].map(iconObj => {
                 const { title, content, iconName } = iconObj;
                 return (
@@ -88,7 +88,7 @@ class Home extends Component {
               })}
             </Grid>
             <h3 className="fs-3">Who We Are</h3>
-            <Grid doubling stackable columns={4}>
+            <Grid className="regular-section" doubling stackable columns={4}>
               {iconObjects[2].map(iconObj => {
                 const { title, content, iconName } = iconObj;
                 return (
@@ -101,6 +101,38 @@ class Home extends Component {
                   </Grid.Column>
                 );
               })}
+            </Grid>
+            <div className="track-record">
+              <h3 className="fs-3 tr-h3">Our Track Record</h3>
+              <Grid doubling stackable columns={4}>
+                <Grid.Column>
+                  <h1 className="white">223TB</h1>
+                  <h6 className="white">Data Secured</h6>
+                </Grid.Column>
+                <Grid.Column>
+                  <h1 className="white">2743</h1>
+                  <h6 className="white">Employees Trained</h6>
+                </Grid.Column>
+                <Grid.Column>
+                  <h1 className="white">956k+</h1>
+                  <h6 className="white">Consulting Hours Delivered</h6>
+                </Grid.Column>
+                <Grid.Column>
+                  <h1 className="white">$528M</h1>
+                  <h6 className="white">We Saved our Clients</h6>
+                </Grid.Column>
+              </Grid>
+            </div>
+            <Grid className="regular-section" relaxed columns={3}>
+              <Grid.Column>
+                <Image src={require("../assets/logos/CMMI_DEV_Color.png")} />
+              </Grid.Column>
+              <Grid.Column>
+                <Image src={require("../assets/logos/ISOcert.png")} />
+              </Grid.Column>
+              <Grid.Column>
+                <Image src={require("../assets/logos/CMMI_SVC_Color.png")} />
+              </Grid.Column>
             </Grid>
           </Fragment>
         );
