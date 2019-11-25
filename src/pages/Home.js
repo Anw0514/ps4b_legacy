@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Grid, Image } from 'semantic-ui-react'
 import IconParagraph from '../reusable/IconParagraph';
+import SubHeader from '../reusable/SubHeader';
 
 class Home extends Component {
     render() {
@@ -63,7 +64,7 @@ class Home extends Component {
         return (
           <Fragment>
             <div className="bg-white text-section">
-              <h3 className="fs-3">Welcome To PSI</h3>
+              <SubHeader title="Welcome To PSI" />
               <p>
                 Since 1997, Practical Solutions, Inc. (PSI) has been turning
                 chaos to order in complex enterprise systems where changes are

@@ -1,8 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 class SubHeader extends Component {
   render() {
-    return <div>SubHeader</div>;
+    const { title } = this.props
+    return (
+      <Fragment>
+        <h3 className="fs-3">{title}</h3>
+        <hr />
+      </Fragment>
+    );
   }
 }
 
