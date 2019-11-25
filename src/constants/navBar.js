@@ -43,7 +43,7 @@ class NavBar extends Component {
                   width={10}
                   tablet={10}
                   largeScreen={8}
-                  widescreen={4}
+                  widescreen={6}
                   verticalAlign="middle"
                   textAlign="right"
                 >

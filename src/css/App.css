@@ -38,6 +38,15 @@ p {
   position: relative;
 }
 
+.drop-cap:first-letter {
+  font-size: 2.8em;
+  float: left;
+  margin-top: .29em;
+  margin-right: .15em;
+  color: #2A3855;
+  font-weight: 600;
+}
+
 .mobile-accordion {
   padding-left: 10px; 
 }
@@ -65,6 +74,10 @@ p {
 .imgdiv-text {
   padding: 1em;
   text-align: left;
+}
+
+.lone-paragraph {
+  padding: 4em 3em;
 }
 
 .navbar {
@@ -163,6 +176,7 @@ p {
   .text-section {
     margin: 0rem 30vw;
   }
+
   p, h6 {
     font-size: 1.5rem;
     margin-top: 0em;

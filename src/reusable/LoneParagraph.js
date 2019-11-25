@@ -2,7 +2,13 @@ import React, { Component } from "react";
 
 class LoneParagraph extends Component {
   render() {
-    return <div>LoneParagraph</div>;
+    return (
+      <div className="narrow-section bg-white lone-paragraph">
+        <p className='drop-cap text-left'>
+        {this.props.text}
+        </p>
+      </div>
+    );
   }
 }
 
