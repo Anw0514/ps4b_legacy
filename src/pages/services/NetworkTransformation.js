@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import ImgDiv from '../../reusable/ImgDiv'
+import SubHeader from '../../reusable/SubHeader';
 
 class NetworkTransformation extends Component {
     render() {
         return (
-          <div className="bg-light-grey">
-            NetworkTransformation
+          <div className="bg-light-grey page-content">
+            <SubHeader title="How do we transform your network?" />
             <ImgDiv
               image={require("../../assets/imgDivs/network-transformation-page.jpg")}
-              list={[
+              paragraphs={[
                 "Assess your network’s security to ensure the necessary controls are in place",
                 "Network mapping",
                 "Assess your organization’s readiness for alternative network architectures",

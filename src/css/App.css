@@ -14,7 +14,6 @@ hr {
   border-width: 0;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  opacity: .8;
   height: 3px;
   border-radius: 1.5px;
   width: 4.20873rem;
@@ -89,7 +88,6 @@ p {
   font-family: "Montserrat", sans-serif !important;
 }
 
-
 .pageTitle {
   background-image: url("../assets/backgrounds/background-2.jpg");
   width: 100vw;
@@ -109,8 +107,12 @@ p {
   background-image: url("../assets/backgrounds/background_video.gif");
 }
 
+.subheader {
+  padding-top: 3rem;
+}
+
 .text-section {
-  margin: 3rem 5vw;
+  margin: 0rem 5vw;
 }
 
 .track-record {
@@ -153,13 +155,13 @@ p {
   }
 
   .text-section {
-    margin: 3rem 20vw;
+    margin: 0rem 20vw;
   }
 }
 
 @media only screen and (min-width: 2000px) {
   .text-section {
-    margin: 3rem 30vw;
+    margin: 0rem 30vw;
   }
   p, h6 {
     font-size: 1.5rem;

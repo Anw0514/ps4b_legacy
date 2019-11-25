@@ -62,7 +62,7 @@ class Home extends Component {
         };
 
         return (
-          <Fragment>
+          <div className="page-content">
             <div className="bg-white text-section">
               <SubHeader title="Welcome To PSI" />
               <p>
@@ -89,7 +89,7 @@ class Home extends Component {
               })}
             </Grid>
             <div className='bg-grey'>
-              <Grid>
+              <Grid style={{ marginBottom: "0"}}>
                 <Grid.Row>
                   <Grid.Column className='center-items' width={16}>
                     <Image className='item' src={require('../assets/logos/MSLogoGIFfinal.gif')} />
@@ -102,7 +102,7 @@ class Home extends Component {
                 </Grid.Row>
               </Grid>
             </div>
-            <h3 className="fs-3">Who We Are</h3>
+            <SubHeader title="Who We Are" />
             <Grid className="regular-section" doubling stackable columns={4}>
               {iconObjects[2].map(iconObj => {
                 const { title, content, iconName } = iconObj;
@@ -149,7 +149,7 @@ class Home extends Component {
                 <Image src={require("../assets/logos/CMMI_SVC_Color.png")} />
               </Grid.Column>
             </Grid>
-          </Fragment>
+          </div>
         );
     }
 }
