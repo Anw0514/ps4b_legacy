@@ -9,13 +9,7 @@ class NetworkTransformation extends Component {
           <div className="bg-light-grey page-content">
             <SubHeader title="How do we transform your network?" />
 
-            <LoneParagraph text="Practical Solutions, Inc. (PSI) is a trusted network 
-            transformation partner to many organizations of various sizes and industries. 
-            PSI specializes in network engineering, deployment, infrastructure management, 
-            and network transformation/evolution. From simple network deployments in smaller 
-            businesses to complex enterprise transformations and expansions, the PSI team is 
-            ready to help our clients move their networking goals forward with our dedicated 
-            team of experts." />
+            <LoneParagraph text={["Practical Solutions, Inc. (PSI) is a trusted network transformation partner to many organizations of various sizes and industries. PSI specializes in network engineering, deployment, infrastructure management, and network transformation/evolution. From simple network deployments in smaller businesses to complex enterprise transformations and expansions, the PSI team is ready to help our clients move their networking goals forward with our dedicated team of experts."]} />
 
             <ImgDiv
               image={require("../../assets/imgDivs/network-transformation-page.jpg")}
