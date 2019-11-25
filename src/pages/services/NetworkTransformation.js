@@ -7,7 +7,13 @@ class NetworkTransformation extends Component {
           <div className="bg-light-grey">
             NetworkTransformation
             <ImgDiv
-              image={require("../../assets/imgDivs/network-transformation-page.jpg")}
+              image={require("../../assets/spongebob_computer.jpg")}
+              paragraphs={["fuck this", "okay how about no"]}
+              title="Here is how PSI can help your network transformation:"
+              right={true}
+            />
+            <ImgDiv
+              image={require("../../assets/spongebob_computer.jpg")}
               list={[
                 "Assess your network’s security to ensure the necessary controls are in place",
                 "Network mapping",
