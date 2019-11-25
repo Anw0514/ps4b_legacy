@@ -101,6 +101,10 @@ p {
   font-family: "Montserrat", sans-serif !important;
 }
 
+.page-content {
+  padding-bottom: 2rem;
+}
+
 .pageTitle {
   background-image: url("../assets/backgrounds/background-2.jpg");
   width: 100vw;

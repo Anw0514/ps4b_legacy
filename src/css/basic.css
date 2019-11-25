@@ -132,20 +132,20 @@
 
 @media only screen and (min-width: 770px) {
   .regular-section {
-    margin: 2rem 10vw !important;
+    margin: 5rem 10vw !important;
   }
 
   .narrow-section {
-    margin: 2rem 25vw !important
+    margin: 5rem 25vw !important
   }
 }
 
 @media only screen and (min-width: 2000px) {
   .regular-section {
-    margin: 2rem 20vw !important;
+    margin: 5rem 20vw !important;
   }
 
   .narrow-section {
-    margin: 2rem 30vw !important
+    margin: 5rem 30vw !important
   }
 }
