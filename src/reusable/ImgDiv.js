@@ -32,7 +32,7 @@ class ImgDiv extends Component {
                   {this.content(list, paragraphs)}
                 </div>
               </Grid.Column>
-              <Grid.Column style={{minHeight: '400px'}} className="noPadding" width={6}>
+              <Grid.Column style={{minHeight: '300px'}} className="noPadding" width={6}>
                 <div
                   style={{ backgroundImage: `url(${image})` }}
                   className="imgdiv-img"
