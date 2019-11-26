@@ -110,6 +110,17 @@
   overflow: hidden;
 }
 
+.top-pad-1 {
+  padding-top: 1rem !important;
+}
+
+
+/* Margins */
+
+.m-top-3 {
+  margin-top: 3rem !important;
+}
+
 /* Miscellaneous */
 
 .clickable {
