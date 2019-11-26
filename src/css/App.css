@@ -76,6 +76,15 @@ p {
   background-image: url("../assets/backgrounds/workingOnLaptop.jpg");
 }
 
+.exchange-online-img {
+  width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  background-image: url("https://s3.amazonaws.com/clarityfm-production/attachments/411/default/exchange.png-550x0.png?1391718139");
+}
+
 .imgdiv {
   overflow: hidden;
 }

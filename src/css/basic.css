@@ -114,6 +114,10 @@
   padding-top: 1rem !important;
 }
 
+.padded {
+  padding: 1em;
+}
+
 
 /* Margins */
 
