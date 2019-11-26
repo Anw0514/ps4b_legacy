@@ -45,10 +45,8 @@ It's just that one cousin that shows up to all the family functions but doesn't 
 
 #### `ImgDiv`
 Dynamic component for white divs that have an image on one side.
-- **image**: the image for the div. must be required in the parent component
-    i.e. `image={require('path/to/image')}`
-- **right**: bool for whether or not the image appears on the right of the text instead of the left.
-    can be left out or set to false if the image appears to the left
+- **image**: the image for the div. must be required in the parent component i.e. `image={require('path/to/image')}`
+- **right**: bool for whether or not the image appears on the right of the text instead of the left. Can be left out or set to false if the image appears to the left
 - **list**: an array of list items if the content for the text is an unordered list. If the content is not a list, this prop should be left out
 - **paragraphs**: just like the list prop, but with paragraphs instead
 - **title**: the title of the text section of the imgdiv
