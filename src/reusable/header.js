@@ -16,7 +16,7 @@ class Header extends Component {
       "/office365": "Office 365",
       "/services": "Services",
       "/data-center-consolidation": "Data Center Consolidation",
-      "/e-learning": "eLearning",
+      "/e-learning": "e-Learning",
       "/network-transformation": "Network Transformation",
       "/security-optimization": "Security Optimization",
       "/workplace-modernization": "Workplace Modernization"

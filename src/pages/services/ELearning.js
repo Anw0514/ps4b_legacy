@@ -9,7 +9,7 @@ class ELearning extends Component {
               <SubHeader title="Why e-Learning" />
               <Grid stackable padded relaxed='very' columns={2}>
                 <Grid.Column>
-                  <div style={{ width: "100%", height: "500px", backgroundColor: "blue"}}></div>
+                <div className="rounded-corners elearning-img" />
                 </Grid.Column>
                 <Grid.Column className="text-left">
                   <p className="drop-cap">
