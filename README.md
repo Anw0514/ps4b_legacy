@@ -41,6 +41,32 @@ classes that are really just css shorthands. Very generic and some was copied an
 #### `index.css`
 It's just that one cousin that shows up to all the family functions but doesn't talk to anyone. Is it contributing? who knows. Am I gonna go and tell it to leave? nah
 
+## Custom Styling Components
+
+#### `ImgDiv`
+Dynamic component for white divs that have an image on one side.
+- **image**: the image for the div. must be required in the parent component
+    i.e. `image={require('path/to/image')}`
+- **right**: bool for whether or not the image appears on the right of the text instead of the left.
+    can be left out or set to false if the image appears to the left
+- **list**: an array of list items if the content for the text is an unordered list. If the content is not a list, this prop should be left out
+- **paragraphs**: just like the list prop, but with paragraphs instead
+- **title**: the title of the text section of the imgdiv
+
+#### `SubHeader`
+Section title component that includes a little hr for a lil extra *pizazz*.
+- **title**: the text that will go in the component
+
+#### `LoneParagraph`
+Text section that has no title, but the first paragraph is a drop cap.
+- **text**: an array of paragraphs for the component
+
+#### `IconParagraph`
+Small section for Icons with accompanying text.
+- **iconName**: the name of the icon. For this app, iconsmind is used. The class for the span will be "icon-" + iconName to display the correct icon
+- **title**: the title under the icon
+- **content**: the text under the title under the content
+
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

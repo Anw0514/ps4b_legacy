@@ -2,8 +2,7 @@ import React, { Component } from "react";
 
 class LoneParagraph extends Component {
   render() {
-    const text = this.props.text
-    const first_paragraph = text.shift()
+    const first_paragraph = this.props.text.shift()
 
     return (
       <div className="narrow-section bg-white lone-paragraph text-left">
