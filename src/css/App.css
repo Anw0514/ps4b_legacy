@@ -33,6 +33,23 @@ p {
   align-items: center;
 }
 
+.blockquote {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  padding-left: 50px;
+}
+
+.blockquote:after {
+  content: "";
+  background: url("../assets/icon-quote.svg") no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 25px;
+  top: -10px;
+}
+
 .content {
   width: 100vw;
   position: relative;
@@ -125,7 +142,7 @@ p {
 }
 
 .subheader {
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 
 .text-section {
