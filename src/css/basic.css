@@ -151,9 +151,17 @@
   margin: 2rem 10px !important;
 }
 
+.wide-section {
+  margin: 2rem 10px !important;
+}
+
 
 
 @media only screen and (min-width: 770px) {
+  .wide-section {
+    margin: 5rem 10vw !important;
+  }
+
   .regular-section {
     margin: 5rem 15vw !important;
   }
@@ -163,12 +171,17 @@
   }
 }
 
+
 @media only screen and (min-width: 2000px) {
+  .wide-section {
+    margin: 5rem 20vw !important;
+  }
+
   .regular-section {
     margin: 5rem 25vw !important;
   }
 
   .narrow-section {
-    margin: 5rem 30vw !important
+    margin: 5rem 32vw !important
   }
 }

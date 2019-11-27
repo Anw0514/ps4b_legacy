@@ -6,10 +6,10 @@ class AlternatingMedia extends Component {
     imageFirst(image, { title, paragraphs }) {
         return (
             <Grid.Row>
-                <Grid.Column>
-                    <Image src={image} />
+                <Grid.Column stretched verticalAlign='middle' >
+                    <Image src={image} size='medium' rounded centered />
                 </Grid.Column>
-                <Grid.Column>
+                <Grid.Column stretched verticalAlign='middle' >
                     <h3>{title}</h3>
                     {paragraphs.map(pg => {
                         return <p>{pg}</p>
@@ -22,14 +22,14 @@ class AlternatingMedia extends Component {
     textFirst(image, { title, paragraphs }) {
         return (
             <Grid.Row reversed='mobile'>
-                <Grid.Column>
+                <Grid.Column verticalAlign='middle'>
                     <h3>{title}</h3>
                     {paragraphs.map(pg => {
                         return <p>{pg}</p>
                     })}
                 </Grid.Column>
-                <Grid.Column>
-                    <Image src={image} />
+                <Grid.Column stretched verticalAlign='middle'>
+                    <Image src={image} size='medium' rounded centered />
                 </Grid.Column>
             </Grid.Row>
         )
@@ -52,7 +52,7 @@ class AlternatingMedia extends Component {
     render() {
         const { images, content, left, mobile } = this.props
         return (
-          <Grid stackable columns={2}>
+          <Grid className='text-left' stackable columns={2}>
             {this.createRows(images, content, left, mobile)}
           </Grid>
         )

@@ -4,7 +4,7 @@ import AlternatingMedia from '../../reusable/AlternatingMedia'
 class WorkplaceModernization extends Component {
     render() {
         return (
-            <div>
+            <div className='page-content regular-section'>
                 <AlternatingMedia 
                     images={[require('../../assets/backgrounds/background-2.jpg'), require('../../assets/imgDivs/data-center-consolidation-page-2.jpg')]}
                     content={[{ title: "Microsoft 365", paragraphs: ["Microsoft 365 brings together the productivity of Office 365, Windows 10, and work-anywhere mobility and always-on security in a cost-effective, subscription-based cloud service built for any size organization. With Microsoft 365, you can bring people, information, and insights together by creating a modern hub that fosters collaboration and keeps people productive on a platform that's always up to date.", "Put your move to Microsoft 365 in the hands of the PSI cloud professionals. Our certified Microsoft engineers and cloud specialists will walk you through every step from deployment to management to get you ready to compete in our digital world."]},
