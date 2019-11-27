@@ -57,6 +57,7 @@ class WorkplaceModernization extends Component {
                         }
                     ]} 
                     mobile={this.props.mobile}
+                    left
                 />
             </div>
         </div>
