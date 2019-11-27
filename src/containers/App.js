@@ -68,7 +68,7 @@ class App extends Component {
           ) : (
             <Header page={page} />
           )}
-            <Content />
+            <Content mobile={mobile} />
             <Footer />
           </div>
         </div>

@@ -35,11 +35,11 @@ class AlternatingMedia extends Component {
         )
     }
 
-    createRows(images, content, left){
+    createRows(images, content, left, mobile){
         let rows = []
         let inverted = left
         for(let i = 0; i < images.length; i++) {
-            if(inverted){
+            if(inverted && !mobile){
                 rows.push(this.textFirst(images[i], content[i]))
             } else {
                 rows.push(this.imageFirst(images[i], content[i]))
@@ -50,10 +50,10 @@ class AlternatingMedia extends Component {
     }
 
     render() {
-        const { images, content, left } = this.props
+        const { images, content, left, mobile } = this.props
         return (
           <Grid stackable columns={2}>
-            {this.createRows(images, content, left)}
+            {this.createRows(images, content, left, mobile)}
           </Grid>
         )
     }
