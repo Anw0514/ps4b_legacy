@@ -4,11 +4,35 @@ import { Grid } from 'semantic-ui-react'
 class AlternatingMedia extends Component {
 
     imageFirst(image, { title, paragraphs }) {
-
+        return (
+            <Grid.Row>
+                <Grid.Column>
+                    <Image src={image} />
+                </Grid.Column>
+                <Grid.Column>
+                    <h3>{title}</h3>
+                    {paragraphs.map(pg => {
+                        return <p>{pg}</p>
+                    })}
+                </Grid.Column>
+            </Grid.Row>
+        )
     }
 
     textFirst(image, { title, paragraphs }) {
-
+        return (
+            <Grid.Row reversed='mobile'>
+                <Grid.Column>
+                    <h3>{title}</h3>
+                    {paragraphs.map(pg => {
+                        return <p>{pg}</p>
+                    })}
+                </Grid.Column>
+                <Grid.Column>
+                    <Image src={image} />
+                </Grid.Column>
+            </Grid.Row>
+        )
     }
 
     createRows(images, content, left){
@@ -28,7 +52,7 @@ class AlternatingMedia extends Component {
     render() {
         const { images, content, left } = this.props
         return (
-          <Grid>
+          <Grid stackable columns={2}>
             {this.createRows(images, content, left)}
           </Grid>
         )
