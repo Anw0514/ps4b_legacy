@@ -57,11 +57,15 @@
 /* Text Colors */
 
 .white {
-    color: white;
+  color: white;
 }
 
 .blue-1 {
-    color: #2a3855;
+  color: #2a3855;
+}
+
+.grey {
+  color: #6a6a6a;
 }
 
 /* Corners */
@@ -92,11 +96,11 @@
 }
 
 .text-center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 /* Padding */

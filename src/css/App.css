@@ -50,6 +50,11 @@ p {
   top: -10px;
 }
 
+.checked-cell {
+  color: #2a3855 !important;
+  background: #f8faff !important;
+}
+
 .content {
   width: 100vw;
   position: relative;
