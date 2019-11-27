@@ -34,7 +34,7 @@ class ImgDiv extends Component {
   render() {
     const { image, right, list, title, paragraphs } = this.props
     return (
-      <div className="imgdiv regular-section bg-white rounded-corners">
+      <div className="imgdiv regular-width bg-white rounded-corners">
         <Grid stackable>
           {right ? (
             <Fragment>

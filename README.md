@@ -5,7 +5,7 @@ This is the react app for the Practical Solutions Inc website. Begun by Andrea W
 ### *I ACTUALLY PUT EFFORT INTO MAKING THE README HELPFUL*
 *please read it*
 
-<img src="./src/assets/spongebob_computer.jpg" width="400">
+<img src="./src/assets/readme/spongebob_computer.jpg" width="400">
 
 ## Resources / Documentation
 - [Semantic UI React](https://react.semantic-ui.com/)
@@ -42,6 +42,9 @@ classes that are really just css shorthands. Very generic and some was copied an
 It's just that one cousin that shows up to all the family functions but doesn't talk to anyone. Is it contributing? who knows. Am I gonna go and tell it to leave? nah
 
 ## Custom Styling Components
+
+
+<img src="./src/assets/readme/imgdiv.png" width="300">
 
 #### `ImgDiv`
 Dynamic component for white divs that have an image on one side.
