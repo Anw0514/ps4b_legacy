@@ -7,7 +7,7 @@ class DataCenterConsolidation extends Component {
     render() {
         return (
             <div className="page-content bg-light-grey">
-                <SubHeader title="How do we consolidate your data?" />
+                <SubHeader paddingTop title="How do we consolidate your data?" />
                 <LoneParagraph text={["A common problem enterprise IT groups face is the resource flooding that occurs in their data centers throughout the years. This cycle is inevitable in most environments and is typically the result of a growing collection of small inefficiencies. When combined, these inefficiencies create a bloated environment that wastes significant resources and causes frustration that often makes its way to the organization’s clients. There comes a time when it makes the best financial sense to invest in a data consolidation effort.",
                                       "Practical Solutions, Inc. (PSI) has solidified its reputation throughout the years as an expert in consolidating data centers using proprietary strategies along with current technologies to provide the most efficient custom architecture. PSI partners with clients of any size and industry to select the desired optimum technology, the right level of engineering complexity, and the capabilities of management in order to realize efficiencies and reduce resources while growing functionality. The PSI team will help clients:"]} />
                 <ImgDiv 

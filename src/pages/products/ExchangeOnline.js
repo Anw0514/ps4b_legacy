@@ -10,7 +10,7 @@ class ExchangeOnline extends Component {
         return (
           <Fragment>
             <div className="bg-white">
-              <div className="subheader narrow-section">
+              <div className="narrow-section">
                 <h3 className="fs-3">Microsoft Exchange Online</h3>
                   <p>
                     Fully hosted email plans complete with online calendars and 
@@ -42,7 +42,7 @@ class ExchangeOnline extends Component {
             </div>
             <div className="bg-light-grey page-content">
               <div className="narrow-section top-pad-1">
-                <SubHeader title="Exchange Online Plans for Your Business" />
+                <SubHeader paddingTop title="Exchange Online Plans for Your Business" />
                 <Grid relaxed='very' columns={2}>
                   { plans.map(plan => {
                     return (

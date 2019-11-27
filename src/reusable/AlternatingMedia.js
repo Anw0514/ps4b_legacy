@@ -52,7 +52,7 @@ class AlternatingMedia extends Component {
     render() {
         const { images, content, left, mobile } = this.props
         return (
-          <Grid className='text-left' stackable columns={2}>
+          <Grid className='text-left regular-section' stackable columns={2}>
             {this.createRows(images, content, left, mobile)}
           </Grid>
         )

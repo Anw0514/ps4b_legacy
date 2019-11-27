@@ -64,7 +64,7 @@ class Home extends Component {
         return (
           <div className="page-content">
             <div className="bg-white text-section">
-              <SubHeader title="Welcome To PSI" />
+              <SubHeader marginTop title="Welcome To PSI" />
               <p>
                 Since 1997, Practical Solutions, Inc. (PSI) has been turning
                 chaos to order in complex enterprise systems where changes are
@@ -102,7 +102,7 @@ class Home extends Component {
                 </Grid.Row>
               </Grid>
             </div>
-            <SubHeader title="Who We Are" />
+            <SubHeader marginTop title="Who We Are" />
             <Grid className="regular-section" doubling stackable columns={4}>
               {iconObjects[2].map(iconObj => {
                 const { title, content, iconName } = iconObj;

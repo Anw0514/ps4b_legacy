@@ -118,6 +118,10 @@
   padding-top: 1rem !important;
 }
 
+.top-pad-3 {
+  padding-top: 3rem !important;
+}
+
 .padded {
   padding: 1em;
 }

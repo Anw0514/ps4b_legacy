@@ -58,6 +58,7 @@ p {
 .content {
   width: 100vw;
   position: relative;
+  margin: 0 !important;
 }
 
 .drop-cap:first-letter {
@@ -165,10 +166,6 @@ p {
 
 .pageTitle.home {
   background-image: url("../assets/backgrounds/background_video.gif");
-}
-
-.subheader {
-  margin-top: 3rem;
 }
 
 .text-section {
