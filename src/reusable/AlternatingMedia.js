@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid } from 'semantic-ui-react'
+import { Grid, Image } from 'semantic-ui-react'
 
 class AlternatingMedia extends Component {
 
@@ -38,7 +38,7 @@ class AlternatingMedia extends Component {
     createRows(images, content, left){
         let rows = []
         let inverted = left
-        for(i = 0; i < images.length; i++) {
+        for(let i = 0; i < images.length; i++) {
             if(inverted){
                 rows.push(this.textFirst(images[i], content[i]))
             } else {
