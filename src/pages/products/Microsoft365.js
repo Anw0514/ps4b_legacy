@@ -1,11 +1,29 @@
-import React, { Component } from 'react'
-import { Table, TabPane, Icon } from 'semantic-ui-react'
+import React, { Component, Fragment } from 'react'
+import { Table, Icon, Image } from 'semantic-ui-react'
 
 class Microsoft365 extends Component {
     render() {
         return (
+          <Fragment>
+            <div className="narrow-section">
+              <div className="subheader">
+                <h3 className="fs-3">Microsoft 365</h3>
+                  <p>
+                    Microsoft bundled the best features from Office 365 and Windows 
+                    10 with cross-device security to create Microsoft 365, the most 
+                    innovative, intelligent, and secure solution on the market. This 
+                    bundle includes everything you need to stay empowered, creative, 
+                    and productive, all with just a single monthly subscription.
+                  </p>
+                  <hr />
+              </div>
+            </div>
             <div className='regular-section'>
-              <Table className='text-center' basic='very' celled columns={4}>
+              <Image centered src={require('../../assets/microsoft365-equation.png')} />
+              <div className='subheader'>
+                <h3 className='fs-3 m-bottom-3'>All the Microsoft 365 Plans for Your Business or Enterprise</h3>
+              </div>
+              <Table className='text-center' basic='very' unstackable celled columns={4}>
                 <Table.Header>
                   <Table.Row>
                     <Table.HeaderCell></Table.HeaderCell>
@@ -198,6 +216,7 @@ class Microsoft365 extends Component {
                 </Table.Body>
               </Table>
             </div>
+          </Fragment>
         )
     }
 }
