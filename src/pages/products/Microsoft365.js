@@ -85,20 +85,6 @@ class Microsoft365 extends Component {
                   </Table.Row>
                   <Table.Row>
                     <Table.Cell>
-                      Self-service PC deployment with Windows AutoPilot
-                    </Table.Cell>
-                    <Table.Cell className='checked-cell'>
-                      -
-                    </Table.Cell>
-                    <Table.Cell className='checked-cell'>
-                      <Icon name='checkmark' />
-                    </Table.Cell>
-                    <Table.Cell className='checked-cell'>
-                      <Icon name='checkmark' />
-                    </Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell>
                       Protect company data across devices
                     </Table.Cell>
                     <Table.Cell className='checked-cell'>
@@ -131,6 +117,20 @@ class Microsoft365 extends Component {
                     </Table.Cell>
                     <Table.Cell className='checked-cell'>
                       <Icon name='checkmark' />
+                    </Table.Cell>
+                    <Table.Cell className='checked-cell'>
+                      <Icon name='checkmark' />
+                    </Table.Cell>
+                    <Table.Cell className='checked-cell'>
+                      <Icon name='checkmark' />
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>
+                      Self-service PC deployment with Windows AutoPilot
+                    </Table.Cell>
+                    <Table.Cell>
+                      -
                     </Table.Cell>
                     <Table.Cell className='checked-cell'>
                       <Icon name='checkmark' />
