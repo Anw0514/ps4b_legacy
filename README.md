@@ -44,7 +44,7 @@ It's just that one cousin that shows up to all the family functions but doesn't 
 ## Custom Styling Components
 
 
-<img src="./src/assets/readme/imgdiv.png" width="300">
+<img src="./src/assets/readme/imgdiv.png" width="500">
 
 #### `ImgDiv`
 Dynamic component for white divs that have an image on one side.
@@ -57,6 +57,9 @@ Dynamic component for white divs that have an image on one side.
 #### `SubHeader`
 Section title component that includes a little hr for a lil extra *pizazz*.
 - **title**: the text that will go in the component
+- **marginTop**: adds a margin-top of 3rem
+- **marginBottom**: adds a margin-bottom of 3rem
+- **paddingTop**: adds a padding-top of 3rem (best used for light grey sections so that the space above matches the rest of the section)
 
 #### `LoneParagraph`
 Text section that has no title, but the first paragraph is a drop cap.
