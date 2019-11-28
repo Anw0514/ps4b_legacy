@@ -67,7 +67,7 @@ Text section that has no title, but the first paragraph is a drop cap.
 
 #### `IconParagraph`
 Small section for Icons with accompanying text.
-- **iconName**: the name of the icon. For this app, iconsmind is used. The class for the span will be "icon-" + iconName to display the correct icon
+- **iconName**: the name of the icon. For this app, iconsmind is used. The class for the span will be "icon-" + iconName to display the correct icon. The full catalog of available icons can be found [here](https://iconsmind.com/view_icons/)
 - **title**: the title under the icon
 - **content**: the text under the title under the content
 
