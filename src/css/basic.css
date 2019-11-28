@@ -109,6 +109,10 @@
   padding-left: 1em;
 }
 
+.indented {
+  padding-left: 4rem !important;
+}
+
 .noPadding {
   padding: 0 !important;
   overflow: hidden;

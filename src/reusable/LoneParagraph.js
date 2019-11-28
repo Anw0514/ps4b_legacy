@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import { List } from 'semantic-ui-react'
 
 class LoneParagraph extends Component {
-  render() {
-    const text = this.props.text
-    const first_paragraph = text.shift()
 
+  render() {
+    const { text, list } = this.props
+    const first_paragraph = text.shift()
     return (
       <div className="narrow-section bg-white lone-paragraph text-left">
         <p className='drop-cap'>
@@ -13,6 +14,7 @@ class LoneParagraph extends Component {
         {text.map(paragraph => {
           return <p>{paragraph}</p>
         })}
+        { list ? <List className="grey indented" bulleted size="large" items={list} /> : null}
       </div>
     );
   }
