@@ -28,7 +28,7 @@ class Header extends Component {
     return (
       <div className="pageTitle">
         <div className="text-left">
-          <h1 className="fs-4 white">{pageName}</h1>
+          <h1 className="fs-5 white">{pageName}</h1>
         </div>
       </div>
     )

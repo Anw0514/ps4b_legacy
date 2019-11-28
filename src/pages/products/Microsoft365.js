@@ -19,7 +19,7 @@ class Microsoft365 extends Component {
               </div>
             </div>
             <div className='regular-section'>
-              <Image centered src={require('../../assets/microsoft365-equation.png')} />
+              <Image className='m-bottom-3' centered src={require('../../assets/microsoft365-equation.png')} />
               <div className='subheader'>
                 <h3 className='fs-3 m-bottom-3'>All the Microsoft 365 Plans for Your Business or Enterprise</h3>
               </div>
