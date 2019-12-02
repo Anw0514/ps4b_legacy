@@ -15,6 +15,7 @@ import ELearning from "../pages/services/ELearning";
 import NetworkTransformation from "../pages/services/NetworkTransformation";
 import SecurityOptimization from "../pages/services/SecurityOptimization";
 import Services from "../pages/services/Services";
+import ManagedServices from "../pages/services/ManagedServices";
 import WorkplaceModernization from "../pages/services/WorkplaceModernization";
 
 
@@ -61,6 +62,9 @@ class Content extends Component {
                 </Route>
                 <Route exact path="/services">
                   <Services />
+                </Route>
+                <Route exact path="/managed-services">
+                  <ManagedServices />
                 </Route>
                 <Route exact path="/data-center-consolidation">
                   <DataCenterConsolidation />

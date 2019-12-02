@@ -66,7 +66,7 @@ class App extends Component {
           {page === "/" ? (
             <HomeHeader />
           ) : (
-            <Header page={page} />
+            <Header page={page} mobile={mobile} />
           )}
             <Content mobile={mobile} />
             <Footer />

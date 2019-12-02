@@ -15,6 +15,7 @@ class Header extends Component {
       "/microsoft365": "Microsoft 365",
       "/office365": "Office 365",
       "/services": "Services",
+      "/managed-services": "Managed Services",
       "/data-center-consolidation": "Data Center Consolidation",
       "/e-learning": "e-Learning",
       "/network-transformation": "Network Transformation",
@@ -24,11 +25,12 @@ class Header extends Component {
   }
 
   render() {
-    const pageName = this.locationObj[this.props.page];
+    const { page, mobile } = this.props
+    const fs = mobile ? "fs-3" : "fs-5"
     return (
       <div className="pageTitle">
         <div className="text-left">
-          <h1 className="fs-5 white">{pageName}</h1>
+          <h1 className={`${fs} white`}>{this.locationObj[page]}</h1>
         </div>
       </div>
     )
