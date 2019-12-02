@@ -41,7 +41,7 @@ p {
 
 .blockquote:after {
   content: "";
-  background: url("../assets/icon-quote.svg") no-repeat;
+  background: url("../icon-quote.svg") no-repeat;
   background-size: contain;
   width: 50px;
   height: 50px;
@@ -79,7 +79,7 @@ p {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  background-image: url("../assets/backgrounds/workingOnLaptop.jpg");
+  background-image: url("../backgrounds/workingOnLaptop.jpg");
 }
 
 .exchange-online-img {
@@ -150,7 +150,7 @@ p {
 }
 
 .pageTitle {
-  background-image: url("../assets/backgrounds/background-2.jpg");
+  background-image: url("../backgrounds/background-2.jpg");
   width: 100vw;
   min-height: 100%;
   top: 0;
@@ -165,7 +165,7 @@ p {
 }
 
 .pageTitle.home {
-  background-image: url("../assets/backgrounds/background_video.gif");
+  background-image: url("../backgrounds/background_video.gif");
 }
 
 .text-section {
@@ -173,7 +173,7 @@ p {
 }
 
 .track-record {
-  background-image: url("../assets/backgrounds/track_record_for_index.jpg");
+  background-image: url("../backgrounds/track_record_for_index.jpg");
   background-size: cover;
   background-position: center;
   padding: 5rem 10vw;
