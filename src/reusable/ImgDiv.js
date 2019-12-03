@@ -18,11 +18,11 @@ class ImgDiv extends Component {
   content(list, paragraphs) {
     if (list) {
       return (
-        <List bulleted>
+        <ul>
           {list.map(item => {
-            return <List.Item className='imgdiv-item'>{item}</List.Item>
+            return <li className='imgdiv-item'><p>{item}</p></li>
           })}
-        </List>
+        </ul>
       )
     } else {
       return paragraphs.map(pgrph => {
@@ -39,7 +39,7 @@ class ImgDiv extends Component {
           {right ? (
             <Fragment>
               <Grid.Column width={10}>
-                <div className="imgdiv-text">
+                <div className="imgdiv-text v-pad-2">
                   <h2>{title}</h2>
                   {this.content(list, paragraphs)}
                 </div>
@@ -60,7 +60,7 @@ class ImgDiv extends Component {
                 ></div>
               </Grid.Column>
               <Grid.Column width={10}>
-                <div className="imgdiv-text">
+                <div className="imgdiv-text v-pad-2">
                   <h2>{title}</h2>
                   {this.content(list, paragraphs)}
                 </div>

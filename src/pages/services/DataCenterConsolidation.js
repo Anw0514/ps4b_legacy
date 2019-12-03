@@ -21,7 +21,7 @@ class DataCenterConsolidation extends Component {
                        ]}
                   title="The PSI team will help clients:"
                 />
-                <div className="narrow-section bg-white lone-paragraph text-left">
+                <div className="narrow-section bg-white lone-paragraph rounded-corners text-left">
                     <p>PSI’s Solution Delivery Methodology (SDM©) looks at all three dimensions that make up the desired solution: Technology, Engineering, and Management to structure the delivery of any solution in a prescribed Solution Delivery Lifecycle (SDL©). PSI will work with clients to identify all three dimensions of the desired solution:</p>
                     <p>Technology dimension: Identifying the specific cloud platform, and whether a standard or hybrid platform consisting of multiple vendors is appropriate.</p>
                     <p>Engineering dimension: Working with the client to identify desired services such as moving computers, storage, and/or network services, and selecting the appropriate cloud provider.</p>

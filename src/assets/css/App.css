@@ -24,6 +24,7 @@ p {
 }
 
 
+
 .App {
   background-color: white;
   min-height: 100vh;
@@ -108,12 +109,17 @@ p {
 }
 
 .imgdiv-item {
+  color: #2A3855;
+}
+
+.imgdiv-item > p {
   color: #6a6a6a;
 }
 
 .imgdiv-text {
   padding: 1em;
   text-align: left;
+  color: #6a6a6a;
 }
 
 .lone-paragraph {

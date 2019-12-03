@@ -7,7 +7,7 @@ class LoneParagraph extends Component {
     const { text, list } = this.props
     const first_paragraph = text.shift()
     return (
-      <div className="narrow-section bg-white lone-paragraph text-left">
+      <div className="narrow-section bg-white lone-paragraph text-left rounded-corners">
         <p className='drop-cap'>
           {first_paragraph}
         </p>
