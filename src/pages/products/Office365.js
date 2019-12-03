@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Card } from 'semantic-ui-react'
+import ComparisonTable from '../../reusable/ComparisonTable'
 
 class Office365 extends Component {
 
@@ -199,7 +201,78 @@ class Office365 extends Component {
                 Migration and support included
               </p>
               <hr />
-              
+              <div className="wide-section">
+                <Card.Group centered>
+                  <Card>
+                    <Card.Content>
+                      <Card.Header className="blue-1">Business Essentials</Card.Header>
+                      <Card.Meta>$5.00 per user / month</Card.Meta>
+                      <Card.Description>
+                        Best for businesses that need business email and other business services. Office apps not included.
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>
+                  <Card>
+                    <Card.Content>
+                      <Card.Header className="blue-1">Business</Card.Header>
+                      <Card.Meta>$8.30 per user / month</Card.Meta>
+                      <Card.Description>
+                        Best for businesses that need Office apps plus cloud file storage and sharing. Business email not included.
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>
+                  <Card>
+                    <Card.Content>
+                      <Card.Header className="blue-1">Business Premium</Card.Header>
+                      <Card.Meta>$12.50 per user / month</Card.Meta>
+                      <Card.Description>
+                        Best for businesses that need business email, Office apps, and other business services.
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>
+                </Card.Group>
+                <Card.Group className="m-bottom-3" centered>
+                  <Card>
+                    <Card.Content>
+                      <Card.Header className="blue-1">Pro Plus</Card.Header>
+                      <Card.Meta>$11.99 per user / month</Card.Meta>
+                      <Card.Description>
+                        Office applications plus cloud file-storage and sharing. Business email not included.
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>
+                  <Card>
+                    <Card.Content>
+                      <Card.Header className="blue-1">E1</Card.Header>
+                      <Card.Meta>$7.99 per user / month</Card.Meta>
+                      <Card.Description>
+                        Business services—email, file storage and sharing, Office Online, meetings and IM, and more. Office applications not included.
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>
+                  <Card>
+                    <Card.Content>
+                      <Card.Header className="blue-1">E3</Card.Header>
+                      <Card.Meta>$19.99 per user / month</Card.Meta>
+                      <Card.Description>
+                        All the features of ProPlus and Office 365 E1 plus security and compliance tools, such as legal hold, data loss prevention, and more.
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>
+                  <Card>
+                    <Card.Content>
+                      <Card.Header className="blue-1">E5</Card.Header>
+                      <Card.Meta>$34.99 per user / month</Card.Meta>
+                      <Card.Description>
+                        All the features of Office 365 E3 plus advanced security, analytics, and voice capabilities.
+                      </Card.Description>
+                    </Card.Content>
+                  </Card>
+                </Card.Group>
+
+                <ComparisonTable criteria={this.criteria} items={this.plans} />
+
+              </div>
             </div>
         )
     }

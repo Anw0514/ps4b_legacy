@@ -31,7 +31,7 @@ class Content extends Component {
 
     render() {
         return (
-            <div className="content">
+            <div className="content-page">
               <Switch>
                 <Route exact path="/">
                   <Home />
