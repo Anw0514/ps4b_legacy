@@ -126,6 +126,12 @@ class NavBar extends Component {
                               text="e-Learning"
                             />
                           </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/managed-services")} to="/managed-services">
+                            <Dropdown.Item
+                              className="nav-dropdown-item"
+                              text="Managed Services"
+                            />
+                          </NavLink>
                         </Dropdown.Menu>
                       </Dropdown>
                     </Grid.Column>
