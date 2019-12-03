@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Card } from 'semantic-ui-react'
 import ComparisonTable from '../../reusable/ComparisonTable'
+import AlternatingMedia from '../../reusable/AlternatingMedia'
+import SubHeader from '../../reusable/SubHeader'
 
 class Office365 extends Component {
 
@@ -199,6 +201,36 @@ class Office365 extends Component {
                 Migration and support included
               </p>
               <hr />
+              <div className="narrow-width">
+              <AlternatingMedia 
+                images={[
+                  require('../../assets/office365/be-mobile.jpg'),
+                  require('../../assets/office365/collaboration.jpg'),
+                  require('../../assets/office365/growth.jpg')
+                ]} 
+                content={[
+                  {
+                    title: "Be mobile! Access Office 365 from any location",
+                    paragraphs: [
+                      "Take your office with you wherever you go! Work from anywhere, on any device. Access Office 365 from your mobile phone, tablet or PC. No extra fees or configurations. Just login to your Office 365 portal, and you’re ready to work! Connect with the right people and share ideas and information at any time, from anywhere."
+                    ]
+                  },
+                  {
+                    title: "Collaborate better! Work from anywhere, anytime",
+                    paragraphs: [
+                      "Share and co-author documents in Office desktop and web-based apps. Use Lync to instantly connect with colleagues and customers as if they were sitting right next to you. Set up online meetings in minutes, send email and coordinate team work wherever you are!"
+                    ]
+                  },
+                  {
+                    title: "Grow Your Business! Simplify your IT",
+                    paragraphs: [
+                      "Simplify IT and give your team the best user experience. Free, automatic updates mean that small business owners can stop worrying about IT problems and focus on what matters most: growing their business."
+                    ]
+                  }
+                ]} 
+              />
+              </div>
+              <SubHeader marginTop title="All the Office 365 Plans for Your Business" />
               <div className="wide-section">
                 <Card.Group centered>
                   <Card>
