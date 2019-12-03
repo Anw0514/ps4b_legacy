@@ -54,6 +54,11 @@
   background-color: #fafafa;
 }
 
+.bg-blue {
+  background-color: #2a3855 !important;
+  color: white !important;
+}
+
 /* Text Colors */
 
 .white {

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { List } from 'semantic-ui-react'
+import { List, Button } from 'semantic-ui-react'
 
 class LoneParagraph extends Component {
 
   render() {
-    const { text, list } = this.props
+    const { text, list, contact, contactText } = this.props
     const first_paragraph = text.shift()
     return (
       <div className="narrow-section bg-white lone-paragraph text-left rounded-corners">
@@ -15,6 +15,11 @@ class LoneParagraph extends Component {
           return <p>{paragraph}</p>
         })}
         { list ? <List className="grey indented" bulleted size="large" items={list} /> : null}
+        { contact ? (
+          <Button circular className="bg-blue"> 
+            { contactText ? contactText : "Contact Us!" }
+          </Button>
+        ) : null }
       </div>
     );
   }
