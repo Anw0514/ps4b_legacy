@@ -10,7 +10,7 @@ class Office365 extends Component {
             { 
               "id": 1,
               "Title": "Business Essentials",
-              "Standard Rate": "$5.00",
+              "Price": "$5.00",
               "User Maximum": "300",
               "Office Online": true,
               "Office Desktop": false,
@@ -32,7 +32,7 @@ class Office365 extends Component {
             { 
               "id": 2,
               "Title": "Business",
-              "Standard Rate": "$8.30",
+              "Price": "$8.30",
               "User Maximum": "300",
               "Office Online": true,
               "Office Desktop": true,
@@ -54,7 +54,7 @@ class Office365 extends Component {
             { 
               "id": 3,
               "Title": "Business Premium",
-              "Standard Rate": "$12.50",
+              "Price": "$12.50",
               "User Maximum": "300",
               "Office Online": true,
               "Office Desktop": true,
@@ -76,7 +76,7 @@ class Office365 extends Component {
             { 
               "id": 4,
               "Title": "Pro Plus",
-              "Standard Rate": "$11.99",
+              "Price": "$11.99",
               "User Maximum": "Unlimited",
               "Office Online": true,
               "Office Desktop": true,
@@ -98,7 +98,7 @@ class Office365 extends Component {
             { 
               "id": 5,
               "Title": "E1",
-              "Standard Rate": "$7.99",
+              "Price": "$7.99",
               "User Maximum": "Unlimited",
               "Office Online": true,
               "Office Desktop": false,
@@ -120,7 +120,7 @@ class Office365 extends Component {
             { 
               "id": 6,
               "Title": "E3",
-              "Standard Rate": "$19.99",
+              "Price": "$19.99",
               "User Maximum": "Unlimited",
               "Office Online": true,
               "Office Desktop": true,
@@ -142,7 +142,7 @@ class Office365 extends Component {
             { 
               "id": 7,
               "Title": "E5",
-              "Standard Rate": "$34.99",
+              "Price": "$34.99",
               "User Maximum": "Unlimited",
               "Office Online": true,
               "Office Desktop": true,
@@ -163,8 +163,6 @@ class Office365 extends Component {
             }
         ]
         this.criteria = [
-          "Title",
-          "Standard Rate",
           "User Maximum",
           "Office Online",
           "Office Desktop",
@@ -193,7 +191,7 @@ class Office365 extends Component {
 
     render() {
         return (
-            <div className='bg-light-grey'>
+            <div className='bg-white'>
               <h3 className="fs-3 top-pad-3">Office 365</h3>
               <p> 
                 Get the best productivity suite for your business! 
@@ -269,8 +267,7 @@ class Office365 extends Component {
                     </Card.Content>
                   </Card>
                 </Card.Group>
-
-                <ComparisonTable criteria={this.criteria} items={this.plans} />
+                <ComparisonTable criterion={this.criteria} items={this.plans} />
 
               </div>
             </div>

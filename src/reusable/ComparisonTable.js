@@ -39,39 +39,39 @@ class ComparisonTable extends Component {
         )
     }
 
-    buildBody(criteria, items) {
+    buildBody(criterion, items) {
 
         return (
             <Table.Body>
-                { criteria.map(measure => {
-                    return measure === "Title" ? null : this.buildRow(items, measure)
+                { criterion.map(criteria => {
+                    return this.buildRow(items, criteria)
                 })}
             </Table.Body>
         )
     }
 
     render() {
-        const { items, criteria } = this.props
+        const { items, criterion } = this.props
         const columns = items.length + 1
         return (
-            <div className="bg-white rounded-corners padded v-pad-2">
-                <Table className='text-center' basic='very' unstackable celled columns={columns}>
-                    <Table.Header>
-                        <Table.Row>
-                            <Table.HeaderCell>
-                            </Table.HeaderCell>
-                            { items.map(item => {
-                                return (
-                                    <Table.HeaderCell>
-                                        { item["Title"] }
-                                    </Table.HeaderCell>
-                                )
-                            })}
-                        </Table.Row>
-                    </Table.Header>
-                    { this.buildBody(criteria, items) }
-                </Table>
-            </div>
+            <Table className='text-center' basic='very' unstackable celled columns={columns}>
+                <Table.Header>
+                    <Table.Row>
+                        <Table.HeaderCell>
+                        </Table.HeaderCell>
+                        { items.map(item => {
+                            return (
+                                <Table.HeaderCell>
+                                    <h4 className="fs-1">{item["Title"]}</h4>
+                                    <div className="fs-1 grey">{item["Price"]}</div>
+                                    <p className="fs--1">per user / per month</p>
+                                </Table.HeaderCell>
+                            )
+                        })}
+                    </Table.Row>
+                </Table.Header>
+                { this.buildBody(criterion, items) }
+            </Table>
         )
     }
 }
