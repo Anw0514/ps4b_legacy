@@ -1,10 +1,22 @@
 import React, { Component } from 'react'
-import { Table } from 'semantic-ui-react'
+import { Table, Icon } from 'semantic-ui-react'
 
 class ComparisonTable extends Component {
 
-    buildCell() {
+    trueCell() {
+        return (
+            <Table.Cell className='checked-cell'>
+                <Icon name='checkmark' />
+            </Table.Cell>
+        )
+    }
 
+    emptyCell() {
+        return (
+            <Table.Cell>
+                -
+            </Table.Cell>
+        )
     }
 
     buildRow(items, criteria) {
@@ -14,9 +26,14 @@ class ComparisonTable extends Component {
                     {criteria}
                 </Table.Cell>
                 { items.map(item => {
-                    return (
-                    <Table.Cell>{item[criteria]}</Table.Cell>
-                    )
+
+                    if (item[criteria] === true) {
+                        return this.trueCell()
+                    } else if(item[criteria] === false) {
+                        return this.emptyCell()
+                    } else {
+                        return <Table.Cell className='checked-cell'>{item[criteria]}</Table.Cell>
+                    }
                 })}
             </Table.Row>
         )
@@ -37,7 +54,7 @@ class ComparisonTable extends Component {
         const { items, criteria } = this.props
         const columns = items.length + 1
         return (
-            <div>
+            <div className="bg-white rounded-corners padded v-pad-2">
                 <Table className='text-center' basic='very' unstackable celled columns={columns}>
                     <Table.Header>
                         <Table.Row>
