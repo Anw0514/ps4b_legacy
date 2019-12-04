@@ -78,6 +78,14 @@
   color: #6a6a6a !important;
 }
 
+.gold {
+  color: #d4af37 !important;
+}
+
+.silver {
+  color: #979691 !important;
+}
+
 /* Corners */
 
 .rounded-corners {
@@ -192,30 +200,13 @@
 
 /* sections  */
 
-.narrow-section {
+.narrow-section, .regular-section, .wide-section {
   margin: 2rem 10px !important
 }
 
-.regular-section {
-  margin: 2rem 10px !important;
-}
-
-.wide-section {
-  margin: 2rem 10px !important;
-}
-
-.narrow-width {
+.narrow-width, .regular-width, .wide-width, .super-narrow-width {
   margin: 0 10px !important
 }
-
-.regular-width {
-  margin: 0 10px !important;
-}
-
-.wide-width {
-  margin: 0 10px !important;
-}
-
 
 
 @media only screen and (min-width: 770px) {
@@ -241,6 +232,10 @@
 
   .narrow-width {
     margin: 0 25vw !important
+  }
+  
+  .super-narrow-width {
+    margin: 0 30vw !important;
   }
 }
 
@@ -268,5 +263,9 @@
 
   .narrow-width {
     margin: 0 32vw !important
+  }
+  
+  .super-narrow-width {
+    margin: 0 35vw !important;
   }
 }

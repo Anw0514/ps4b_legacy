@@ -1,11 +1,44 @@
 import React, { Component, Fragment } from 'react'
-import { Grid, Image } from 'semantic-ui-react'
+import { Grid, Image, Icon } from 'semantic-ui-react'
 import IconParagraph from '../reusable/IconParagraph';
 import SubHeader from '../reusable/SubHeader';
 import ContactButton from '../reusable/ContactButton';
+import Carousel from '../reusable/Carousel'
+
 
 class Home extends Component {
     render() {
+
+      const slides = [
+        <h5>
+          <Icon className='gold' name="trophy" />
+          Cloud Platform
+        </h5>,
+        <h5>
+          <Icon className='gold' name="trophy" />
+          ISV
+        </h5>,
+        <h5>
+          <Icon className='gold' name="trophy" />
+          Data Platform
+        </h5>,
+        <h5>
+          <Icon className='gold' name="trophy" />
+          Azure DevOps
+        </h5>,
+        <h5>
+          <Icon className='gold' name="trophy" />
+          Windows and Devices
+        </h5>,
+        <h5>
+          <Icon className='gold' name="trophy" />
+          Data Analytics
+        </h5>,
+        <h5>
+          <Icon className='silver' name="trophy" />
+          Small and Midmarket Cloud Solutions
+        </h5>
+      ]
 
         const iconObjects = {
           1: [
@@ -89,16 +122,20 @@ class Home extends Component {
                 );
               })}
             </Grid>
-            <div className='bg-grey'>
-              <Grid style={{ marginBottom: "0"}}>
+            <div className="bg-grey">
+              <Grid style={{ marginBottom: "0" }}>
                 <Grid.Row>
-                  <Grid.Column className='center-items' width={16}>
-                    <Image className='item' src={require('../assets/logos/MSLogoGIFfinal.gif')} />
+                  <Grid.Column className="center-items" width={16}>
+                    <Image
+                      className="item"
+                      src={require("../assets/logos/MSLogoGIFfinal.gif")}
+                    />
                   </Grid.Column>
                 </Grid.Row>
                 <Grid.Row>
-                  <Grid.Column width={16}>
-                    Carousel
+                  <Grid.Column width={16} textAlign="center">
+                    <Carousel slides={slides} width="super-narrow-width" />
+                    <div className="filler" />
                   </Grid.Column>
                 </Grid.Row>
               </Grid>

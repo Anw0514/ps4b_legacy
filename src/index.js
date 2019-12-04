@@ -7,6 +7,8 @@ import "semantic-ui-css/semantic.min.css";
 import "./assets/css/App.css";
 import "./assets/css/basic.css";
 import "./assets/iconsmind/iconsmind.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
