@@ -6,11 +6,10 @@ import LoneParagraph from '../../reusable/LoneParagraph';
 class NetworkTransformation extends Component {
     render() {
         return (
-          <div className="bg-light-grey page-content">
+          <div className="bg-light-grey">
             <SubHeader paddingTop title="How do we transform your network?" />
-
             <LoneParagraph text={["Practical Solutions, Inc. (PSI) is a trusted network transformation partner to many organizations of various sizes and industries. PSI specializes in network engineering, deployment, infrastructure management, and network transformation/evolution. From simple network deployments in smaller businesses to complex enterprise transformations and expansions, the PSI team is ready to help our clients move their networking goals forward with our dedicated team of experts."]} />
-
+            <div className='filler' />
             <ImgDiv
               image={require("../../assets/imgDivs/network-transformation-page.jpg")}
               paragraphs={[
@@ -23,6 +22,7 @@ class NetworkTransformation extends Component {
               ]}
               title="Here is how PSI can help your network transformation:"
             />
+            <div className='filler' />
           </div>
         );
     }

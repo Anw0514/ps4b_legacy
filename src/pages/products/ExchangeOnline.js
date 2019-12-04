@@ -40,8 +40,8 @@ class ExchangeOnline extends Component {
                 </Grid.Column>
               </Grid>
             </div>
-            <div className="bg-light-grey page-content">
-              <div className="narrow-section top-pad-1">
+            <div className="bg-light-grey">
+              <div className="narrow-width top-pad-1">
                 <SubHeader paddingTop title="Exchange Online Plans for Your Business" />
                 <Grid relaxed='very' columns={2}>
                   { plans.map(plan => {

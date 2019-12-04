@@ -92,6 +92,10 @@ p {
   background-image: url("https://s3.amazonaws.com/clarityfm-production/attachments/411/default/exchange.png-550x0.png?1391718139");
 }
 
+.filler {
+  height: 3em;
+}
+
 .footer-grid {
   margin: 0 10px !important;
 }
