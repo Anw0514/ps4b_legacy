@@ -5,9 +5,9 @@ class Footer extends Component {
     render() {
         return (
             <div className="bg-blue-2 fluid pretty-padded">
-                <Grid doubling centered columns={5} className='regular-width'>
-                    <Grid.Column verticalAlign="middle" textAlign='right'>
-                        <Image src={require('../assets/PSI_Logo_Dark.png')} floated='right' />
+                <Grid doubling stackable centered columns={5} className='footer-grid'>
+                    <Grid.Column verticalAlign="middle">
+                        <Image src={require('../assets/PSI_Logo_Dark.png')} centered />
                     </Grid.Column>
                     <Grid.Column verticalAlign="middle" className="text-left">
                         <h2 className="white fs-2" >Headquarters</h2>
@@ -32,7 +32,7 @@ class Footer extends Component {
                         <h2 className="white fs-1" >Email Us</h2>
                         <p className="white">info@ps4b.com</p>
                     </Grid.Column>
-                    <Grid.Column verticalAlign="middle" textAlign='left'>
+                    <Grid.Column verticalAlign="middle">
                         <Grid columns={2} relaxed>
                             <Grid.Row>
                                 <Grid.Column>
