@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Grid, Image } from 'semantic-ui-react'
 import IconParagraph from '../reusable/IconParagraph';
 import SubHeader from '../reusable/SubHeader';
+import ContactButton from '../reusable/ContactButton';
 
 class Home extends Component {
     render() {
@@ -117,6 +118,7 @@ class Home extends Component {
                 );
               })}
             </Grid>
+            <ContactButton />
             <div className="track-record">
               <h3 className="fs-3 tr-h3">Our Track Record</h3>
               <Grid doubling stackable columns={4}>
