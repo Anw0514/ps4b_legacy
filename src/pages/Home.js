@@ -138,14 +138,14 @@ class Home extends Component {
                 </Grid.Column>
               </Grid>
             </div>
-            <Grid className="regular-section" relaxed columns={3}>
-              <Grid.Column>
+            <Grid className="wide-width" relaxed columns={3}>
+              <Grid.Column verticalAlign="middle">
                 <Image src={require("../assets/logos/CMMI_DEV_Color.png")} />
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column verticalAlign="middle">
                 <Image src={require("../assets/logos/ISOcert.png")} />
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column verticalAlign="middle">
                 <Image src={require("../assets/logos/CMMI_SVC_Color.png")} />
               </Grid.Column>
             </Grid>

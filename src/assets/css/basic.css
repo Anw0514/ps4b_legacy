@@ -59,10 +59,15 @@
   color: white !important;
 }
 
+.bg-blue-2 {
+  background-color: #3D4C6F !important;
+  color: white !important;
+}
+
 /* Text Colors */
 
 .white {
-  color: white;
+  color: white !important;
 }
 
 .blue-1 {
@@ -70,7 +75,7 @@
 }
 
 .grey {
-  color: #6a6a6a;
+  color: #6a6a6a !important;
 }
 
 /* Corners */
@@ -108,6 +113,10 @@
     text-align: left !important;
 }
 
+.v-align-mid {
+  vertical-align: middle;
+}
+
 /* Padding */
 
 .left-padded {
@@ -140,6 +149,10 @@
   padding: 1em;
 }
 
+.hella-padded {
+  padding: 4em;
+}
+
 
 /* Margins */
 
@@ -163,6 +176,10 @@
 
 .fluid {
   width: 100%;
+}
+
+.full-height {
+  height: 100%;
 }
 
 /* sections  */
