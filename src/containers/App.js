@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import NavBar from '../constants/NavBar';
 import Content from './Content';
 import Footer from '../constants/Footer';
-import Header from "../reusable/Header";
-import HomeHeader from "../reusable/HomeHeader"
+import Header from "../constants/Header";
+import HomeHeader from "../constants/HomeHeader"
 import { BrowserRouter as Router } from 'react-router-dom'
 
 
