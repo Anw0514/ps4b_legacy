@@ -127,6 +127,10 @@
   padding-left: 4rem !important;
 }
 
+.indented-s {
+  padding-left: 2rem !important;
+}
+
 .noPadding {
   padding: 0 !important;
   overflow: hidden;
@@ -147,6 +151,10 @@
 
 .padded {
   padding: 1em;
+}
+
+.pretty-padded {
+  padding: 2rem;
 }
 
 .hella-padded {
