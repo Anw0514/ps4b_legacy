@@ -1,21 +1,8 @@
 import React, { Component } from "react";
 import { List, Button } from 'semantic-ui-react'
+import StyledList from "./StyledList";
 
 class LoneParagraph extends Component {
-
-  makeList(list) {
-    return (
-      <ul>
-        {list.map(item => {
-          return (
-            <li className="list-item">
-              <p>{item}</p>
-            </li>
-          );
-        })}
-      </ul>
-    );
-  }
 
   render() {
     const { text, list, contact, contactText } = this.props
@@ -28,7 +15,7 @@ class LoneParagraph extends Component {
         {text.map(paragraph => {
           return <p>{paragraph}</p>
         })}
-        { list ? <List className="grey indented" bulleted size="large" items={list} /> : null}
+        { list ? <StyledList indented items={list} /> : null}
         { contact ? (
           <Button circular className="bg-blue"> 
             { contactText ? contactText : "Contact Us!" }

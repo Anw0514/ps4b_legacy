@@ -3,6 +3,7 @@ import { List, Image, Grid } from 'semantic-ui-react'
 import SubHeader from '../reusable/SubHeader';
 import ImgDiv from '../reusable/ImgDiv';
 import Carousel from '../reusable/Carousel';
+import LoneParagraph from '../reusable/LoneParagraph';
 
 class Company extends Component {
 
@@ -61,49 +62,23 @@ class Company extends Component {
     }
     
     render() {
+        
+      const introList = [
+        "PSI serves several federal and commercial agencies of various sizes with administrative, engineering, and management challenges.",
+        "PSI maintains a diverse portfolio that includes development, project management, e-Learning, and strategic planning in both business and IT.",
+        "From certified project managers and business analysts to solution architects and developers, we fit the right resources to support clients with their business needs.",
+        "We strategically partner with several industry leaders such as Microsoft, IBM, Oracle, and many more."
+      ]
 
       return (
         <Fragment>
           <div className="bg-light-grey">
-            <SubHeader title="Introduction" paddingTop />
-            <div className="narrow-width bg-white lone-paragraph text-left rounded-corners">
-              <p className="drop-cap">
-                Practical Solutions Inc (PSI) was founded in 1997 by Mr. Jay
-                Hajeer, who led the development of PSI into a modern
-                high-performance global organization that embodies his vision:
-                “We Deliver Practical Solutions”
-              </p>
-              <ul className="grey indented">
-                <li className="list-item">
-                  <p>
-                    PSI serves several federal and commercial agencies of
-                    various sizes with administrative, engineering, and
-                    management challenges.
-                  </p>
-                </li>
-                <li className="list-item">
-                  <p>
-                    PSI maintains a diverse portfolio that includes development,
-                    project management, e-Learning, and strategic planning in
-                    both business and IT.
-                  </p>
-                </li>
-                <li className="list-item">
-                  <p>
-                    From certified project managers and business analysts to
-                    solution architects and developers, we fit the right
-                    resources to support clients with their business needs.
-                  </p>
-                </li>
-                <li className="list-item">
-                  <p>
-                    We strategically partner with several industry leaders such
-                    as Microsoft, IBM, Oracle, and many more.
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <SubHeader title="Our Methodology and Differentiators" marginTop />
+            <SubHeader title="Introduction" marginBottom paddingTop />
+            <LoneParagraph 
+              text={["Practical Solutions Inc (PSI) was founded in 1997 by Mr. JayHajeer, who led the development of PSI into a modernhigh-performance global organization that embodies his vision: “We Deliver Practical Solutions”"]}
+              list={introList}
+            />
+            <SubHeader title="Our Methodology and Differentiators" marginBottom marginTop />
             <ImgDiv
               image={require("../assets/about/about.jpg")}
               list={[
@@ -117,9 +92,12 @@ class Company extends Component {
             <div className="filler" />
           </div>
           <div className="bg-white">
-              <SubHeader title="Our Partners" paddingTop marginBottom />
-              <Carousel width="super-narrow-width" slides={this.buildPartners()} show={1} scroll={1} />
-              <div className="filler" />
+            <SubHeader title="Our Partners" paddingTop marginBottom />
+            <Carousel arrows width="super-narrow-width" slides={this.buildPartners()} show={1} scroll={1} />
+            <div className="filler" />
+          </div>
+          <div className="bg-light-grey">
+              
           </div>
         </Fragment>
       );

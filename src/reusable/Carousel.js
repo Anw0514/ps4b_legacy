@@ -5,7 +5,7 @@ import { Grid, Icon } from "semantic-ui-react";
 class Carousel extends Component {
   render() {
 
-    const { slides, show, scroll, width} = this.props
+    const { slides, show, scroll, width, arrows} = this.props
 
     const sliderWidth = width ? width : ""
     const slidesToShow = show ? show : 2;

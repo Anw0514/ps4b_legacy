@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
-import { Image, Grid, List } from "semantic-ui-react";
+import { Image, Grid } from "semantic-ui-react";
+import StyledList from './StyledList'
 
 class ImgDiv extends Component {
     // Dynamic component for white divs that have an image on one side.
@@ -18,11 +19,7 @@ class ImgDiv extends Component {
   content(list, paragraphs) {
     if (list) {
       return (
-        <ul>
-          {list.map(item => {
-            return <li className='list-item'><p>{item}</p></li>
-          })}
-        </ul>
+        <StyledList items={list} />
       )
     } else {
       return paragraphs.map(pgrph => {
