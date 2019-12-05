@@ -134,107 +134,121 @@ class Company extends Component {
                 "TBM Council"
               ]} />
             </div>
-              <div className="filler" />
-              <Grid stackable className="regular-width" relaxed="very">
-                <Grid.Column stretched width={7}>
-                  <Table className="cv-table fluid" celled>
-                    <Table.Body>
-                      { tableRows.map(row => {
-                        return (
-                          <Table.Row>
-                            <Table.Cell className="cv-head-cell">
-                            {row[0]}
-                            </Table.Cell>
-                            <Table.Cell>
-                            {row[1]}
-                            </Table.Cell>
-                          </Table.Row>
-                        )
-                      })}
-                    </Table.Body>
-                  </Table>
-                </Grid.Column>
-                <Grid.Column stretched width={9}>
-                  <Table className="cv-table" celled>
-                    <Table.Header>
+            <div className="filler" />
+            <Grid stackable className="regular-width" relaxed="very">
+              <Grid.Column stretched width={7}>
+                <Table className="cv-table fluid" celled>
+                <Table.Body>
+                  { tableRows.map(row => {
+                    return (
                       <Table.Row>
                         <Table.Cell className="cv-head-cell">
-                          SIN
+                          {row[0]}
                         </Table.Cell>
-                        <Table.Cell className="cv-head-cell">
-                          SIN Title
-                        </Table.Cell>
-                        <Table.Cell className="cv-head-cell">
-                          NAICS
+                        <Table.Cell>
+                          {row[1]}
                         </Table.Cell>
                       </Table.Row>
-                    </Table.Header>
-                    <Table.Body>
-                      <Table.Row>
-                        <Table.Cell>
-                          132 51
-                        </Table.Cell>
-                        <Table.Cell>
-                          Information Technology Professional Services
-                        </Table.Cell>
-                        <Table.Cell>
-                          541511, 541512, 541513, 541519
-                        </Table.Cell>
-                      </Table.Row>
-                      <Table.Row>
-                        <Table.Cell>
-                          132 40
-                        </Table.Cell>
-                        <Table.Cell>
-                          Cloud Computing Services – SUBJECT TO COOPERATIVE PURCHASING
-                        </Table.Cell>
-                        <Table.Cell>
-                          518210
-                        </Table.Cell>
-                      </Table.Row>
-                    </Table.Body>
-                  </Table>
-                  <Table className="cv-table" celled>
-                    <Table.Header>
-                      <Table.Row>
-                        <Table.Cell className="cv-head-cell">
-                          SIN
-                        </Table.Cell>
-                        <Table.Cell className="cv-head-cell">
-                          SIN Title
-                        </Table.Cell>
-                        <Table.Cell className="cv-head-cell">
-                          NAICS
-                        </Table.Cell>
-                      </Table.Row>
-                    </Table.Header>
-                    <Table.Body>
-                      <Table.Row>
-                        <Table.Cell>
-                          132 51
-                        </Table.Cell>
-                        <Table.Cell>
-                          Information Technology Professional Services
-                        </Table.Cell>
-                        <Table.Cell>
-                          541511, 541512, 541513, 541519
-                        </Table.Cell>
-                      </Table.Row>
-                      <Table.Row>
-                        <Table.Cell>
-                          132 40
-                        </Table.Cell>
-                        <Table.Cell>
-                          Cloud Computing Services – SUBJECT TO COOPERATIVE PURCHASING
-                        </Table.Cell>
-                        <Table.Cell>
-                          518210
-                        </Table.Cell>
-                      </Table.Row>
-                    </Table.Body>
-                  </Table>
-                </Grid.Column>
-              </Grid>
+                    )
+                  })}
+                </Table.Body>
+                </Table>
+              </Grid.Column>
+              <Grid.Column stretched width={9}>
+                <Table className="cv-table" celled>
+                <Table.Header>
+                  <Table.Row>
+                    <Table.Cell className="cv-head-cell">
+                      SIN
+                    </Table.Cell>
+                    <Table.Cell className="cv-head-cell">
+                      SIN Title
+                    </Table.Cell>
+                    <Table.Cell className="cv-head-cell">
+                      NAICS
+                    </Table.Cell>
+                  </Table.Row>
+                </Table.Header>
+                <Table.Body>
+                  <Table.Row>
+                    <Table.Cell>
+                      132 51
+                    </Table.Cell>
+                    <Table.Cell>
+                      Information Technology Professional Services
+                    </Table.Cell>
+                    <Table.Cell>
+                      541511, 541512, 541513, 541519
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>
+                      132 40
+                    </Table.Cell>
+                    <Table.Cell>
+                      Cloud Computing Services – SUBJECT TO COOPERATIVE PURCHASING
+                    </Table.Cell>
+                    <Table.Cell>
+                      518210
+                    </Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+                </Table>
+                <Table className="cv-table" celled>
+                  <Table.Header>
+                    <Table.Row>
+                      <Table.Cell className="cv-head-cell">
+                        SIN
+                      </Table.Cell>
+                      <Table.Cell className="cv-head-cell">
+                        SIN Title
+                      </Table.Cell>
+                      <Table.Cell className="cv-head-cell">
+                        NAICS
+                      </Table.Cell>
+                    </Table.Row>
+                  </Table.Header>
+                  <Table.Body>
+                    <Table.Row>
+                      <Table.Cell>
+                        132 51
+                      </Table.Cell>
+                      <Table.Cell>
+                        Information Technology Professional Services
+                      </Table.Cell>
+                      <Table.Cell>
+                        541511, 541512, 541513, 541519
+                      </Table.Cell>
+                    </Table.Row>
+                    <Table.Row>
+                      <Table.Cell>
+                        132 40
+                      </Table.Cell>
+                      <Table.Cell>
+                        Cloud Computing Services – SUBJECT TO COOPERATIVE PURCHASING
+                      </Table.Cell>
+                      <Table.Cell>
+                        518210
+                      </Table.Cell>
+                    </Table.Row>
+                  </Table.Body>
+                </Table>
+              </Grid.Column>
+            </Grid>
+          </div>
+          <div className="bg-white">
+            <SubHeader title="Our Team" paddingTop />
+          </div>
+          <div className="bg-light-grey">
+            <SubHeader title="Careers" paddingTop marginBottom />
+            <ImgDiv 
+              image={require('../assets/about/careers.jpg')}
+              paragraphs={[
+                "Practical Solutions, Inc. (PSI) is looking for highly motivated and highly skilled individuals who believe in our mission “Turn Chaos into Order” and are ready for exciting opportunities with a growing company. The PSI team hold themselves to very high standards, both professionally and ethically. All our employees are expected to expand their existing skillset and develop new skills in different areas to support our mission. Each employee prides themselves on their commitment to the company, ability to add value and contribute to our growth and success.",
+                "PSI is eagerly seeking talented, creative, and flexible problem solvers to join our growing team. We continue to expand our internal operations, consulting, and staffing services divisions. PSI is an Equal Opportunity Employer and we are always accepting resumes and actively looking for partners. If you are interested in opportunities at PSI, send in your resume and salary requirements to jobs@ps4b.com."
+              ]} 
+            />
+            <div className="filler" />
           </div>
         </Fragment>
       );
