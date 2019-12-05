@@ -3,6 +3,20 @@ import { List, Button } from 'semantic-ui-react'
 
 class LoneParagraph extends Component {
 
+  makeList(list) {
+    return (
+      <ul>
+        {list.map(item => {
+          return (
+            <li className="list-item">
+              <p>{item}</p>
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
+
   render() {
     const { text, list, contact, contactText } = this.props
     const first_paragraph = text.shift()

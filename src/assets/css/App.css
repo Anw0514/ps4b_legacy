@@ -116,11 +116,11 @@ p {
   overflow: hidden;
 }
 
-.imgdiv-item {
+.list-item {
   color: #2A3855;
 }
 
-.imgdiv-item > p {
+.list-item > p {
   color: #6a6a6a;
 }
 
@@ -207,7 +207,7 @@ p {
     margin-top: 0em;
   }
   
-  .imgdiv-item {
+  .list-item {
     font-size: 1.2rem;
     margin-bottom: 1em;
   }

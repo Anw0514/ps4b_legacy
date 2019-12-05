@@ -20,7 +20,7 @@ class ImgDiv extends Component {
       return (
         <ul>
           {list.map(item => {
-            return <li className='imgdiv-item'><p>{item}</p></li>
+            return <li className='list-item'><p>{item}</p></li>
           })}
         </ul>
       )
