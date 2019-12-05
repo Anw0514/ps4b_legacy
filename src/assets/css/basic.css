@@ -204,7 +204,7 @@
   margin: 2rem 10px !important
 }
 
-.narrow-width, .regular-width, .wide-width, .super-narrow-width {
+.narrow-width, .regular-width, .wide-width, .hella-narrow-width {
   margin: 0 10px !important
 }
 
@@ -231,11 +231,11 @@
   }
 
   .narrow-width {
-    margin: 0 25vw !important
+    margin: 0 20vw !important
   }
   
-  .super-narrow-width {
-    margin: 0 30vw !important;
+  .hella-narrow-width {
+    margin: 0 25vw !important;
   }
 }
 
@@ -265,7 +265,7 @@
     margin: 0 32vw !important
   }
   
-  .super-narrow-width {
+  .hella-narrow-width {
     margin: 0 35vw !important;
   }
 }

@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react'
-import { List, Image, Grid } from 'semantic-ui-react'
+import { List, Image, Grid, Table } from 'semantic-ui-react'
 import SubHeader from '../reusable/SubHeader';
 import ImgDiv from '../reusable/ImgDiv';
 import Carousel from '../reusable/Carousel';
 import LoneParagraph from '../reusable/LoneParagraph';
+import StyledList from '../reusable/StyledList'
 
 class Company extends Component {
 
@@ -70,6 +71,17 @@ class Company extends Component {
         "We strategically partner with several industry leaders such as Microsoft, IBM, Oracle, and many more."
       ]
 
+      const tableRows = [
+        ["Contract #", "47QTCA18D007V"],
+        ["Contractor", "PRACTICAL SOLUTIONS, INC."],
+        ["Address", "20 F ST NW STE 700 WASHINGTON, DC 20001-6705"],
+        ["Phone", "5713341395"],
+        ["E-mail", "jhajeer@ps4b.com"],
+        ["Web Address", "http://www.ps4b.com"],
+        ["DUNS", "110321374"],
+        ["NAICS", "541512"]
+      ]
+
       return (
         <Fragment>
           <div className="bg-light-grey">
@@ -93,11 +105,136 @@ class Company extends Component {
           </div>
           <div className="bg-white">
             <SubHeader title="Our Partners" paddingTop marginBottom />
-            <Carousel arrows width="super-narrow-width" slides={this.buildPartners()} show={1} scroll={1} />
+            <Carousel arrows width="hella-narrow-width" slides={this.buildPartners()} show={1} scroll={1} />
             <div className="filler" />
           </div>
           <div className="bg-light-grey">
-              
+            <SubHeader title="Certifications" paddingTop />
+            <div className="hella-narrow-width bg-white lone-paragraph text-left rounded-corners">
+              <p className='drop-cap'>
+                PSI embodies a process of continues improvement which 
+                drives us to seek industry recognized certifications 
+                and credentials.
+              </p>
+              <StyledList indented items={[
+                "2018: Capability Maturity Model Integration (CMMI) Development (DEV) and CMMI Services (SVC) appraisals at maturity level 3",
+                "2018: ISO X000",
+                "2012: Practical Solutions, Inc. (PSI) became a U.S. Small Business Administration (SBA) certified 8(a) Disadvantaged Small Business (DSB) and Economically Disadvantaged Small Business (EDSB)."
+              ]} />
+              <p>
+                Members of our team maintain certifications and 
+                continued professional development in their fields 
+                along with valuable memberships and positions with 
+                outside agencies.
+              </p>
+              <StyledList indented items={[
+                "Project Management Institute (PMI) Staff members certified",
+                "Information Technology Infrastructure Library (ITIL®)",
+                "International Information Systems Security Certification Consortium ((ISC)²)",
+                "TBM Council"
+              ]} />
+            </div>
+              <div className="filler" />
+              <Grid stackable className="regular-width" relaxed="very">
+                <Grid.Column stretched width={7}>
+                  <Table className="cv-table fluid" celled>
+                    <Table.Body>
+                      { tableRows.map(row => {
+                        return (
+                          <Table.Row>
+                            <Table.Cell className="cv-head-cell">
+                            {row[0]}
+                            </Table.Cell>
+                            <Table.Cell>
+                            {row[1]}
+                            </Table.Cell>
+                          </Table.Row>
+                        )
+                      })}
+                    </Table.Body>
+                  </Table>
+                </Grid.Column>
+                <Grid.Column stretched width={9}>
+                  <Table className="cv-table" celled>
+                    <Table.Header>
+                      <Table.Row>
+                        <Table.Cell className="cv-head-cell">
+                          SIN
+                        </Table.Cell>
+                        <Table.Cell className="cv-head-cell">
+                          SIN Title
+                        </Table.Cell>
+                        <Table.Cell className="cv-head-cell">
+                          NAICS
+                        </Table.Cell>
+                      </Table.Row>
+                    </Table.Header>
+                    <Table.Body>
+                      <Table.Row>
+                        <Table.Cell>
+                          132 51
+                        </Table.Cell>
+                        <Table.Cell>
+                          Information Technology Professional Services
+                        </Table.Cell>
+                        <Table.Cell>
+                          541511, 541512, 541513, 541519
+                        </Table.Cell>
+                      </Table.Row>
+                      <Table.Row>
+                        <Table.Cell>
+                          132 40
+                        </Table.Cell>
+                        <Table.Cell>
+                          Cloud Computing Services – SUBJECT TO COOPERATIVE PURCHASING
+                        </Table.Cell>
+                        <Table.Cell>
+                          518210
+                        </Table.Cell>
+                      </Table.Row>
+                    </Table.Body>
+                  </Table>
+                  <Table className="cv-table" celled>
+                    <Table.Header>
+                      <Table.Row>
+                        <Table.Cell className="cv-head-cell">
+                          SIN
+                        </Table.Cell>
+                        <Table.Cell className="cv-head-cell">
+                          SIN Title
+                        </Table.Cell>
+                        <Table.Cell className="cv-head-cell">
+                          NAICS
+                        </Table.Cell>
+                      </Table.Row>
+                    </Table.Header>
+                    <Table.Body>
+                      <Table.Row>
+                        <Table.Cell>
+                          132 51
+                        </Table.Cell>
+                        <Table.Cell>
+                          Information Technology Professional Services
+                        </Table.Cell>
+                        <Table.Cell>
+                          541511, 541512, 541513, 541519
+                        </Table.Cell>
+                      </Table.Row>
+                      <Table.Row>
+                        <Table.Cell>
+                          132 40
+                        </Table.Cell>
+                        <Table.Cell>
+                          Cloud Computing Services – SUBJECT TO COOPERATIVE PURCHASING
+                        </Table.Cell>
+                        <Table.Cell>
+                          518210
+                        </Table.Cell>
+                      </Table.Row>
+                    </Table.Body>
+                  </Table>
+                </Grid.Column>
+              </Grid>
           </div>
         </Fragment>
       );

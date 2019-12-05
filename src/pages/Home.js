@@ -134,7 +134,7 @@ class Home extends Component {
                 </Grid.Row>
                 <Grid.Row>
                   <Grid.Column width={16} textAlign="center">
-                    <Carousel slides={slides} width="super-narrow-width" />
+                    <Carousel slides={slides} width="hella-narrow-width" />
                     <div className="filler" />
                   </Grid.Column>
                 </Grid.Row>

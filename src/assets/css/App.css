@@ -24,6 +24,10 @@ p {
   color: #6a6a6a;
 }
 
+tr {
+  padding: 0 !important;
+}
+
 
 .App {
   background-color: white;
@@ -60,6 +64,27 @@ p {
   width: 100vw;
   position: relative;
   margin: 0 !important;
+}
+
+.cv-head-cell {
+  background-color: #2A3855 !important;
+  color: white;
+  font-weight: bold;
+}
+
+.cv-table {
+  border: 1px solid #192233;
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.cv-table.fluid {
+  height: 100%
+}
+
+.cv-table th, .cv-table td {
+  padding: 5px;
+  border-color: #192233;
 }
 
 .drop-cap:first-letter {
