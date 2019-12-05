@@ -1,11 +1,69 @@
-import React, { Component } from 'react'
-import { List } from 'semantic-ui-react'
+import React, { Component, Fragment } from 'react'
+import { List, Image, Grid } from 'semantic-ui-react'
 import SubHeader from '../reusable/SubHeader';
 import ImgDiv from '../reusable/ImgDiv';
+import Carousel from '../reusable/Carousel';
 
 class Company extends Component {
+
+
+    buildPartners() {
+        const imgNames = [
+          ["z-imperium.png", "ibm-bp.png", "fire-eye-silver.png", "dell-technologies.jpg"],
+          ["fortinet-gold.png", "click-dimensions.png", "silver-peak.png", "oracle.png"],
+          ["redhat-ready.png", "vmware.png",  "hp.png"]
+        ];
+
+        return imgNames.map(imgName => {
+            return (
+              <Grid centered columns={2}>
+                <Grid.Row>
+                  <Grid.Column verticalAlign="middle">
+                    <Image
+                      centered
+                      src={require(`../assets/about/${imgName[0]}`)}
+                    />
+                  </Grid.Column>
+                  <Grid.Column verticalAlign="middle">
+                    {imgName[1] ? (
+                      <Image
+                        centered
+                        src={require(`../assets/about/${imgName[1]}`)}
+                      />
+                    ) : (
+                        <div></div>
+                    )}
+                  </Grid.Column>
+                </Grid.Row>
+                <Grid.Row>
+                  <Grid.Column verticalAlign="middle">
+                    {imgName[2] ? (
+                      <Image
+                        centered
+                        src={require(`../assets/about/${imgName[2]}`)}
+                      />
+                    ) : (
+                      <div></div>
+                    )}
+                  </Grid.Column>
+                  {imgName[3] ? (
+                    <Grid.Column verticalAlign="middle">
+                      <Image
+                        centered
+                        src={require(`../assets/about/${imgName[3]}`)}
+                      />
+                    </Grid.Column>
+                  ) : null}
+                </Grid.Row>
+              </Grid>
+            );
+        })
+    }
+    
     render() {
-        return (
+
+      return (
+        <Fragment>
           <div className="bg-light-grey">
             <SubHeader title="Introduction" paddingTop />
             <div className="narrow-width bg-white lone-paragraph text-left rounded-corners">
@@ -58,7 +116,13 @@ class Company extends Component {
             />
             <div className="filler" />
           </div>
-        );
+          <div className="bg-white">
+              <SubHeader title="Our Partners" paddingTop marginBottom />
+              <Carousel width="super-narrow-width" slides={this.buildPartners()} show={1} scroll={1} />
+              <div className="filler" />
+          </div>
+        </Fragment>
+      );
     }
 }
 
