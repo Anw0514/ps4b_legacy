@@ -203,6 +203,15 @@ tr {
   background-image: url("../backgrounds/background_video.gif");
 }
 
+.slick-slide:not(.slick-center):not(.slick-active) {
+  filter: blur(5px);
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #2A3855;
+  opacity: 1;
+}
+
 .text-section {
   margin: 0rem 5vw;
 }

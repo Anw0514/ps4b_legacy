@@ -52,43 +52,52 @@ class NavBar extends Component {
                       onMouseEnter={() => this.props.dropdownNav("Company")}
                       onMouseLeave={() => this.props.closeNav()}
                     >
-                      <NavLink
-                        onClick={() => this.props.goToPage("/company")}
-                        to="/company"
-                      >
-                        <Dropdown open={dropdown === "Company"} text="Company">
-                          <Dropdown.Menu>
+                      <Dropdown open={dropdown === "Company"} text="Company">
+                        <Dropdown.Menu>
+                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="About"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Partners"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Certifications"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Contract Vehicles"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Our Team"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Careers"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Contact"
                             />
-                          </Dropdown.Menu>
-                        </Dropdown>
-                      </NavLink>
+                          </NavLink>
+                        </Dropdown.Menu>
+                      </Dropdown>
                     </Grid.Column>
                     <Grid.Column
                       onMouseEnter={() => this.props.dropdownNav("Services")}
@@ -139,31 +148,37 @@ class NavBar extends Component {
                       onMouseEnter={() => this.props.dropdownNav("Solutions")}
                       onMouseLeave={() => this.props.closeNav()}
                     >
-                      <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
-                        <Dropdown
-                          open={dropdown === "Solutions"}
-                          text="Solutions"
-                        >
-                          <Dropdown.Menu>
+                      <Dropdown
+                        open={dropdown === "Solutions"}
+                        text="Solutions"
+                      >
+                        <Dropdown.Menu>
+                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Microsoft 365"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Business Apps"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Data and BI"
                             />
+                          </NavLink>
+                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Apps & Infrastructure"
                             />
-                          </Dropdown.Menu>
-                        </Dropdown>
-                      </NavLink>
+                          </NavLink>
+                        </Dropdown.Menu>
+                      </Dropdown>
                     </Grid.Column>
                     <Grid.Column
                       onMouseEnter={() => this.props.dropdownNav("Products")}

@@ -14,7 +14,8 @@ class App extends Component {
       page: window.location.pathname,
       lastPage: null,
       mobile: true,
-      dropdown: ""
+      dropdown: "",
+      tablet: false
     };
   }
 

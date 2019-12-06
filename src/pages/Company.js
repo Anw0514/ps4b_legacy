@@ -135,6 +135,7 @@ class Company extends Component {
               ]} />
             </div>
             <div className="filler" />
+            <SubHeader title="Contract Vehicles" paddingTop />
             <Grid stackable className="regular-width" relaxed="very">
               <Grid.Column stretched width={7}>
                 <Table className="cv-table fluid" celled>
@@ -235,6 +236,7 @@ class Company extends Component {
                 </Table>
               </Grid.Column>
             </Grid>
+            <div className="filler" />
           </div>
           <div className="bg-white">
             <SubHeader title="Our Team" paddingTop />
