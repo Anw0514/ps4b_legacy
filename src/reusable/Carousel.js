@@ -5,7 +5,6 @@ import { Grid, Icon } from "semantic-ui-react";
 class Carousel extends Component {
 
   render() {
-    console.log("rendered")
     const { slides, show, scroll, width, centered, centerPadding, arrows } = this.props
 
     const regularSettings = {
@@ -23,6 +22,7 @@ class Carousel extends Component {
       centerMode: true,
       infinite: true,
       autoplay: true,
+      arrows: arrows,
       autoplaySpeed: 4000,
       centerPadding: centerPadding,
       slidesToShow: 1,

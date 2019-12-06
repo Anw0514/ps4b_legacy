@@ -6,7 +6,7 @@ class IconParagraph extends Component {
     return (
       <div>
         <span className={`icon-${iconName} fs-5`} style={{ fontWeight: "600" }}></span>
-        <h4>{title}</h4>
+        <h4 className="fs-2">{title}</h4>
         {content ?
           <p>{content}</p> 
         : null}
