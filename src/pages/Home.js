@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Grid, Image, Icon } from 'semantic-ui-react'
+import { Grid, Image, Icon, Statistic } from 'semantic-ui-react'
 import IconParagraph from '../reusable/IconParagraph';
 import SubHeader from '../reusable/SubHeader';
 import ContactButton from '../reusable/ContactButton';
@@ -10,34 +10,34 @@ class Home extends Component {
     render() {
 
       const slides = [
-        <h5>
+        <h6>
           <Icon className='gold' name="trophy" />
           Cloud Platform
-        </h5>,
-        <h5>
+        </h6>,
+        <h6>
           <Icon className='gold' name="trophy" />
           ISV
-        </h5>,
-        <h5>
+        </h6>,
+        <h6>
           <Icon className='gold' name="trophy" />
           Data Platform
-        </h5>,
-        <h5>
+        </h6>,
+        <h6>
           <Icon className='gold' name="trophy" />
           Azure DevOps
-        </h5>,
-        <h5>
+        </h6>,
+        <h6>
           <Icon className='gold' name="trophy" />
           Windows and Devices
-        </h5>,
-        <h5>
+        </h6>,
+        <h6>
           <Icon className='gold' name="trophy" />
           Data Analytics
-        </h5>,
-        <h5>
+        </h6>,
+        <h6>
           <Icon className='silver' name="trophy" />
           Small and Midmarket Cloud Solutions
-        </h5>
+        </h6>
       ]
 
         const iconObjects = {
@@ -157,23 +157,19 @@ class Home extends Component {
             </Grid>
             <ContactButton />
             <div className="track-record">
-              <h3 className="fs-3 tr-h3">Our Track Record</h3>
+              <h3 className="tr-h3">Our Track Record</h3>
               <Grid doubling stackable columns={4}>
                 <Grid.Column>
-                  <h1 className="white">223TB</h1>
-                  <h6 className="white">Data Secured</h6>
+                  <Statistic inverted label='Data Secured' value='223TB' />
                 </Grid.Column>
                 <Grid.Column>
-                  <h1 className="white">2743</h1>
-                  <h6 className="white">Employees Trained</h6>
+                  <Statistic inverted label='Employees Trained' value='2743' />
                 </Grid.Column>
                 <Grid.Column>
-                  <h1 className="white">956k+</h1>
-                  <h6 className="white">Consulting Hours Delivered</h6>
+                  <Statistic inverted label='Consulting Hours Delivered' value='956k+' />
                 </Grid.Column>
                 <Grid.Column>
-                  <h1 className="white">$528M</h1>
-                  <h6 className="white">We Saved our Clients</h6>
+                  <Statistic inverted label='We Saved Our Clients' value='$528M' />
                 </Grid.Column>
               </Grid>
             </div>

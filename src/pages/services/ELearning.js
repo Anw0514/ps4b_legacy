@@ -25,10 +25,10 @@ class ELearning extends Component {
                   </p>
                   <div style={{position: "relative"}}>
                   <blockquote className='blockquote'>
-                    <h5 className="fs-2">
+                    <h6>
                       65% of employees report that they do not remember the specifics 
                       of on-site training they attended a week later
-                    </h5>
+                    </h6>
                   </blockquote>
                   </div>
                   <p>

@@ -63,7 +63,7 @@ class ComparisonTable extends Component {
                             { items.map(item => {
                                 return (
                                     <Table.HeaderCell>
-                                        <h4 className="fs-1">{item["Title"]}</h4>
+                                        <h6>{item["Title"]}</h6>
                                         <div className="fs-1 grey">{item["Price"]}</div>
                                         <p className="fs--1">per user / per month</p>
                                     </Table.HeaderCell>

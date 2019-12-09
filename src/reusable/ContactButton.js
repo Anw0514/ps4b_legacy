@@ -7,7 +7,7 @@ class ContactButton extends Component {
             <div className="bg-blue fluid hella-padded">
                 <Grid stackable centered>
                     <Grid.Column verticalAlign="middle" className="text-center" width={11}>
-                        <h1 className="white fs-3" >How can we help? Schedule a free consultation!</h1>
+                        <h3 className="white" >How can we help? Schedule a free consultation!</h3>
                     </Grid.Column>
                     <Grid.Column verticalAlign="middle" width={5}>
                         <Button circular inverted size="big">Contact Us</Button>

@@ -19,7 +19,7 @@ hr {
   width: 4.20873rem;
 }
 
-p, li, span {
+p, li {
   color: #6a6a6a;
   font-size: 1.2em;
 }
@@ -114,7 +114,7 @@ tr {
 }
 
 .drop-cap:first-letter {
-  font-size: 2.6em;
+  font-size: 2.8em;
   float: left;
   margin-top: .29em;
   margin-right: .15em;

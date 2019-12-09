@@ -193,8 +193,8 @@ class Office365 extends Component {
 
     render() {
         return (
-            <div className='bg-white'>
-              <h3 className="fs-3 top-pad-3">Office 365</h3>
+            <div className='bg-white top-pad-3'>
+              <h3>Office 365</h3>
               <p> 
                 Get the best productivity suite for your business! 
                 <br />

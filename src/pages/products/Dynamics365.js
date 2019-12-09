@@ -18,8 +18,8 @@ class Dynamics365 extends Component {
         return (
             <div>
               <div className="top-pad-3 m-bottom-3">
-                <h3 className="fs-3">Microsoft Dynamics 365</h3>
-                <p>Manage Your Entire Business With One Application </p>
+                <h3>Microsoft Dynamics 365</h3>
+                <p className="fs-2">Manage Your Entire Business With One Application </p>
                 <hr />
               </div>
               <Grid stackable className="narrow-width" columns="equal">
@@ -40,7 +40,7 @@ class Dynamics365 extends Component {
                 slides={slides.map(s => {
                   return (
                     <div>
-                      <h2>{s.title}</h2>
+                      <h5>{s.title}</h5>
                       <p style={{ padding: "0 2em" }}>{s.text}</p>
                     </div>
                   )

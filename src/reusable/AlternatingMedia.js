@@ -10,7 +10,7 @@ class AlternatingMedia extends Component {
                     <Image src={image} size='medium' rounded centered />
                 </Grid.Column>
                 <Grid.Column stretched verticalAlign='middle' >
-                    <h3 className='fs-3'>{title}</h3>
+                    <h5>{title}</h5>
                     {paragraphs.map(pg => {
                         return <p>{pg}</p>
                     })}
@@ -23,7 +23,7 @@ class AlternatingMedia extends Component {
         return (
             <Grid.Row reversed='mobile'>
                 <Grid.Column verticalAlign='middle'>
-                    <h3 className='fs-3'>{title}</h3>
+                    <h5>{title}</h5>
                     {paragraphs.map(pg => {
                         return <p>{pg}</p>
                     })}

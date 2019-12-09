@@ -11,14 +11,14 @@ class ExchangeOnline extends Component {
           <Fragment>
             <div className="bg-white">
               <div className="narrow-section">
-                <h3 className="fs-3">Microsoft Exchange Online</h3>
+                <h3>Microsoft Exchange Online</h3>
                   <p>
                     Fully hosted email plans complete with online calendars and 
                     contacts migration and support included!
                   </p>
                   <hr />
               </div>
-              <h4 className="fs-2 subheader">WE MAKE EXCHANGE ONLINE ADOPTION CHAOS FREE</h4>
+              <h5>WE MAKE EXCHANGE ONLINE ADOPTION CHAOS FREE</h5>
               <Grid stackable columns={3} className="bg-white m-top-3 narrow-section">
                 <Grid.Column>
                   <IconParagraph iconName="Mail-Send" title="Expert and dedicated migration from any email platform." />
@@ -33,7 +33,7 @@ class ExchangeOnline extends Component {
             </div>
             <div className="bg-light-grey">
               <div className="narrow-width top-pad-1">
-                <SubHeader paddingTop title="Exchange Online Plans for Your Business" />
+                <SubHeader paddingTop title="Exchange Online Plans for Your Business" marginBottom />
                 <Grid relaxed='very' columns={2}>
                   { plans.map(plan => {
                     return (
@@ -41,10 +41,10 @@ class ExchangeOnline extends Component {
                         <div className='rounded-corners bg-white fluid' style={{minHeight: "100%", overflow: "hidden"}}>
                           <div className='exchange-online-img' />
                           <div className='padded'>
-                            <h4 className="fs-2">Exchange Online Plan {plan.id}</h4>
+                            <h5>Exchange Online Plan {plan.id}</h5>
                             <p>{plan.content}</p>
-                            <h3 className="fs-3">${plan.price}.00</h3>
-                            <p className="fs-0">per user/per month</p>
+                            <h6>${plan.price}.00</h6>
+                            <p>per user/per month</p>
                           </div>
                         </div>
                       </Grid.Column>
@@ -52,6 +52,7 @@ class ExchangeOnline extends Component {
                   }) }
                 </Grid>
               </div>
+              <div className="filler" />
             </div>
           </Fragment>
         )

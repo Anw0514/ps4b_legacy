@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 class SubHeader extends Component {
   render() {
@@ -8,7 +8,7 @@ class SubHeader extends Component {
     const p = paddingTop ? "top-pad-3" : ""
     return (
       <div className={`${t} ${b} ${p}`}>
-        <h3 className="fs-3">{title}</h3>
+        <h3>{title}</h3>
         <hr />
       </div>
     );
