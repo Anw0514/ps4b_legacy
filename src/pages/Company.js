@@ -245,10 +245,10 @@ class Company extends Component {
             </Grid>
             <div className="filler" />
           </div>
-          <div className="bg-white narrow-width">
+          <div className="bg-white regular-width">
             <SubHeader title="Our Team" paddingTop />
-            <Grid stackable columns={3}>
-              <Grid.Column>
+            <Grid verticalAlign="middle" stackable columns={3}>
+              <Grid.Column width={5}>
                 <Card fluid>
                   <Image src={require('../assets/readme/spongebob_computer.jpg')} />
                   <Card.Content className="text-left">
@@ -264,7 +264,7 @@ class Company extends Component {
                   </Card.Content>
                 </Card>
               </Grid.Column>
-              <Grid.Column>
+              <Grid.Column width={5}>
                 <Card fluid>
                   <Image src={require('../assets/readme/spongebob_computer.jpg')} />
                   <Card.Content className="text-left">
@@ -280,44 +280,21 @@ class Company extends Component {
                   </Card.Content>
                 </Card>
               </Grid.Column>
-              <Grid.Column>
-                <Grid>
-                  <Grid.Row>
-                    <Grid.Column width={5}>
-                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
-                    </Grid.Column>
-                    <Grid.Column width={11}>
-                      <h1 className="fs-3">Name</h1>
-                      <p>Position</p>
-                    </Grid.Column>
-                  </Grid.Row>
-                  <Grid.Row>
-                    <Grid.Column width={5}>
-                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
-                    </Grid.Column>
-                    <Grid.Column width={11}>
-                      <h1 className="fs-3">Name</h1>
-                      <p>Position</p>
-                    </Grid.Column>
-                  </Grid.Row>
-                  <Grid.Row>
-                    <Grid.Column width={5}>
-                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
-                    </Grid.Column>
-                    <Grid.Column width={11}>
-                      <h1 className="fs-3">Name</h1>
-                      <p>Position</p>
-                    </Grid.Column>
-                  </Grid.Row>
-                  <Grid.Row>
-                    <Grid.Column width={5}>
-                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
-                    </Grid.Column>
-                    <Grid.Column width={11}>
-                      <h1 className="fs-3">Name</h1>
-                      <p>Position</p>
-                    </Grid.Column>
-                  </Grid.Row>
+              <Grid.Column width={6}>
+                <Grid doubling verticalAlign="middle">
+                  { employees.map(e => {
+                    return (
+                      <Grid.Row>
+                        <Grid.Column width={5}>
+                          <Image circular fluid src={require('../assets/readme/kitty.jpeg')} />
+                        </Grid.Column>
+                        <Grid.Column width={11}>
+                          <h1 className="fs-2">{e.name}</h1>
+                          <p>{e.role}</p>
+                        </Grid.Column>
+                      </Grid.Row>
+                    )
+                  })}
                 </Grid>
               </Grid.Column>
             </Grid>
