@@ -10,26 +10,26 @@ class Footer extends Component {
                         <Image src={require('../assets/PSI_Logo_Dark.png')} centered />
                     </Grid.Column>
                     <Grid.Column verticalAlign="middle" className="text-left">
-                        <h2 className="white fs-2" >Headquarters</h2>
-                        <p className="white fs-0">
+                        <h4 className="white" >Headquarters</h4>
+                        <p className="white">
                             20 F Street NW, Suite 700 <br />
                             Washington, DC 20001 <br />
                             USA
                         </p>
                     </Grid.Column>
                     <Grid.Column verticalAlign="middle" textAlign='left'>
-                        <h2 className="white fs-1" >Privacy Policy</h2>
-                        <h2 className="white fs-1" >Other Locations</h2>
-                        <p className="white indented-s fs-0">
+                        <h6 className="white" >Privacy Policy</h6>
+                        <h6 className="white" >Other Locations</h6>
+                        <p className="white indented-s">
                             McLean, Virginia<br />
                             West Chester Pennsylvania<br />
                             Phoenix, Arizona
                         </p>
                     </Grid.Column>
                     <Grid.Column verticalAlign="middle" textAlign='left'>
-                        <h2 className="white fs-1" >Give Us a Call</h2>
+                        <h5 className="white" >Give Us a Call</h5>
                         <p className="white">+1 (202)239-6247</p>
-                        <h2 className="white fs-1" >Email Us</h2>
+                        <h5 className="white" >Email Us</h5>
                         <p className="white">info@ps4b.com</p>
                     </Grid.Column>
                     <Grid.Column verticalAlign="middle">

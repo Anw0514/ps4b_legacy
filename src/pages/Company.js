@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { List, Image, Grid, Table } from 'semantic-ui-react'
+import { List, Image, Grid, Table, Card } from 'semantic-ui-react'
 import SubHeader from '../reusable/SubHeader';
 import ImgDiv from '../reusable/ImgDiv';
 import Carousel from '../reusable/Carousel';
@@ -238,8 +238,74 @@ class Company extends Component {
             </Grid>
             <div className="filler" />
           </div>
-          <div className="bg-white">
+          <div className="bg-white narrow-width">
             <SubHeader title="Our Team" paddingTop />
+            <Grid stackable columns={3}>
+              <Grid.Column>
+                <Card fluid>
+                  <Image src={require('../assets/readme/spongebob_computer.jpg')} />
+                  <Card.Content className="text-left">
+                    <Card.Header>Jay Hajeer</Card.Header>
+                    <Card.Meta>CEO</Card.Meta>
+                  </Card.Content>
+                </Card>
+                <Card fluid>
+                  <Image src={require('../assets/readme/spongebob_computer.jpg')} />
+                  <Card.Content className="text-left">
+                    <Card.Header>Jay Hajeer</Card.Header>
+                    <Card.Meta>CEO</Card.Meta>
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <Card fluid>
+                  <Image src={require('../assets/readme/spongebob_computer.jpg')} />
+                  <Card.Content className="text-left">
+                    <Card.Header>Jay Hajeer</Card.Header>
+                    <Card.Meta>CEO</Card.Meta>
+                  </Card.Content>
+                </Card>
+                <Card fluid>
+                  <Image src={require('../assets/readme/spongebob_computer.jpg')} />
+                  <Card.Content className="text-left">
+                    <Card.Header>Jay Hajeer</Card.Header>
+                    <Card.Meta>CEO</Card.Meta>
+                  </Card.Content>
+                </Card>
+              </Grid.Column>
+              <Grid.Column>
+                <List size="huge">
+                  <List.Item>
+                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
+                    <List.Content>
+                      <List.Header>Andrea Williams</List.Header>
+                      <List.Description>Internal Application Engineer</List.Description>
+                    </List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
+                    <List.Content>
+                      <List.Header>Andrea Williams</List.Header>
+                      <List.Description>Internal Application Engineer</List.Description>
+                    </List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
+                    <List.Content>
+                      <List.Header>Andrea Williams</List.Header>
+                      <List.Description>Internal Application Engineer</List.Description>
+                    </List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
+                    <List.Content>
+                      <List.Header>Andrea Williams</List.Header>
+                      <List.Description>Internal Application Engineer</List.Description>
+                    </List.Content>
+                  </List.Item>
+                </List>
+              </Grid.Column>
+            </Grid>
           </div>
           <div className="bg-light-grey">
             <SubHeader title="Careers" paddingTop marginBottom />
