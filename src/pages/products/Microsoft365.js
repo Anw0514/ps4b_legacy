@@ -20,7 +20,7 @@ class Microsoft365 extends Component {
             </div>
             <div className="regular-section">
               <Image className='m-bottom-3' centered src={require('../../assets/microsoft365-equation.png')} />
-              <h3 className='m-bottom-3'>All the Microsoft 365 Plans for Your Business or Enterprise</h3>
+              <h4 className='m-bottom-3'>All the Microsoft 365 Plans for Your Business or Enterprise</h4>
             </div>
             <Grid stackable className="narrow-width" columns="equal">
               <Grid.Column>

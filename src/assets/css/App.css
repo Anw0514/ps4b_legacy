@@ -1,3 +1,7 @@
+html {
+  font-size: calc(14px + 3 * ((100vw - 300px) / 1100 ))
+}
+
 body {
   text-align: center;
 }
@@ -21,31 +25,6 @@ hr {
 
 p, li {
   color: #6a6a6a;
-  font-size: 1.2em;
-}
-
-h1 {
-  font-size: 4.2em;
-}
-
-h2 {
-  font-size: 3.5em;
-}
-
-h3 {
-  font-size: 2.9em;
-}
-
-h4 {
-  font-size: 2.45em;
-}
-
-h5 {
-  font-size: 2em;
-}
-
-h6 {
-  font-size: 1.6em;
 }
 
 tr {
@@ -282,11 +261,12 @@ tr {
   .text-section {
     margin: 0rem 20vw;
   }
+
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
   .footer-grid {
-    margin: 0 15vw !important;
+    margin: 0 7vw !important;
   }
 }
 
@@ -300,6 +280,6 @@ tr {
   }
 
   .footer-grid {
-    margin: 0 25vw !important;
+    margin: 0 15vw !important;
   }
 }

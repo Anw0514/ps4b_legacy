@@ -26,7 +26,7 @@ class Header extends Component {
 
   render() {
     const { page, mobile } = this.props
-    const fs = mobile ? "fs-6" : "fs-9"
+    const fs = mobile ? "fs-8" : "fs-9"
     return (
       <div className="pageTitle">
         <div className="text-left">

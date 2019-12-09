@@ -37,7 +37,7 @@ class ImgDiv extends Component {
             <Fragment>
               <Grid.Column width={10}>
                 <div className="imgdiv-text v-pad-2">
-                  <h2>{title}</h2>
+                  <h5>{title}</h5>
                   {this.content(list, paragraphs)}
                 </div>
               </Grid.Column>
@@ -58,7 +58,7 @@ class ImgDiv extends Component {
               </Grid.Column>
               <Grid.Column width={10}>
                 <div className="imgdiv-text v-pad-2">
-                  <h2>{title}</h2>
+                  <h5>{title}</h5>
                   {this.content(list, paragraphs)}
                 </div>
               </Grid.Column>

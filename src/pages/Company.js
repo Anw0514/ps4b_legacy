@@ -82,6 +82,13 @@ class Company extends Component {
         ["NAICS", "541512"]
       ]
 
+      const employees = [
+        { name: "Samad Haider", role: "Dynamics Analyst" },
+        { name: "Sam Ashtar", role: "Software Engineer" },
+        { name: "Andrea Williams", role: "Internal Application Developer" },
+        { name: "Leeroy Okpara", role: "Jr Network Engineer" }
+      ]
+
       return (
         <Fragment>
           <div className="bg-light-grey">
@@ -274,36 +281,44 @@ class Company extends Component {
                 </Card>
               </Grid.Column>
               <Grid.Column>
-                <List size="huge">
-                  <List.Item>
-                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
-                    <List.Content>
-                      <List.Header>Andrea Williams</List.Header>
-                      <List.Description>Internal Application Engineer</List.Description>
-                    </List.Content>
-                  </List.Item>
-                  <List.Item>
-                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
-                    <List.Content>
-                      <List.Header>Andrea Williams</List.Header>
-                      <List.Description>Internal Application Engineer</List.Description>
-                    </List.Content>
-                  </List.Item>
-                  <List.Item>
-                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
-                    <List.Content>
-                      <List.Header>Andrea Williams</List.Header>
-                      <List.Description>Internal Application Engineer</List.Description>
-                    </List.Content>
-                  </List.Item>
-                  <List.Item>
-                    <Image avatar src={require('../assets/readme/imgdiv.png')} />
-                    <List.Content>
-                      <List.Header>Andrea Williams</List.Header>
-                      <List.Description>Internal Application Engineer</List.Description>
-                    </List.Content>
-                  </List.Item>
-                </List>
+                <Grid>
+                  <Grid.Row>
+                    <Grid.Column width={5}>
+                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
+                    </Grid.Column>
+                    <Grid.Column width={11}>
+                      <h1 className="fs-3">Name</h1>
+                      <p>Position</p>
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Grid.Column width={5}>
+                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
+                    </Grid.Column>
+                    <Grid.Column width={11}>
+                      <h1 className="fs-3">Name</h1>
+                      <p>Position</p>
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Grid.Column width={5}>
+                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
+                    </Grid.Column>
+                    <Grid.Column width={11}>
+                      <h1 className="fs-3">Name</h1>
+                      <p>Position</p>
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row>
+                    <Grid.Column width={5}>
+                      <Image fluid src={require('../assets/readme/kitty.jpeg')} />
+                    </Grid.Column>
+                    <Grid.Column width={11}>
+                      <h1 className="fs-3">Name</h1>
+                      <p>Position</p>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
               </Grid.Column>
             </Grid>
           </div>
