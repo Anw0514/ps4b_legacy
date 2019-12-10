@@ -3,13 +3,16 @@ import SubHeader from '../reusable/SubHeader'
 import ImgDiv from '../reusable/ImgDiv'
 import IconParagraph from '../reusable/IconParagraph'
 import LoneParagraph from '../reusable/LoneParagraph'
+import { Grid } from 'semantic-ui-react'
+import StyledList from '../reusable/StyledList'
 
 class Solutions extends Component {
 
     constructor() {
-        this.m365Data = [
+        super()
+        this.mColData = [
             {
-                name: "Business",
+                title: "Business",
                 description: "Microsoft 365 brings together the best-in-class productivity of Office 365 with simple device management and security to connect people and information in an intelligent new way.",
                 data: [
                     [
@@ -35,7 +38,7 @@ class Solutions extends Component {
                 ]
             },
             {
-                name: "Enterprise",
+                title: "Enterprise",
                 description: "Microsoft 365 combines best-in-class productivity apps with intelligent cloud services to transform the way you work.",
                 data: [
                     [
@@ -63,13 +66,42 @@ class Solutions extends Component {
         ]
     }
 
+    buildLittleList(data) {
+        const items = data.slice(1)
+        return (
+            <Grid.Column>
+                <h6 className="fs-2">{ data[0] }</h6>
+                <StyledList items={items} />
+            </Grid.Column>
+        )
+    }
+
+    microsoftColumns(col) {
+        return (
+            <Grid.Column>
+                <h5>{col.title}</h5>
+                <p>{ col.description }</p>
+                <Grid stackable centered columns={2}>
+                    { col.data.map( d => {
+                        return this.buildLittleList(d)
+                    }) }
+                </Grid>
+            </Grid.Column>
+        )
+    }
+
     render() {
         return (
             <div>
                 <div className="bg-white regular-width">
-                
+                    <SubHeader title="Microsoft 365" marginTop marginBottom />
+                    <Grid stackable divided columns={2}>
+                        { this.mColData.map(c => {
+                            return this.microsoftColumns(c)
+                        }) }
+                    </Grid>
                 </div>
-                Solutions
+                <div className="filler" />
             </div>
         )
     }
