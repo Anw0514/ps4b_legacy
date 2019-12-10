@@ -127,7 +127,19 @@ class Solutions extends Component {
                         </p>
                     </div>
                     <div className="filler" />
-
+                    <ImgDiv 
+                        title="This plan enables proactive monitoring and problem solving resulting in:"
+                        list={[
+                            "Reduced costs",
+                            "Increased IT insights",
+                            "More energy focused on providing new business capabilities",
+                            "Improved service levels",
+                            "Increased organizational agility",
+                            "Reduced system complexity"
+                        ]}
+                        image={require('../assets/imgDivs/app-and-i.jpg')}
+                    />
+                    <div className="filler" />
                 </div>
             </div>
         )
