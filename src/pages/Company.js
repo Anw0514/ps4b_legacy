@@ -14,7 +14,7 @@ class Company extends Component {
   constructor() {
     super()
     this.state = {
-      open: true,
+      open: false,
       person: { name: "Jay Hajeer", role: "I built the ground you walk on", image: "andrea.jpeg", bio: "something clearly went wrong" }
     }
   }
