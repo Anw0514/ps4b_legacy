@@ -281,21 +281,33 @@ class Company extends Component {
                 </Card>
               </Grid.Column>
               <Grid.Column width={6}>
-                <Grid doubling verticalAlign="middle">
+                <Grid verticalAlign="middle">
                   { employees.map(e => {
                     return (
                       <Grid.Row>
-                        <Grid.Column width={5}>
+                        <Grid.Column style={{ objectFit: "contain", paddingRight: "0" }} width={5}>
                           <Image circular fluid src={require('../assets/readme/kitty.jpeg')} />
                         </Grid.Column>
                         <Grid.Column width={11}>
-                          <h1 className="fs-2">{e.name}</h1>
-                          <p>{e.role}</p>
+                          { window.innerWidth > 768 ? (
+                            <div>
+                              <h1 className="fs-2">{e.name}</h1>
+                              <p>{e.role}</p>
+                            </div>
+                          ) : (
+                            <div>
+                              <h3>{e.name}</h3>
+                              <p className="fs-5">{e.role}</p>
+                            </div>
+                          )
+                          }
                         </Grid.Column>
                       </Grid.Row>
                     )
                   })}
                 </Grid>
+
+                
               </Grid.Column>
             </Grid>
           </div>
