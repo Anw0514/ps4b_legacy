@@ -310,6 +310,7 @@ class Company extends Component {
                 
               </Grid.Column>
             </Grid>
+            <div className="filler" />
           </div>
           <div className="bg-light-grey">
             <SubHeader title="Careers" paddingTop marginBottom />
