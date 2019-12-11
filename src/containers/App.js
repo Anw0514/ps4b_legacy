@@ -14,7 +14,8 @@ class App extends Component {
       page: window.location.pathname,
       lastPage: null,
       mobile: true,
-      dropdown: ""
+      dropdown: "",
+      subject: ""
     };
   }
 
@@ -30,9 +31,13 @@ class App extends Component {
     });
   }
 
-  goToPage = (page) => {
+  goToPage = (page, subject) => {
     // Function to be clicked when moving to different path
-    this.setState({ page, dropdown: "" });
+    this.setState({ 
+      page, 
+      dropdown: "",
+      subject: subject ? subject : this.state.subject
+    });
   }
 
   //  Functions to show the Nav dropdowns on hover
@@ -50,8 +55,12 @@ class App extends Component {
     this.setState({ dropdown: "" });
   }
 
+  changeSubject = (subject) => {
+    this.setState({ subject: subject.value })
+  }
+
   render() {
-    const { page, mobile, dropdown } = this.state
+    const { page, mobile, dropdown, subject } = this.state
     return (
       <Router>
         <div className="App">
@@ -68,7 +77,7 @@ class App extends Component {
           ) : (
             <Header page={page} mobile={mobile} />
           )}
-            <Content mobile={mobile} />
+            <Content changeSubject={this.changeSubject} subject={subject} mobile={mobile} />
             <Footer />
           </div>
         </div>

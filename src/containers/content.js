@@ -25,13 +25,8 @@ class Content extends Component {
         super()
         this.state = {
             scrollPosition: 0,
-            modal: false,
-            subject: ""
+            modal: false
         }
-    }
-
-    changeSubject = (subject) => {
-      this.setState({ subject })
     }
 
     render() {
@@ -45,7 +40,7 @@ class Content extends Component {
                   <Company />
                 </Route>
                 <Route exact path="/contact">
-                  <Contact subject={this.state.subject} changeSubject={this.changeSubject} />
+                  <Contact subject={this.props.subject} changeSubject={this.props.changeSubject} />
                 </Route>
                 <Route exact path="/solutions">
                   <Solutions />

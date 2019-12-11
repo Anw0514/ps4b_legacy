@@ -105,31 +105,31 @@ class NavBar extends Component {
                     >
                       <Dropdown open={dropdown === "Services"} text="Services">
                         <Dropdown.Menu>
-                          <NavLink onClick={() => this.props.goToPage("/security-optimization")} to="/security-optimization">
+                          <NavLink onClick={() => this.props.goToPage("/security-optimization", "1")} to="/security-optimization">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Security Optimization"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/workplace-modernization")} to="/workplace-modernization">
+                          <NavLink onClick={() => this.props.goToPage("/workplace-modernization", "5")} to="/workplace-modernization">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Workplace Modernization"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/network-transformation")} to="/network-transformation">
+                          <NavLink onClick={() => this.props.goToPage("/network-transformation", "4")} to="/network-transformation">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Network Transformation"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/data-center-consolidation")} to="/data-center-consolidation">
+                          <NavLink onClick={() => this.props.goToPage("/data-center-consolidation", "2")} to="/data-center-consolidation">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Data Center Consolidation"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/e-learning")} to="/e-learning">
+                          <NavLink onClick={() => this.props.goToPage("/e-learning", "3")} to="/e-learning">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="e-Learning"
@@ -153,25 +153,25 @@ class NavBar extends Component {
                         text="Solutions"
                       >
                         <Dropdown.Menu>
-                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
+                            <NavLink onClick={() => this.props.goToPage("/solutions", "6")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Microsoft 365"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
+                          <NavLink onClick={() => this.props.goToPage("/solutions", "8")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Business Apps"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
+                          <NavLink onClick={() => this.props.goToPage("/solutions", "9")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Data and BI"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/solutions")} to="/solutions">
+                          <NavLink onClick={() => this.props.goToPage("/solutions", "10")} to="/solutions">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Apps & Infrastructure"
@@ -186,25 +186,25 @@ class NavBar extends Component {
                     >
                       <Dropdown open={dropdown === "Products"} text="Products">
                         <Dropdown.Menu>
-                          <NavLink onClick={() => this.props.goToPage("/exchange-online")}  to="exchange-online">
+                          <NavLink onClick={() => this.props.goToPage("/exchange-online", "11")}  to="exchange-online">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Exchange Online"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/microsoft365")} to="microsoft365">
+                          <NavLink onClick={() => this.props.goToPage("/microsoft365", "7")} to="microsoft365">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Microsoft 365"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/office365")}  to="office365">
+                          <NavLink onClick={() => this.props.goToPage("/office365", "12")}  to="office365">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Office 365"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/dynamics365")}  to="dynamics365">
+                          <NavLink onClick={() => this.props.goToPage("/dynamics365", "13")}  to="dynamics365">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Dynamics 365"

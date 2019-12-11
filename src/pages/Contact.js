@@ -38,7 +38,7 @@ class Contact extends Component {
                 <div className="filler" />
                 <div className="hella-narrow-width">
                     <div className="bg-white rounded-corners padded">
-                        <ContactForm />
+                        <ContactForm subject={this.props.subject} changeSubject={this.props.changeSubject} />
                     </div>
                 </div>
                 <div className="filler" />
