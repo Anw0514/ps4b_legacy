@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Grid } from 'semantic-ui-react'
+import ContactForm from '../reusable/ContactForm'
 
 class Contact extends Component {
     render() {
@@ -36,12 +37,8 @@ class Contact extends Component {
                 </Grid>
                 <div className="filler" />
                 <div className="hella-narrow-width">
-                    <div className="bg-white rounded-corners">
-                        <div className="filler" />
-                        <div className="filler" />
-                        <div className="filler" />
-                        <div className="filler" />
-                        <div className="filler" />
+                    <div className="bg-white rounded-corners padded">
+                        <ContactForm />
                     </div>
                 </div>
                 <div className="filler" />
