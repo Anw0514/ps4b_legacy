@@ -176,7 +176,7 @@ tr {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 1000;
   font-weight: 600;
   color: #2a3855;
   box-shadow: 0px 2px 5px #00000029

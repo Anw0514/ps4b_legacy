@@ -64,6 +64,37 @@ class Solutions extends Component {
                 ]
             }
         ]
+
+        this.icons = [
+            {
+                iconName: "Check",
+                title: "Simplify and automate everyday business tasks",
+                list: [
+                    "Automate common tasks without expensive development processes",
+                    "Reduce dependency on inefficient paper-based processes by implementing a modern set of tools",
+                    "Increase productivity with applications that solve real business challenges"
+                ]
+
+            },
+            {
+                iconName: "Optimization",
+                title: "Modernize to stay competitive",
+                list: [
+                    "Provide exceptional employee and customer experiences",
+                    "Empower employees to accomplish and create more with less",
+                    "Reduce redundancy, waste, and inefficiency through planning and consolidation"
+                ]
+            },
+            {
+                iconName: "Sync-Cloud",
+                title: "Connect employees and processes to data",
+                list: [
+                    "Securely collect, manage, and use data from disparate systems to provide critical insights and action",
+                    "Access to critical information from anywhere, at anytime, with any device",
+                    "Connect employees through data driven processes"
+                ]
+            }
+        ]
     }
 
     buildLittleList(data) {
@@ -76,16 +107,28 @@ class Solutions extends Component {
         )
     }
 
-    microsoftColumns(col) {
+    microsoftColumns({ title, description, data }) {
         return (
             <Grid.Column>
-                <h5>{col.title}</h5>
-                <p>{ col.description }</p>
+                <h5>{title}</h5>
+                <p>{ description }</p>
                 <Grid stackable centered columns={2}>
-                    { col.data.map( d => {
+                    { data.map( d => {
                         return this.buildLittleList(d)
                     }) }
                 </Grid>
+            </Grid.Column>
+        )
+    }
+
+    iconColumn({ iconName, title, list }) {
+        return (
+            <Grid.Column>
+                <IconParagraph
+                    iconName={iconName}
+                    title={title}
+                    list={list}
+                />
             </Grid.Column>
         )
     }
@@ -138,6 +181,79 @@ class Solutions extends Component {
                             "Reduced system complexity"
                         ]}
                         image={require('../assets/imgDivs/app-and-i.jpg')}
+                    />
+                    <div className="filler" />
+                </div>
+                <div className="bg-white">
+                    <div className="filler" />
+                    <h3>Microsoft Business Apps</h3>
+                    <p className="hella-narrow-width">
+                        Microsoft 365 Business Applications are native tools fully integrated with 
+                        Microsoft 365 and Azure Applications that are meant to drive business 
+                        efficiency and deliver the insights you need. Practical Solutions, Inc. 
+                        (PSI) is an experienced service provider that you can rely on for solutions 
+                        and help with your Business Apps. PSI enables you to build applications that 
+                        simplify everyday tasks without the need for pro developers.
+                    </p>
+                    <hr />
+                    <div className="filler" />
+                    <Grid stackable className="regular-width" columns={3}>
+                        { this.icons.map(icon => this.iconColumn(icon)) }
+                    </Grid>
+                    <div className="filler" />
+                </div>
+                <div className="bg-light-grey">
+                    <SubHeader paddingTop marginBottom title="Data and Business Intelligence" />
+                    <div className="narrow-width bg-white lone-paragraph rounded-corners text-left">
+                        <p className="drop-cap">
+                            The Practical Solutions, Inc. (PSI) Data and Business Intelligence 
+                            program encompasses a wide spectrum of data and analytical disciplines. 
+                            Which are centered on the tactical and strategic use of data in support 
+                            of decision making.
+                        </p>
+                        <p>
+                            PSI holds Microsoft Gold Competencies in both Data Analytics and Data 
+                            Platform. We take a holistic approach in evaluating each data challenge 
+                            and applying the most ideal solution based on enterprise data maturity.
+                        </p>
+                        <h6>Examples of applied solutions include:</h6>
+                        <StyledList items={[
+                            "Consolidated and standardized data infrastructure",
+                            "Seamless access to all data available to each role",
+                            "Automated operational reports and dashboards that are easy to use, navigate, and drill down",
+                            "Advanced models that take full advantage of all available data that can predict future events, segment clients for a specific strategy, provide an accurate probability score for a specific response, and many other developments where critical decision support is necessary"
+                        ]} />
+                    </div>
+                    <SubHeader marginTop marginBottom title="How do we solve data challenges?" />
+                    <ImgDiv
+                        title="We cover the entire spectrum of data solutions, including:"
+                        list={[
+                            "Consulting and evaluation",
+                            "Data structuring and consolidation",
+                            "Data Lake Optimization",
+                            "Data Cleaning and Mining",
+                            "End-to-end operational reporting and automation",
+                            "Data visualization",
+                            "Descriptive business state analysis",
+                            "Advanced Analytics and modeling (ex. Propensity, Clustering, Segmentation, Predictive, Scoring)"
+                        ]}
+                        image={require('../assets/imgDivs/data-bi-1.png')}
+                    />
+                    <div className="filler" />
+                    <ImgDiv
+                        right
+                        title="Our team are experts in the following tools and platforms:"
+                        list={[
+                            "Microsoft Azure (including all services such as text analytics, cognitive services, and others)",
+                            "Power BI, Tableau, QuickSite, KNIME Analytics, SAP BusinessObjects, and various other BI visualization software.",
+                            "IBM Cognos components",
+                            "SAS and SPSS",
+                            "Business Objects",
+                            "Oracle, Siebel, and Sybase",
+                            "Adobe Analytics, IBM TeaLeaf, Webtrends, and Google Analytics",
+                            "Social Media Aggregators"
+                        ]}
+                        image={require('../assets/imgDivs/data-bi-2.jpg')}
                     />
                     <div className="filler" />
                 </div>

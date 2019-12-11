@@ -44,25 +44,25 @@ class Home extends Component {
           1: [
             {
               title: "Microsoft Solutions",
-              content:
+              paragraph:
                 "Design, implement, and support an end-to-end cloud infrastructure.",
               iconName: "Cloud"
             },
             {
               title: "Cybersecurity",
-              content:
+              paragraph:
                 "Dedicated to keeping our clients' enterprise data and network secure.",
               iconName: "Computer-Secure"
             },
             {
               title: "Planning and Strategy",
-              content:
+              paragraph:
                 "Helping clients with their strategic planning in both business and IT contexts.",
               iconName: "Idea-2"
             },
             {
               title: "e-Learning",
-              content:
+              paragraph:
                 "Offering a wide catalog of free and subscription-based online courses.",
               iconName: "Student-Hat2"
             }
@@ -70,25 +70,25 @@ class Home extends Component {
           2: [
             {
               title: "Engineers",
-              content:
+              paragraph:
                 "Designing and integrating solutions within our clients’ diverse environments.",
               iconName: "Engineering"
             },
             {
               title: "Consultants",
-              content:
+              paragraph:
                 "Partnering with our clients to identify their root challenges and help them resolve efficiently.",
               iconName: "Consulting"
             },
             {
               title: "Analysts",
-              content:
+              paragraph:
                 "Studying and dissecting quantitative and qualitative data to guide decisions.",
               iconName: "Monitor-Analytics"
             },
             {
               title: "Strategists",
-              content:
+              paragraph:
                 "Reconciling our teams’ efforts to develop the ideal roadmap to efficiency and productivity.",
               iconName: "Tactic"
             }
@@ -110,12 +110,12 @@ class Home extends Component {
             </div>
             <Grid className="regular-section" doubling stackable columns={4}>
               {iconObjects[1].map(iconObj => {
-                const { title, content, iconName } = iconObj;
+                const { title, paragraph, iconName } = iconObj;
                 return (
                   <Grid.Column>
                     <IconParagraph
                       title={title}
-                      content={content}
+                      paragraph={paragraph}
                       iconName={iconName}
                     />
                   </Grid.Column>
@@ -143,12 +143,12 @@ class Home extends Component {
             <SubHeader marginTop title="Who We Are" />
             <Grid className="regular-section" doubling stackable columns={4}>
               {iconObjects[2].map(iconObj => {
-                const { title, content, iconName } = iconObj;
+                const { title, paragraph, iconName } = iconObj;
                 return (
                   <Grid.Column>
                     <IconParagraph
                       title={title}
-                      content={content}
+                      paragraph={paragraph}
                       iconName={iconName}
                     />
                   </Grid.Column>

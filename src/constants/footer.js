@@ -4,7 +4,7 @@ import { Grid, Button, Image, Icon } from 'semantic-ui-react'
 class Footer extends Component {
     render() {
         return (
-            <div className="bg-blue-2 fluid pretty-padded">
+            <div className="bg-blue-2 fluid padded">
                 <Grid doubling stackable centered columns={5} className='footer-grid'>
                     <Grid.Column verticalAlign="middle">
                         <Image src={require('../assets/PSI_Logo_Dark.png')} centered />
