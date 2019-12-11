@@ -5,7 +5,7 @@ import ContactForm from '../reusable/ContactForm'
 class Contact extends Component {
     render() {
         return (
-            <div className="bg-light-grey">
+            <div className="bg-light-grey top-pad-3">
                 <Grid stretched stackable columns={3} relaxed className="regular-width">
                     <Grid.Column>
                         <div className="bg-white rounded-corners">

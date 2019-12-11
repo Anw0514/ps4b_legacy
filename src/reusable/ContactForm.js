@@ -1,21 +1,28 @@
 import React, { Component } from 'react'
 import { Form, Button } from 'semantic-ui-react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 class ContactForm extends Component {
 
     constructor() {
         super()
         this.state = {
-            captcha: false
+            captcha: null
         }
     }
 
-    handleSubmit = () => {
-        console.log("yo it got submitted :)")
+    handleSubmit = (e) => {
+        e.preventDefault()
+        if (!!this.state.captcha) {
+            console.log("submitted!")
+            document.getElementById('form').submit()
+        } else {
+            console.log("form didn't submit :/")
+        }
     }
 
-    handleCaptcha = () => {
-        console.log("captched")
+    handleCaptcha = (captcha) => {
+        this.setState({ captcha })
     }
 
     render() {
@@ -37,27 +44,42 @@ class ContactForm extends Component {
         ]
 
         return (
-            <Form className="text-left">
-                <Form.Group widths="equal">
-                    <Form.Input fluid id="name" label="Name" placeholder="Name" />
-                    <Form.Input fluid id="phone-number" label="Phone Number" placeholder="Phone Number" />
-                </Form.Group>
-                <Form.Group widths="equal">
-                    <Form.Input fluid id="email" label="Email" placeholder="Email" />
-                    <Form.Select 
-                        fluid 
-                        id="subject" 
-                        onChange={this.props.changeSubject} 
-                        label="Subject" 
-                        options={subjects} 
-                        value={this.props.subject} 
-                        placeholder="Choose a subject"
-                    />
-                </Form.Group>
-                <Form.TextArea fluid id="tell-us-more" label="Tell Us More"/>
-                <Button onClick={this.handleSubmit}>Submit</Button>
-            </Form>
-        )
+          <Form
+            id="form"
+            className="text-left padded"
+            action="http://analytics.clickdimensions.com/forms/h/aR0OIOK7EX0eCGJAY8Ne0A"
+          >
+            <Form.Group widths="equal">
+              <Form.Input fluid id="name" label="Name" placeholder="Name" />
+              <Form.Input
+                fluid
+                id="phone-number"
+                label="Phone Number"
+                placeholder="Phone Number"
+              />
+            </Form.Group>
+            <Form.Group widths="equal">
+              <Form.Input fluid id="email" label="Email" placeholder="Email" />
+              <Form.Select
+                fluid
+                id="subject"
+                onChange={this.props.changeSubject}
+                label="Subject"
+                options={subjects}
+                value={this.props.subject}
+                placeholder="Choose a subject"
+              />
+            </Form.Group>
+            <Form.TextArea fluid id="tell-us-more" label="Tell Us More" />
+            <ReCAPTCHA
+              sitekey="6LdvRscUAAAAAGc-ciLEJnQQ3atePh1I8PiEjs6P"
+              onChange={this.handleCaptcha}
+            />
+            <Button circular className="bg-blue m-top-1" onClick={this.handleSubmit}>
+              Submit
+            </Button>
+          </Form>
+        );
     }
 }
 
