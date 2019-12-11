@@ -6,7 +6,7 @@ class Contact extends Component {
     render() {
         return (
             <div className="bg-light-grey">
-                <Grid stretched stackable columns={3} relaxed className="narrow-width">
+                <Grid stretched stackable columns={3} relaxed className="regular-width">
                     <Grid.Column>
                         <div className="bg-white rounded-corners">
                             <h6>Headquarters</h6>
