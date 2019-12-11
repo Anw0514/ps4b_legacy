@@ -11,6 +11,8 @@ h1, h2, h3, h4, h5, h6, a, a:hover, a:checked {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  line-height: 1.25;
 }
 
 hr {

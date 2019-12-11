@@ -90,7 +90,7 @@ class NavBar extends Component {
                               text="Careers"
                             />
                           </NavLink>
-                          <NavLink onClick={() => this.props.goToPage("/company")} to="/company">
+                          <NavLink onClick={() => this.props.goToPage("/contact")} to="/contact">
                             <Dropdown.Item
                               className="nav-dropdown-item"
                               text="Contact"

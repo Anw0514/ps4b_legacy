@@ -6,7 +6,7 @@ class IconParagraph extends Component {
     const { title, iconName, paragraph, list } = this.props
     return (
       <div>
-        <span className={`icon-${iconName} fs-7`} style={{ fontWeight: "600" }}></span>
+        <span className={`icon-${iconName} fs-7 blue-1`} style={{ fontWeight: "600" }}></span>
         <h6 className="fs-2">{title}</h6>
         {paragraph ?
           <p>{paragraph}</p> 

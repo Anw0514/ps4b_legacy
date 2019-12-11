@@ -76,7 +76,7 @@ class MobileNav extends Component {
               </Item>
               <Item>
                 <Item.Content verticalAlign="middle">
-                  <NavLink onClick={() => this.props.goToPage("/company")} to="/company" className="mobile-accordion">
+                  <NavLink onClick={() => this.props.goToPage("/contact")} to="/contact" className="mobile-accordion">
                     Contact
                   </NavLink>
                 </Item.Content>
