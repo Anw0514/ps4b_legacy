@@ -7,10 +7,10 @@ class ContactButton extends Component {
             <div className="bg-blue fluid hella-padded">
                 <Grid stackable centered>
                     <Grid.Column verticalAlign="middle" className="text-center" width={11}>
-                        <h3 className="white" >How can we help? Schedule a free consultation!</h3>
+                        <h4 className="white" >How can we help? Schedule a free consultation!</h4>
                     </Grid.Column>
                     <Grid.Column verticalAlign="middle" width={5}>
-                        <Button circular inverted size="big">Contact Us</Button>
+                        <Button circular inverted size="big" onClick={this.props.open}>Contact Us</Button>
                     </Grid.Column>
                 </Grid>
             </div>

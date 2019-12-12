@@ -155,7 +155,7 @@ class Home extends Component {
                 );
               })}
             </Grid>
-            <ContactButton />
+            <ContactButton open={this.props.open} />
             <div className="track-record">
               <h3 className="tr-h3">Our Track Record</h3>
               <Grid doubling stackable columns={4}>

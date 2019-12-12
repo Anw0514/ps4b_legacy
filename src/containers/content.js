@@ -24,65 +24,68 @@ class Content extends Component {
     constructor() {
         super()
         this.state = {
-            scrollPosition: 0,
-            modal: false
+            scrollPosition: 0
         }
     }
 
     render() {
         return (
-            <div className="content-page">
-              <Switch>
-                <Route exact path="/">
-                  <Home />
-                </Route>
-                <Route exact path="/company">
-                  <Company />
-                </Route>
-                <Route exact path="/contact">
-                  <Contact subject={this.props.subject} changeSubject={this.props.changeSubject} />
-                </Route>
-                <Route exact path="/solutions">
-                  <Solutions />
-                </Route>
-                <Route exact path="/products">
-                  <Products />
-                </Route>
-                <Route exact path="/exchange-online">
-                  <ExchangeOnline />
-                </Route>
-                <Route exact path="/dynamics365">
-                  <Dynamics365 />
-                </Route>
-                <Route exact path="/microsoft365">
-                  <Microsoft365 />
-                </Route>
-                <Route exact path="/office365">
-                  <Office365 />
-                </Route>
-                <Route exact path="/services">
-                  <Services />
-                </Route>
-                <Route exact path="/managed-services">
-                  <ManagedServices />
-                </Route>
-                <Route exact path="/data-center-consolidation">
-                  <DataCenterConsolidation />
-                </Route>
-                <Route exact path="/e-learning">
-                  <ELearning />
-                </Route>
-                <Route exact path="/network-transformation">
-                  <NetworkTransformation />
-                </Route>
-                <Route exact path="/security-optimization">
+          <div className="content-page">
+            <Switch>
+              <Route exact path="/">
+                <Home open={this.props.openModal} />
+              </Route>
+              <Route exact path="/company">
+                <Company />
+              </Route>
+              <Route exact path="/contact">
+                <Contact
+                  subject={this.props.subject}
+                  changeSubject={this.props.changeSubject}
+                  submitForm={this.props.submitForm}
+                />
+              </Route>
+              <Route exact path="/solutions">
+                <Solutions />
+              </Route>
+              <Route exact path="/products">
+                <Products />
+              </Route>
+              <Route exact path="/exchange-online">
+                <ExchangeOnline />
+              </Route>
+              <Route exact path="/dynamics365">
+                <Dynamics365 />
+              </Route>
+              <Route exact path="/microsoft365">
+                <Microsoft365 />
+              </Route>
+              <Route exact path="/office365">
+                <Office365 />
+              </Route>
+              <Route exact path="/services">
+                <Services />
+              </Route>
+              <Route exact path="/managed-services">
+                <ManagedServices />
+              </Route>
+              <Route exact path="/data-center-consolidation">
+                <DataCenterConsolidation />
+              </Route>
+              <Route exact path="/e-learning">
+                <ELearning />
+              </Route>
+              <Route exact path="/network-transformation">
+                <NetworkTransformation />
+              </Route>
+              <Route exact path="/security-optimization">
                 <SecurityOptimization mobile={this.props.mobile} />
-                </Route>
-                <Route exact path="/workplace-modernization">
-                  <WorkplaceModernization mobile={this.props.mobile} />
-                </Route>
-              </Switch>
-            </div>
+              </Route>
+              <Route exact path="/workplace-modernization">
+                <WorkplaceModernization mobile={this.props.mobile} />
+              </Route>
+            </Switch>
+          </div>
         );
     }
 }

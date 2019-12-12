@@ -17,7 +17,7 @@ class ContactForm extends Component {
         if (!!this.state.captcha) {
             console.log("submitted!")
             // !!! document.getElementById('form').submit()
-            toast.success("Successfully submitted form")
+            this.props.submitForm()
         } else {
             console.log("form didn't submit :/")
             toast.error("Please check the form and resubmit")

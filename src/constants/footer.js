@@ -47,7 +47,7 @@ class Footer extends Component {
                     <Grid.Column>
                       <Icon
                         name="linkedin alternate"
-                        size="huge"
+                        size="big"
                         className="white clickable"
                         onClick={() => {
                             window.location.assign(
@@ -59,7 +59,7 @@ class Footer extends Component {
                     <Grid.Column>
                       <Icon
                         name="youtube"
-                        size="huge"
+                        size="big"
                         className="white clickable"
                         onClick={() => {
                             window.location.assign(
