@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { toast } from "react-toastify";
 
 class ContactForm extends Component {
 
@@ -15,9 +16,11 @@ class ContactForm extends Component {
         e.preventDefault()
         if (!!this.state.captcha) {
             console.log("submitted!")
-            document.getElementById('form').submit()
+            // !!! document.getElementById('form').submit()
+            toast.success("Successfully submitted form")
         } else {
             console.log("form didn't submit :/")
+            toast.error("Please check the form and resubmit")
         }
     }
 

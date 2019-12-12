@@ -223,6 +223,10 @@ tr {
   margin: 0rem 5vw;
 }
 
+.Toastify__toast--success {
+  background: #3D4C6F !important;
+}
+
 .track-record {
   background-image: url("../backgrounds/track_record_for_index.jpg");
   background-size: cover;

@@ -5,6 +5,13 @@ import Footer from '../constants/Footer';
 import Header from "../constants/Header";
 import HomeHeader from "../constants/HomeHeader"
 import { BrowserRouter as Router } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+
+toast.configure({
+  autoClose: 40000,
+  position: "top-center"
+})
 
 
 class App extends Component {
