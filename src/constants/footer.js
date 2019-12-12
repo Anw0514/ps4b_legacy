@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { Grid, Button, Image, Icon } from 'semantic-ui-react'
+import { Grid, Image, Icon } from 'semantic-ui-react'
 
-// !!! add links 
 class Footer extends Component {
     render() {
         return (

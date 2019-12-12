@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { Grid, Image, Icon, Statistic } from 'semantic-ui-react'
 import IconParagraph from '../reusable/IconParagraph';
 import SubHeader from '../reusable/SubHeader';
