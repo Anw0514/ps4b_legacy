@@ -24,7 +24,8 @@ class Footer extends Component {
                 </p>
               </Grid.Column>
               <Grid.Column verticalAlign="middle" textAlign="left">
-                <h6 className="white fs-2">Privacy Policy</h6>
+                {/* !!! add underline when privacy policy is hovered */}
+                <h6 onClick={this.props.togglePP} className="white fs-2 clickable">Privacy Policy</h6>
                 <h6 className="white fs-2">Other Locations</h6>
                 <p className="white indented-s">
                   McLean, Virginia

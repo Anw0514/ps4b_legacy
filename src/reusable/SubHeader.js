@@ -7,7 +7,7 @@ class SubHeader extends Component {
     const b = marginBottom ? "m-bottom-3" : ""
     const p = paddingTop ? "top-pad-3" : ""
     return (
-      <div className={`${t} ${b} ${p}`}>
+      <div className={`${t} ${b} ${p} text-center`}>
         <h3>{title}</h3>
         <hr />
       </div>

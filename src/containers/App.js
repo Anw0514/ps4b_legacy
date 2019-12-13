@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ContactButton from '../reusable/ContactButton';
 import { Modal } from 'semantic-ui-react'
 import ContactForm from '../reusable/ContactForm'
+import PrivacyPolicy from '../constants/PrivacyPolicy';
 
 toast.configure({
   autoClose: 3000,
@@ -26,16 +27,14 @@ class App extends Component {
       mobile: true,
       dropdown: "",
       subject: "",
-      modal: false
+      contactModal: false,
+      privacyPolicy: false
     };
-    
   }
 
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();
-
-    
   }
 
   resize() {
@@ -74,15 +73,28 @@ class App extends Component {
   };
 
   toggleModal = () => {
-    this.setState({ modal: !this.state.modal });
+    this.setState({ contactModal: !this.state.contactModal });
+  };
+
+  togglePP = () => {
+    this.setState({ privacyPolicy: !this.state.privacyPolicy });
   };
 
   submitForm = () => {
-    this.setState({ modal: false }, () => {toast.success("Successfully submitted form")})
+    this.setState({ contactModal: false }, () => {
+      toast.success("Successfully submitted form");
+    });
   };
 
   render() {
-    const { page, mobile, dropdown, subject } = this.state;
+    const {
+      page,
+      mobile,
+      dropdown,
+      subject,
+      contactModal,
+      privacyPolicy
+    } = this.state;
 
     const noContactButton = page === "/" || page === "/contact";
     return (
@@ -108,7 +120,7 @@ class App extends Component {
               mobile={mobile}
               openModal={this.toggleModal}
             />
-            <Modal closeIcon open={this.state.modal} onClose={this.toggleModal}>
+            <Modal closeIcon open={contactModal} onClose={this.toggleModal}>
               <Modal.Header content="Contact Us" />
               <Modal.Content>
                 <ContactForm
@@ -118,8 +130,9 @@ class App extends Component {
                 />
               </Modal.Content>
             </Modal>
+            <PrivacyPolicy open={privacyPolicy} close={this.togglePP} />
             {noContactButton ? null : <ContactButton open={this.toggleModal} />}
-            <Footer />
+            <Footer togglePP={this.togglePP} />
           </div>
         </div>
       </Router>
