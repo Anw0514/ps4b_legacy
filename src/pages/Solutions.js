@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import SubHeader from '../reusable/SubHeader'
 import ImgDiv from '../reusable/ImgDiv'
 import IconParagraph from '../reusable/IconParagraph'
-import LoneParagraph from '../reusable/LoneParagraph'
 import { Grid } from 'semantic-ui-react'
 import StyledList from '../reusable/StyledList'
 

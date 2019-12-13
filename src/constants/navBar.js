@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Grid, Image, Dropdown, Icon } from 'semantic-ui-react'
+import { Grid, Image, Dropdown, Icon } from 'semantic-ui-react'
 import { Link as NavLink } from 'react-router-dom'
 import MobileNav from './MobileNav'
 

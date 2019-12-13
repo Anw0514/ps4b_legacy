@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { List, Image, Grid, Table, Card, Modal } from 'semantic-ui-react'
+import { Image, Grid, Table, Card, Modal } from 'semantic-ui-react'
 import SubHeader from '../reusable/SubHeader';
 import ImgDiv from '../reusable/ImgDiv';
 import Carousel from '../reusable/Carousel';
