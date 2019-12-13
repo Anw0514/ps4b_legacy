@@ -28,11 +28,14 @@ class App extends Component {
       subject: "",
       modal: false
     };
+    
   }
 
   componentDidMount() {
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();
+
+    
   }
 
   resize() {
