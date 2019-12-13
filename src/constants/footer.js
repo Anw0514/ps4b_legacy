@@ -37,7 +37,7 @@ class Footer extends Component {
               </Grid.Column>
               <Grid.Column verticalAlign="middle" textAlign="left">
                 <h6 className="white">Give Us a Call</h6>
-                <p className="white">+1 (202)239-6247</p>
+                <p className="white">+1 (202) 239-6247</p>
                 <h6 className="white">Email Us</h6>
                 <p className="white">info@ps4b.com</p>
               </Grid.Column>
