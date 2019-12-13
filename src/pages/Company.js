@@ -33,11 +33,12 @@ class Company extends Component {
   
   componentDidUpdate() {
     // !!! This way of getting the query only works when there's ONE
-    const section = window.location.search.split("=")[1];
+    const section = window.location.search.split("section=")[1];
+    // if you end up with multiple queries in the url, uncomment the next line and use actualSection instead of section from then on
+    // const actualSection = section.split("&")[0]
     if (section !== this.state.section) {
-      this.setState({ section });
+      this.setState({ section }, this.findAndScroll);
     }
-    this.findAndScroll()
   }
 
   findAndScroll() {
