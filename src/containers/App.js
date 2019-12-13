@@ -68,8 +68,8 @@ class App extends Component {
     this.setState({ dropdown: "" });
   };
 
-  changeSubject = subject => {
-    this.setState({ subject: subject.value });
+  changeSubject = (subject) => {
+    this.setState({ subject: subject });
   };
 
   toggleModal = () => {
@@ -124,8 +124,8 @@ class App extends Component {
               <Modal.Header content="Contact Us" />
               <Modal.Content>
                 <ContactForm
-                  subject={this.props.subject}
-                  changeSubject={this.props.changeSubject}
+                  subject={subject}
+                  changeSubject={this.changeSubject}
                   submitForm={this.submitForm}
                 />
               </Modal.Content>
