@@ -34,6 +34,10 @@ tr {
   padding: 0 !important;
 }
 
+#video {
+  object-fit: cover;
+  width: 100%;
+}
 
 
 
@@ -133,6 +137,10 @@ tr {
   margin: 0 10px !important;
 }
 
+.home {
+  z-index: 1;
+}
+
 .imgdiv {
   overflow: hidden;
 }
@@ -205,10 +213,7 @@ tr {
   padding: 7rem 5vw 5rem;
   align-items: center;
   display: flex;
-}
-
-.pageTitle.home {
-  background-image: url("../backgrounds/background_video.gif");
+  position: relative;
 }
 
 .slick-slide:not(.slick-center):not(.slick-active) {
@@ -245,7 +250,21 @@ tr {
   margin-top: 10px;
 }
 
+.video-holder {
+  position: absolute;
+  display: block;
+  min-width: 100%;
+  height: auto;
+  left: 0
+}
+
 /*Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .video-holder {
+    min-width: 200%
+  }
+}
 
 @media only screen and (min-width: 770px) {
   p{
