@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import { Grid, Icon } from "semantic-ui-react";
 
 class Carousel extends Component {
 

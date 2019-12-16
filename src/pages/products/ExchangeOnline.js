@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Grid, Card, Image } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 import IconParagraph from '../../reusable/IconParagraph'
 import SubHeader from '../../reusable/SubHeader'
 

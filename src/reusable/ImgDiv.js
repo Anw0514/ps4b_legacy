@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Image, Grid } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import StyledList from './StyledList'
 
 class ImgDiv extends Component {
