@@ -1,6 +1,6 @@
 {
   "name": "ps4b-react",
-  "homepage": "https://www.ps4b.com/build",
+  "homepage": "https://www.ps4b.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
