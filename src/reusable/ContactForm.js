@@ -21,7 +21,7 @@ class ContactForm extends Component {
       const { captcha, name, email, tellusmore, phonenumber } = this.state
       const valid = !!captcha && !!email && !!tellusmore && !!phonenumber && !!name && !!captcha 
       if (valid) {
-        // !!! document.getElementById('form').submit()
+        document.getElementById('form').submit()
         this.props.submitForm()
       } else {
         toast.error("Please check the form and resubmit")
