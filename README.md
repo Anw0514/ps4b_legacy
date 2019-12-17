@@ -64,6 +64,7 @@ Dynamic component for white divs that have an image on one side.
 
 #### `SubHeader`
 Section title component that includes a little hr for a lil extra *pizazz*.
+
 |   Prop Name  |  Type  | Required? | Default |             Notes            |
 |:------------:|:------:|:---------:|:-------:|:----------------------------:|
 |     text     | string |    yes    |   n/a   |             title            |
@@ -73,6 +74,7 @@ Section title component that includes a little hr for a lil extra *pizazz*.
 
 #### `LoneParagraph`
 Text section that has no title, but the first paragraph is a drop cap.
+
 |  Prop Name  |  Type  | Required? | Default |                        Notes                       |
 |:-----------:|:------:|:---------:|:-------:|:--------------------------------------------------:|
 |     text    |  array |    yes    |   n/a   |               paragraphs (as strings)              |
@@ -82,6 +84,7 @@ Text section that has no title, but the first paragraph is a drop cap.
 
 #### `IconParagraph`
 Small section for Icons with accompanying text.
+
 | Prop Name |  Type  | Required? | Default |                Notes                |
 |:---------:|:------:|:---------:|:-------:|:-----------------------------------:|
 |  iconName |  image |    yes    |   n/a   | iconName as it appears on iconsmind |
@@ -93,6 +96,7 @@ Small section for Icons with accompanying text.
 
 #### `AlternatingMedia`
 Styled content. Look at workplace modernization for reference.
+
 | Prop Name |       Type       | Required? | Default |                             Notes                             |
 |:---------:|:----------------:|:---------:|:-------:|:-------------------------------------------------------------:|
 |   images  |  array of images |    yes    |   n/a   |                                                               |
@@ -100,8 +104,9 @@ Styled content. Look at workplace modernization for reference.
 |    left   |       bool       |     no    |  false  | toggles whether or not the first image appears after the text |
 |   large   |       bool       |     no    |  false  |            makes images 'large' instead of 'medium'           |
 
-#### `Carousel`
+#### `Carousel`'
 Simple carousel styled to fit the theme of the site.
+
 | Prop Name |           Type          | Required? |       Default      |                                  Notes                                 |
 |:---------:|:-----------------------:|:---------:|:------------------:|:----------------------------------------------------------------------:|
 |   width   |          string         |     no    |         ""         | className for the carousel - meant for the width but could be anything |
@@ -112,6 +117,7 @@ Simple carousel styled to fit the theme of the site.
 
 #### `ComparisonTable`
 Table to compare product plans.
+
 | Prop Name |       Type       | Required? | Default |                                             Notes                                            |
 |:---------:|:----------------:|:---------:|:-------:|:--------------------------------------------------------------------------------------------:|
 |   items   | array of objects |    yes    |   n/a   | objects for each plan. Objects must include Title, Price, and values for all of the criteria |
@@ -119,6 +125,7 @@ Table to compare product plans.
 
 #### `StyledList`
 Literally just an unordered list. I just made it pretty so now it works with the site.
+
 | Prop Name |       Type       | Required? | Default |      Notes     |
 |:---------:|:----------------:|:---------:|:-------:|:--------------:|
 |   items   | array of strings |    yes    |   n/a   | the list items |
