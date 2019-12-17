@@ -117,7 +117,6 @@ class App extends Component {
               changeSubject={this.changeSubject}
               submitForm={this.submitForm}
               subject={subject}
-              mobile={mobile}
               openModal={this.toggleModal}
             />
             <Modal closeIcon open={contactModal} onClose={this.toggleModal}>

@@ -5,6 +5,7 @@ import IconParagraph from '../reusable/IconParagraph'
 import { Grid } from 'semantic-ui-react'
 import StyledList from '../reusable/StyledList'
 import { solutions } from '../Data'
+import AlternatingMedia from '../reusable/AlternatingMedia'
 
 // !!! scroll shit is not dry at alllllll
 // !!! imgdivs to alternatingmedia
@@ -80,7 +81,7 @@ class Solutions extends Component {
 
   render() {
 
-    const { microsoftColumnData, iconObjects } = solutions
+    const { microsoftColumnData, iconObjects, altMedia } = solutions
     return (
       <div>
         <div id="microsoft365" className="bg-white regular-width">
@@ -185,37 +186,13 @@ class Solutions extends Component {
             marginBottom
             title="How do we solve data challenges?"
           />
-          <ImgDiv
-            title="We cover the entire spectrum of data solutions, including:"
-            list={[
-              "Consulting and evaluation",
-              "Data structuring and consolidation",
-              "Data Lake Optimization",
-              "Data Cleaning and Mining",
-              "End-to-end operational reporting and automation",
-              "Data visualization",
-              "Descriptive business state analysis",
-              "Advanced Analytics and modeling (ex. Propensity, Clustering, Segmentation, Predictive, Scoring)"
-            ]}
-            image={require("../assets/imgDivs/data-bi-1.png")}
-          />
-          <div className="filler" />
-          <ImgDiv
-            right
-            title="Our team are experts in the following tools and platforms:"
-            list={[
-              "Microsoft Azure (including all services such as text analytics, cognitive services, and others)",
-              "Power BI, Tableau, QuickSite, KNIME Analytics, SAP BusinessObjects, and various other BI visualization software.",
-              "IBM Cognos components",
-              "SAS and SPSS",
-              "Business Objects",
-              "Oracle, Siebel, and Sybase",
-              "Adobe Analytics, IBM TeaLeaf, Webtrends, and Google Analytics",
-              "Social Media Aggregators"
-            ]}
-            image={require("../assets/imgDivs/data-bi-2.jpg")}
-          />
-          <div className="filler" />
+          <div className="regular-width">
+            <AlternatingMedia 
+              images={altMedia.images} 
+              content={altMedia.content}
+              large
+            />
+          </div>
         </div>
       </div>
     );
