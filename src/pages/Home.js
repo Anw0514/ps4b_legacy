@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Image, Icon, Statistic } from 'semantic-ui-react'
+import { Grid, Image, Statistic } from 'semantic-ui-react'
 import IconParagraph from '../reusable/IconParagraph';
 import SubHeader from '../reusable/SubHeader';
 import ContactButton from '../reusable/ContactButton';
