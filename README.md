@@ -54,6 +54,7 @@ It's just that one cousin that shows up to all the family functions but doesn't 
 
 #### `ImgDiv`
 Dynamic component for white divs that have an image on one side.
+
 |  Prop Name |  Type  |        Required?        | Default |                                                                           Notes                                                                          |
 |:----------:|:------:|:-----------------------:|:-------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    image   |  image |           yes           |   n/a   |                                                             image to appear next to the text                                                             |
@@ -91,8 +92,6 @@ Small section for Icons with accompanying text.
 |   title   | string |     no    |   n/a   |                title                |
 |    list   |  array |     no    |   n/a   |       string items for a list       |
 | paragraph | string |     no    |   n/a   |        string for a paragraph       |
-|           |        |           |         |                                     |
-|           |        |           |         |                                     |
 
 #### `AlternatingMedia`
 Styled content. Look at workplace modernization for reference.
