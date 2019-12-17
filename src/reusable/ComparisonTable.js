@@ -19,39 +19,39 @@ class ComparisonTable extends Component {
         )
     }
 
-    buildRow(items, criteria) {
+    buildRow(items, criterion) {
         return (
             <Table.Row>
                 <Table.Cell>
-                    {criteria}
+                    {criterion}
                 </Table.Cell>
                 { items.map(item => {
 
-                    if (item[criteria] === true) {
+                    if (item[criterion] === true) {
                         return this.trueCell()
-                    } else if(item[criteria] === false) {
+                    } else if(item[criterion] === false) {
                         return this.emptyCell()
                     } else {
-                        return <Table.Cell className='checked-cell'>{item[criteria]}</Table.Cell>
+                        return <Table.Cell className='checked-cell'>{item[criterion]}</Table.Cell>
                     }
                 })}
             </Table.Row>
         )
     }
 
-    buildBody(criterion, items) {
+    buildBody(criteria, items) {
 
         return (
             <Table.Body>
-                { criterion.map(criteria => {
-                    return this.buildRow(items, criteria)
+                { criteria.map(criterion => {
+                    return this.buildRow(items, criterion)
                 })}
             </Table.Body>
         )
     }
 
     render() {
-        const { items, criterion } = this.props
+        const { items, criteria } = this.props
         const columns = items.length + 1
         return (
             <Responsive minWidth={768}>
@@ -71,7 +71,7 @@ class ComparisonTable extends Component {
                             })}
                         </Table.Row>
                     </Table.Header>
-                    { this.buildBody(criterion, items) }
+                    { this.buildBody(criteria, items) }
                 </Table>
             </Responsive>
         )

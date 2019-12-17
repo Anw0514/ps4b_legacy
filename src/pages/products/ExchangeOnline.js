@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react'
-import { Grid, Card, Image } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 import IconParagraph from '../../reusable/IconParagraph'
 import SubHeader from '../../reusable/SubHeader'
+import { exchangeOnline } from '../../Data'
 
 class ExchangeOnline extends Component {
     render() {
-        const plans = [{ id: "1", content: "50 GB of inbox storage and can send messages up to 150 MB, inbox management, sharing of calendars", price: "4"},
-            { id: "2", content: "100 GB of inbox storage and can send messages up to 150 MB, inbox management, sharing of calendars Data Loss Prevention (DLP), voicemail", price: "8"}]
+        const { plans } = exchangeOnline
         return (
           <Fragment>
             <div className="bg-white">
@@ -19,6 +19,7 @@ class ExchangeOnline extends Component {
                   <hr />
               </div>
               <h5>WE MAKE EXCHANGE ONLINE ADOPTION CHAOS FREE</h5>
+              { /* !!! product icon component */}
               <Grid stackable columns={3} className="bg-white m-top-3 narrow-section">
                 <Grid.Column>
                   <IconParagraph iconName="Mail-Send" title="Expert and dedicated migration from any email platform." />

@@ -4,96 +4,13 @@ import IconParagraph from '../reusable/IconParagraph';
 import SubHeader from '../reusable/SubHeader';
 import ContactButton from '../reusable/ContactButton';
 import Carousel from '../reusable/Carousel'
+import { home } from '../Data'
 
 
 class Home extends Component {
     render() {
 
-      const slides = [
-        <h6>
-          <Icon className='gold' name="trophy" />
-          Cloud Platform
-        </h6>,
-        <h6>
-          <Icon className='gold' name="trophy" />
-          ISV
-        </h6>,
-        <h6>
-          <Icon className='gold' name="trophy" />
-          Data Platform
-        </h6>,
-        <h6>
-          <Icon className='gold' name="trophy" />
-          Azure DevOps
-        </h6>,
-        <h6>
-          <Icon className='gold' name="trophy" />
-          Windows and Devices
-        </h6>,
-        <h6>
-          <Icon className='gold' name="trophy" />
-          Data Analytics
-        </h6>,
-        <h6>
-          <Icon className='silver' name="trophy" />
-          Small and Midmarket Cloud Solutions
-        </h6>
-      ]
-
-        const iconObjects = {
-          1: [
-            {
-              title: "Microsoft Solutions",
-              paragraph:
-                "Design, implement, and support an end-to-end cloud infrastructure.",
-              iconName: "Cloud"
-            },
-            {
-              title: "Cybersecurity",
-              paragraph:
-                "Dedicated to keeping our clients' enterprise data and network secure.",
-              iconName: "Computer-Secure"
-            },
-            {
-              title: "Planning and Strategy",
-              paragraph:
-                "Helping clients with their strategic planning in both business and IT contexts.",
-              iconName: "Idea-2"
-            },
-            {
-              title: "e-Learning",
-              paragraph:
-                "Offering a wide catalog of free and subscription-based online courses.",
-              iconName: "Student-Hat2"
-            }
-          ],
-          2: [
-            {
-              title: "Engineers",
-              paragraph:
-                "Designing and integrating solutions within our clients’ diverse environments.",
-              iconName: "Engineering"
-            },
-            {
-              title: "Consultants",
-              paragraph:
-                "Partnering with our clients to identify their root challenges and help them resolve efficiently.",
-              iconName: "Consulting"
-            },
-            {
-              title: "Analysts",
-              paragraph:
-                "Studying and dissecting quantitative and qualitative data to guide decisions.",
-              iconName: "Monitor-Analytics"
-            },
-            {
-              title: "Strategists",
-              paragraph:
-                "Reconciling our teams’ efforts to develop the ideal roadmap to efficiency and productivity.",
-              iconName: "Tactic"
-            }
-          ]
-        };
+      const { slides, iconObjects } = home
 
         return (
           <div className="page-content">

@@ -5,7 +5,7 @@ import { Icon } from 'semantic-ui-react'
 
 
 
-
+// COMPANY: partners, introList, contractRows, employees, execs
 export const company = {
   partners: [
     [
@@ -22,12 +22,14 @@ export const company = {
     ],
     ["redhat-ready.png", "vmware.png", "hp.png"]
   ],
+
   introList: [
     "PSI serves several federal and commercial agencies of various sizes with administrative, engineering, and management challenges.",
     "PSI maintains a diverse portfolio that includes development, project management, e-Learning, and strategic planning in both business and IT.",
     "From certified project managers and business analysts to solution architects and developers, we fit the right resources to support clients with their business needs.",
     "We strategically partner with several industry leaders such as Microsoft, IBM, Oracle, and many more."
   ],
+
   contractRows: [
     ["Contract #", "47QTCA18D007V"],
     ["Contractor", "PRACTICAL SOLUTIONS, INC."],
@@ -38,6 +40,7 @@ export const company = {
     ["DUNS", "110321374"],
     ["NAICS", "541512"]
   ],
+
   employees: [
     {
       name: "Samad Haider",
@@ -60,6 +63,7 @@ export const company = {
       avitar: "leroy.jpeg"
     }
   ],
+
   execs: {
     jay: {
       name: "Jay Hajeer",
@@ -175,7 +179,7 @@ export const company = {
 
 
 
-
+// CONTACTFORM: subjects
 export const contactForm = {
   subjects: [
     { key: "1", text: "Security Optimization", value: "1" },
@@ -209,7 +213,7 @@ export const contactForm = {
 
 
 
-
+// DYNAMICS365: slides
 export const dynamics365 = {
   slides: [
     {
@@ -260,7 +264,7 @@ export const dynamics365 = {
 
 
 
-
+// EXCHANGEONLINE: plans
 export const exchangeOnline = {
   plans: [
     {
@@ -293,7 +297,7 @@ export const exchangeOnline = {
 
 
 
-
+// HEADER: locationObj
 export const header = {
   locationObj: {
     "/company": "About",
@@ -329,7 +333,7 @@ export const header = {
 
 
 
-
+// HOME: slides, iconObjects
 export const home = {
   slides: [
     <h6>
@@ -433,7 +437,7 @@ export const home = {
 
 
 
-
+// MICROSOFT365: plans, criteria
 export const microsoft365 = {
   plans: [
     {
@@ -516,162 +520,176 @@ export const microsoft365 = {
 
 
 
-
+// OFFICE365: plans, crtieria, altMedia
 export const office365 = {
   plans: [
     {
-      id: 1,
-      Title: "Business Essentials",
-      Price: "$5.00",
-      "User Maximum": "300",
-      "Office Online": true,
-      "Office Desktop": false,
-      "Office Mobile": false,
-      "Personalized Search": true,
-      "Corporate Video Portal": false,
-      "Enterprise Management": false,
-      "Self-Service Business Intelligence": false,
-      "EDiscovery Center": false,
-      "Compliance and Information Protection": false,
-      oneDrive: true,
-      Stream: true,
-      Exchange: true,
-      Teams: true,
-      Sharepoint: true,
-      Yammer: true,
-      PowerBI: false
+        id: 1,
+        Title: "Business Essentials",
+        description:
+        "Best for businesses that need business email and other business services. Office apps not included.",
+        Price: "$5.00",
+        "User Maximum": "300",
+        "Office Online": true,
+        "Office Desktop": false,
+        "Office Mobile": false,
+        "Personalized Search": true,
+        "Corporate Video Portal": false,
+        "Enterprise Management": false,
+        "Self-Service Business Intelligence": false,
+        "EDiscovery Center": false,
+        "Compliance and Information Protection": false,
+        oneDrive: true,
+        Stream: true,
+        Exchange: true,
+        Teams: true,
+        Sharepoint: true,
+        Yammer: true,
+        PowerBI: false
     },
     {
-      id: 2,
-      Title: "Business",
-      Price: "$8.30",
-      "User Maximum": "300",
-      "Office Online": true,
-      "Office Desktop": true,
-      "Office Mobile": true,
-      "Personalized Search": false,
-      "Corporate Video Portal": false,
-      "Enterprise Management": false,
-      "Self-Service Business Intelligence": false,
-      "EDiscovery Center": false,
-      "Compliance and Information Protection": false,
-      oneDrive: true,
-      Stream: true,
-      Exchange: false,
-      Teams: false,
-      Sharepoint: false,
-      Yammer: false,
-      PowerBI: false
+        id: 2,
+        Title: "Business",
+        description:
+        "Best for businesses that need Office apps plus cloud file storage and sharing. Business email not included.",
+        Price: "$8.30",
+        "User Maximum": "300",
+        "Office Online": true,
+        "Office Desktop": true,
+        "Office Mobile": true,
+        "Personalized Search": false,
+        "Corporate Video Portal": false,
+        "Enterprise Management": false,
+        "Self-Service Business Intelligence": false,
+        "EDiscovery Center": false,
+        "Compliance and Information Protection": false,
+        oneDrive: true,
+        Stream: true,
+        Exchange: false,
+        Teams: false,
+        Sharepoint: false,
+        Yammer: false,
+        PowerBI: false
     },
     {
-      id: 3,
-      Title: "Business Premium",
-      Price: "$12.50",
-      "User Maximum": "300",
-      "Office Online": true,
-      "Office Desktop": true,
-      "Office Mobile": true,
-      "Personalized Search": true,
-      "Corporate Video Portal": false,
-      "Enterprise Management": false,
-      "Self-Service Business Intelligence": false,
-      "EDiscovery Center": false,
-      "Compliance and Information Protection": false,
-      oneDrive: true,
-      Stream: true,
-      Exchange: true,
-      Teams: true,
-      Sharepoint: true,
-      Yammer: true,
-      PowerBI: false
+        id: 3,
+        Title: "Business Premium",
+        description:
+        "Best for businesses that need business email, Office apps, and other business services.",
+        Price: "$12.50",
+        "User Maximum": "300",
+        "Office Online": true,
+        "Office Desktop": true,
+        "Office Mobile": true,
+        "Personalized Search": true,
+        "Corporate Video Portal": false,
+        "Enterprise Management": false,
+        "Self-Service Business Intelligence": false,
+        "EDiscovery Center": false,
+        "Compliance and Information Protection": false,
+        oneDrive: true,
+        Stream: true,
+        Exchange: true,
+        Teams: true,
+        Sharepoint: true,
+        Yammer: true,
+        PowerBI: false
     },
     {
-      id: 4,
-      Title: "Pro Plus",
-      Price: "$11.99",
-      "User Maximum": "Unlimited",
-      "Office Online": true,
-      "Office Desktop": true,
-      "Office Mobile": true,
-      "Personalized Search": false,
-      "Corporate Video Portal": false,
-      "Enterprise Management": true,
-      "Self-Service Business Intelligence": true,
-      "EDiscovery Center": false,
-      "Compliance and Information Protection": false,
-      oneDrive: true,
-      Stream: false,
-      Exchange: false,
-      Teams: false,
-      Sharepoint: false,
-      Yammer: false,
-      PowerBI: false
+        id: 4,
+        Title: "Pro Plus",
+        description:
+        "Office applications plus cloud file-storage and sharing. Business email not included.",
+        Price: "$11.99",
+        "User Maximum": "Unlimited",
+        "Office Online": true,
+        "Office Desktop": true,
+        "Office Mobile": true,
+        "Personalized Search": false,
+        "Corporate Video Portal": false,
+        "Enterprise Management": true,
+        "Self-Service Business Intelligence": true,
+        "EDiscovery Center": false,
+        "Compliance and Information Protection": false,
+        oneDrive: true,
+        Stream: false,
+        Exchange: false,
+        Teams: false,
+        Sharepoint: false,
+        Yammer: false,
+        PowerBI: false
     },
     {
-      id: 5,
-      Title: "E1",
-      Price: "$7.99",
-      "User Maximum": "Unlimited",
-      "Office Online": true,
-      "Office Desktop": false,
-      "Office Mobile": false,
-      "Personalized Search": true,
-      "Corporate Video Portal": true,
-      "Enterprise Management": false,
-      "Self-Service Business Intelligence": false,
-      "EDiscovery Center": false,
-      "Compliance and Information Protection": false,
-      oneDrive: true,
-      Stream: true,
-      Exchange: true,
-      Teams: true,
-      Sharepoint: true,
-      Yammer: true,
-      PowerBI: false
+        id: 5,
+        Title: "E1",
+        description:
+        "Business services—email, file storage and sharing, Office Online, meetings and IM, and more. Office applications not included.",
+        Price: "$7.99",
+        "User Maximum": "Unlimited",
+        "Office Online": true,
+        "Office Desktop": false,
+        "Office Mobile": false,
+        "Personalized Search": true,
+        "Corporate Video Portal": true,
+        "Enterprise Management": false,
+        "Self-Service Business Intelligence": false,
+        "EDiscovery Center": false,
+        "Compliance and Information Protection": false,
+        oneDrive: true,
+        Stream: true,
+        Exchange: true,
+        Teams: true,
+        Sharepoint: true,
+        Yammer: true,
+        PowerBI: false
     },
     {
-      id: 6,
-      Title: "E3",
-      Price: "$19.99",
-      "User Maximum": "Unlimited",
-      "Office Online": true,
-      "Office Desktop": true,
-      "Office Mobile": true,
-      "Personalized Search": true,
-      "Corporate Video Portal": true,
-      "Enterprise Management": true,
-      "Self-Service Business Intelligence": true,
-      "EDiscovery Center": true,
-      "Compliance and Information Protection": true,
-      oneDrive: true,
-      Stream: true,
-      Exchange: true,
-      Teams: true,
-      Sharepoint: true,
-      Yammer: true,
-      PowerBI: false
+        id: 6,
+        Title: "E3",
+        description:
+        "All the features of ProPlus and Office 365 E1 plus security and compliance tools, such as legal hold, data loss prevention, and more.",
+        Price: "$19.99",
+        "User Maximum": "Unlimited",
+        "Office Online": true,
+        "Office Desktop": true,
+        "Office Mobile": true,
+        "Personalized Search": true,
+        "Corporate Video Portal": true,
+        "Enterprise Management": true,
+        "Self-Service Business Intelligence": true,
+        "EDiscovery Center": true,
+        "Compliance and Information Protection": true,
+        oneDrive: true,
+        Stream: true,
+        Exchange: true,
+        Teams: true,
+        Sharepoint: true,
+        Yammer: true,
+        PowerBI: false
     },
     {
-      id: 7,
-      Title: "E5",
-      Price: "$34.99",
-      "User Maximum": "Unlimited",
-      "Office Online": true,
-      "Office Desktop": true,
-      "Office Mobile": true,
-      "Personalized Search": true,
-      "Corporate Video Portal": true,
-      "Enterprise Management": true,
-      "Self-Service Business Intelligence": true,
-      "EDiscovery Center": true,
-      "Compliance and Information Protection": true,
-      oneDrive: true,
-      Stream: true,
-      Exchange: true,
-      Teams: true,
-      Sharepoint: true,
-      Yammer: true,
-      PowerBI: true
+        id: 7,
+        Title: "E5",
+        description:
+        "All the features of Office 365 E3 plus advanced security, analytics, and voice capabilities.",
+        Price: "$34.99",
+        "User Maximum": "Unlimited",
+        "Office Online": true,
+        "Office Desktop": true,
+        "Office Mobile": true,
+        "Personalized Search": true,
+        "Corporate Video Portal": true,
+        "Enterprise Management": true,
+        "Self-Service Business Intelligence": true,
+        "EDiscovery Center": true,
+        "Compliance and Information Protection": true,
+        oneDrive: true,
+        Stream: true,
+        Exchange: true,
+        Teams: true,
+        Sharepoint: true,
+        Yammer: true,
+        PowerBI: true
     }
   ],
   criteria: [
@@ -737,7 +755,7 @@ export const office365 = {
 
 
 
-
+// SECURITYOPTIMIZATION: altMedia
 export const securityOptimization = {
   altMedia: {
     images: [
@@ -825,7 +843,7 @@ export const securityOptimization = {
 
 
 
-
+// SOLUTIONS: microsoftColumnData, iconObjects
 export const solutions = {
   microsoftColumnData: [
     {
@@ -930,7 +948,7 @@ export const solutions = {
 
 
 
-
+// WORKPLACEMODERNIZATION: altMedia
 export const workplaceModernization = {
   altMedia: {
     images: [
