@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { List, Button } from 'semantic-ui-react'
+import { Button } from 'semantic-ui-react'
 import StyledList from "./StyledList";
 
 class LoneParagraph extends Component {

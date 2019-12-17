@@ -12,7 +12,15 @@ This is the react app for the Practical Solutions Inc website. Begun by Andrea W
 - [React Router Dom](https://reacttraining.com/react-router/web/example/basic)
 - [Click this one when you get too frustrated](https://www.reddit.com/r/wholesomememes/)
 
-## File Structure
+## File Structure (within `src`)
+
+#### `Data.js`
+
+objects of data for different pages. It makes the component files a lot more readable and makes data accessible anywhere, incase there's something that needs to be used in multiple places
+
+#### `/assets`
+
+Contains the css files and all of the media for the app
 
 #### `/containers`
 
@@ -33,43 +41,89 @@ For Components that are mainly stylistic and can change their content in order t
 ## Navigating CSS files
 
 #### `App.css`
-The custom css written entirely by me. Includes workarounds for weird Semantic-UI things, defaults for certain elements, and component-specific styling. Organized **alphabetically**, with the exception of having the general styling before the class styling. The default styles are for mobile, and the media queries are to apply to screens that are tablet and larger.
+The custom css written entirely by me. Includes workarounds for weird Semantic-UI things, defaults for certain elements, and component-specific styling. Organized **alphabetically**, with the exception of having the general styling before the class styling. The default styles are for mobile, and the media queries apply to screens that are tablet and larger.
 
 #### `basic.css`
 classes that are really just css shorthands. Very generic and some was copied and pasted from the old site. If there's a class that's abbreviated or doesn't make much sense, it can probably be found here. There are subtitle comments for easier navigation.
 
 #### `index.css`
-It's just that one cousin that shows up to all the family functions but doesn't talk to anyone. Is it contributing? who knows. Am I gonna go and tell it to leave? nah
+It's just that one cousin that shows up to all the family functions but doesn't talk to anyone. Is it contributing? who knows. Am I gonna go and tell it to leave? nah, bro
 
 ## Custom Styling Components
 
 
-<img src="./src/assets/readme/imgdiv.png" width="500">
-
 #### `ImgDiv`
 Dynamic component for white divs that have an image on one side.
-- **image**: the image for the div. must be required in the parent component i.e. `image={require('path/to/image')}`
-- **right**: bool for whether or not the image appears on the right of the text instead of the left. Can be left out or set to false if the image appears to the left
-- **list**: an array of list items if the content for the text is an unordered list. If the content is not a list, this prop should be left out
-- **paragraphs**: just like the list prop, but with paragraphs instead
-- **title**: the title of the text section of the imgdiv
+|  Prop Name |  Type  |        Required?        | Default |                                                                           Notes                                                                          |
+|:----------:|:------:|:-----------------------:|:-------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    image   |  image |           yes           |   n/a   |                                                             image to appear next to the text                                                             |
+|    title   | string |            no           |   n/a   |                                                            title above text section of the div                                                           |
+|    right   |  bool  |            no           |  false  | bool for whether or not the image appears on the right of the text instead of the left. Can be left out or set to false if the image appears to the left |
+|    list    |  array | if paragraphs is absent |   n/a   |                         an array of list item strings for the content. If the content is not a list, this prop should be left out                        |
+| paragraphs |  array |    if list is absent    |   n/a   |                                                              array of strings as paragraphs                                                              |
 
 #### `SubHeader`
 Section title component that includes a little hr for a lil extra *pizazz*.
-- **title**: the text that will go in the component
-- **marginTop**: adds a margin-top of 3rem
-- **marginBottom**: adds a margin-bottom of 3rem
-- **paddingTop**: adds a padding-top of 3rem (best used for light grey sections so that the space above matches the rest of the section)
+|   Prop Name  |  Type  | Required? | Default |             Notes            |
+|:------------:|:------:|:---------:|:-------:|:----------------------------:|
+|     text     | string |    yes    |   n/a   |             title            |
+|   marginTop  |  bool  |     no    |  false  |   adds a top margin of 3rem  |
+| marginBottom |  bool  |     no    |  false  | adds a bottom margin of 3rem |
+|  paddingTop  |  bool  |     no    |  false  |  adds a top padding of 3rem  |
 
 #### `LoneParagraph`
 Text section that has no title, but the first paragraph is a drop cap.
-- **text**: an array of paragraphs for the component
+|  Prop Name  |  Type  | Required? | Default |                        Notes                       |
+|:-----------:|:------:|:---------:|:-------:|:--------------------------------------------------:|
+|     text    |  array |    yes    |   n/a   |               paragraphs (as strings)              |
+|     list    |  array |     no    |   n/a   |      list to be displayed below the paragraphs     |
+|   contact   |  bool  |     no    |  false  | toggles whether or not a contact button is present |
+| contactText | string |     no    |   n/a   |     optional unique text for the contact button    |
 
 #### `IconParagraph`
 Small section for Icons with accompanying text.
-- **iconName**: the name of the icon. For this app, iconsmind is used. The class for the span will be "icon-" + iconName to display the correct icon. The full catalog of available icons can be found [here](https://iconsmind.com/view_icons/)
-- **title**: the title under the icon
-- **content**: the text under the title under the content
+| Prop Name |  Type  | Required? | Default |                Notes                |
+|:---------:|:------:|:---------:|:-------:|:-----------------------------------:|
+|  iconName |  image |    yes    |   n/a   | iconName as it appears on iconsmind |
+|   title   | string |     no    |   n/a   |                title                |
+|    list   |  array |     no    |   n/a   |       string items for a list       |
+| paragraph | string |     no    |   n/a   |        string for a paragraph       |
+|           |        |           |         |                                     |
+|           |        |           |         |                                     |
+
+#### `AlternatingMedia`
+Styled content. Look at workplace modernization for reference.
+| Prop Name |       Type       | Required? | Default |                             Notes                             |
+|:---------:|:----------------:|:---------:|:-------:|:-------------------------------------------------------------:|
+|   images  |  array of images |    yes    |   n/a   |                                                               |
+|  content  | array of strings |     no    |   n/a   |                                                               |
+|    left   |       bool       |     no    |  false  | toggles whether or not the first image appears after the text |
+|   large   |       bool       |     no    |  false  |            makes images 'large' instead of 'medium'           |
+
+#### `Carousel`
+Simple carousel styled to fit the theme of the site.
+| Prop Name |           Type          | Required? |       Default      |                                  Notes                                 |
+|:---------:|:-----------------------:|:---------:|:------------------:|:----------------------------------------------------------------------:|
+|   width   |          string         |     no    |         ""         | className for the carousel - meant for the width but could be anything |
+|   slides  | array of JSX components |     no    | dont worry bout it |                  slides for the carousel to go through                 |
+|    show   |         integer         |     no    |          2         |                  number of slides to show at one time                  |
+|   scroll  |         integer         |     no    |          2         |                      number of slides to scroll by                     |
+|   arrows  |           bool          |     no    |        false       |           toggles clickable arrows on either side of carousel          |
+
+#### `ComparisonTable`
+Table to compare product plans.
+| Prop Name |       Type       | Required? | Default |                                             Notes                                            |
+|:---------:|:----------------:|:---------:|:-------:|:--------------------------------------------------------------------------------------------:|
+|   items   | array of objects |    yes    |   n/a   | objects for each plan. Objects must include Title, Price, and values for all of the criteria |
+|  criteria | array of strings |    yes    |   n/a   |                         criteria that the plans are being compared by                        |
+
+#### `StyledList`
+Literally just an unordered list. I just made it pretty so now it works with the site.
+| Prop Name |       Type       | Required? | Default |      Notes     |
+|:---------:|:----------------:|:---------:|:-------:|:--------------:|
+|   items   | array of strings |    yes    |   n/a   | the list items |
+
+
 
 ---
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

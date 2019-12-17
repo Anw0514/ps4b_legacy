@@ -8,8 +8,6 @@ import StyledList from '../reusable/StyledList'
 import { company } from '../Data'
 
 
-// !!! extract all the consts to constructor method
-
 class Company extends Component {
   constructor() {
     super();
