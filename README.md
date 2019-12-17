@@ -10,6 +10,8 @@ This is the react app for the Practical Solutions Inc website. Begun by Andrea W
 ## Resources / Documentation
 - [Semantic UI React](https://react.semantic-ui.com/)
 - [React Router Dom](https://reacttraining.com/react-router/web/example/basic)
+- [Free Pictures!](https://pixabay.com/)
+- [React Slick (the Carousel)](https://react-slick.neostack.com/docs/example/simple-slider)
 - [Click this one when you get too frustrated](https://www.reddit.com/r/wholesomememes/)
 
 ## File Structure (within `src`)
