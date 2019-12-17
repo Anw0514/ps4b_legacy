@@ -236,7 +236,7 @@ class MobileNav extends Component {
                     to="/solutions?section=appsandinfrastructure"
                     className="mobile-accordion"
                   >
-                    Apps & Infrostructure
+                    Apps & Infrastructure
                   </NavLink>
                 </Item.Content>
               </Item>

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { toast } from "react-toastify";
+import { contactForm } from '../Data'
 
 class ContactForm extends Component {
 
@@ -45,22 +46,6 @@ class ContactForm extends Component {
 
     render() {
 
-      const subjects = [
-        { key: "1", text: "Security Optimization", value: "1" },
-        { key: "2", text: "Data Center Consolidation", value: "2" },
-        { key: "3", text: "e-Learning", value: "3" },
-        { key: "4", text: "Network Transformation", value: "4" },
-        { key: "5", text: "Workplace Modernization", value: "5" },
-        { key: "6", text: "Microsoft 365 Solutions", value: "6" },
-        { key: "7", text: "Microsoft 365 Products", value: "7" },
-        { key: "8", text: "Business Apps", value: "8" },
-        { key: "9", text: "Data and BI", value: "9" },
-        { key: "10", text: "Apps and Infrastructure", value: "10" },
-        { key: "11", text: "Exchange Online", value: "11" },
-        { key: "12", text: "Office 365", value: "12" },
-        { key: "13", text: "Dynamics 365", value: "13" }
-      ]
-
       return (
         <Form
           id="form"
@@ -96,7 +81,7 @@ class ContactForm extends Component {
               id="subject"
               onChange={this.handleChange}
               label="Subject"
-              options={subjects}
+              options={contactForm.subjects}
               value={this.props.subject}
               placeholder="Choose a subject"
             />

@@ -2,9 +2,13 @@ import React, { Component, Fragment } from 'react'
 import { Grid, Image } from 'semantic-ui-react'
 import ComparisonTable from '../../reusable/ComparisonTable'
 import IconParagraph from '../../reusable/IconParagraph'
+import { microsoft365 } from '../../Data'
 
 class Microsoft365 extends Component {
     render() {
+
+      const { plans, criteria } = microsoft365
+
         return (
           <Fragment>
             <div className="narrow-section">
@@ -35,70 +39,8 @@ class Microsoft365 extends Component {
             </Grid>
             <div className='regular-section'>
               <ComparisonTable
-                items={[
-                  {
-                    "Title": "Business",
-                    "Price": "$21.95",
-                    "User maximum": "300",
-                    "Office 365 applications": true,
-                    "1 TB file storage and sharing": true,
-                    "Microsoft Teams chat-based workspace": true,
-                    "Protect company data across devices": true,
-                    "Secure access to documents on mobile devices": true,
-                    "Protect Windows 10 devices against malware, viruses, and spyware with Windows Defender": true,
-                    "Self-service PC deployment with Windows AutoPilot": false,
-                    "Automatically deploy Office apps to Windows 10 PCs": false,
-                    "PSTN Conferencing, Cloud PBX with OneDrive": false,
-                    "Windows Defender Advanced Threat Protection, Office 365 Advanced Threat Protection, Office 365 Threat Intelligence": false,
-                    "Power BI Pro, MyAnalytics": false
-                  },
-                  {
-                    "Title": "E3",
-                    "Price": "$35.95",
-                    "User maximum": "Unlimited",
-                    "Office 365 applications": true,
-                    "1 TB file storage and sharing": true,
-                    "Microsoft Teams chat-based workspace": true,
-                    "Protect company data across devices": true,
-                    "Secure access to documents on mobile devices": true,
-                    "Protect Windows 10 devices against malware, viruses, and spyware with Windows Defender": true,
-                    "Self-service PC deployment with Windows AutoPilot": true,
-                    "Automatically deploy Office apps to Windows 10 PCs": true,
-                    "PSTN Conferencing, Cloud PBX with OneDrive": false,
-                    "Windows Defender Advanced Threat Protection, Office 365 Advanced Threat Protection, Office 365 Threat Intelligence": false,
-                    "Power BI Pro, MyAnalytics": false
-                  },
-                  {
-                    "Title": "E5",
-                    "Price": "$63.95",
-                    "User maximum": "Unlimited",
-                    "Office 365 applications": true,
-                    "1 TB file storage and sharing": true,
-                    "Microsoft Teams chat-based workspace": true,
-                    "Protect company data across devices": true,
-                    "Secure access to documents on mobile devices": true,
-                    "Protect Windows 10 devices against malware, viruses, and spyware with Windows Defender": true,
-                    "Self-service PC deployment with Windows AutoPilot": true,
-                    "Automatically deploy Office apps to Windows 10 PCs": true,
-                    "PSTN Conferencing, Cloud PBX with OneDrive": true,
-                    "Windows Defender Advanced Threat Protection, Office 365 Advanced Threat Protection, Office 365 Threat Intelligence": true,
-                    "Power BI Pro, MyAnalytics": true
-                  }
-                ]}
-                criterion={[
-                  "User maximum",
-                  "Office 365 applications",
-                  "1 TB file storage and sharing",
-                  "Microsoft Teams chat-based workspace",
-                  "Protect company data across devices",
-                  "Secure access to documents on mobile devices",
-                  "Protect Windows 10 devices against malware, viruses, and spyware with Windows Defender",
-                  "Self-service PC deployment with Windows AutoPilot",
-                  "Automatically deploy Office apps to Windows 10 PCs",
-                  "PSTN Conferencing, Cloud PBX with OneDrive",
-                  "Windows Defender Advanced Threat Protection, Office 365 Advanced Threat Protection, Office 365 Threat Intelligence",
-                  "Power BI Pro, MyAnalytics"
-                ]}
+                items={plans}
+                criteria={criteria}
               />
             </div>
           </Fragment>
