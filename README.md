@@ -2,7 +2,7 @@
 
 This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019.
 
-### *I ACTUALLY PUT EFFORT INTO MAKING THE README HELPFUL*
+### I actually put effort into making this readme helpful
 *please read it*
 
 <img src="./src/assets/readme/spongebob_computer.jpg" width="400">

@@ -30,7 +30,7 @@ class Footer extends Component {
                 <p className="white indented-s">
                   McLean, Virginia
                   <br />
-                  West Chester Pennsylvania
+                  West Chester, Pennsylvania
                   <br />
                   Phoenix, Arizona
                 </p>
@@ -50,9 +50,9 @@ class Footer extends Component {
                         size="big"
                         className="white clickable"
                         onClick={() => {
-                            window.location.assign(
-                              "https://www.linkedin.com/company/practical-solutions-inc-/"
-                            );
+                          window.location.assign(
+                            "https://www.linkedin.com/company/practical-solutions-inc-/"
+                          );
                         }}
                       />
                     </Grid.Column>
