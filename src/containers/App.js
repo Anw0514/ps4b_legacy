@@ -50,6 +50,10 @@ class App extends Component {
       page,
       dropdown: "",
       subject: subject ? subject : this.state.subject
+    }, () => {
+      if (page !== "/company" && page !== "/solutions") {
+        window.scrollTo(0, 0);
+      }
     });
   };
 
@@ -117,7 +121,6 @@ class App extends Component {
               changeSubject={this.changeSubject}
               submitForm={this.submitForm}
               subject={subject}
-              mobile={mobile}
               openModal={this.toggleModal}
             />
             <Modal closeIcon open={contactModal} onClose={this.toggleModal}>

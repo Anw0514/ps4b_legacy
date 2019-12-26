@@ -80,10 +80,10 @@ class Content extends Component {
                 <NetworkTransformation />
               </Route>
               <Route exact path="/security-optimization">
-                <SecurityOptimization mobile={this.props.mobile} />
+                <SecurityOptimization />
               </Route>
               <Route exact path="/workplace-modernization">
-                <WorkplaceModernization mobile={this.props.mobile} />
+                <WorkplaceModernization />
               </Route>
             </Switch>
           </div>

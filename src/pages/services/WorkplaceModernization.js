@@ -19,7 +19,6 @@ class WorkplaceModernization extends Component {
                 <AlternatingMedia
                   images={images}
                   content={content}
-                  mobile={this.props.mobile}
                   left
                 />
               </div>

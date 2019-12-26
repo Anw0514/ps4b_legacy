@@ -1,9 +1,5 @@
-import React from 'react'
-import { Icon } from 'semantic-ui-react'
-
-
-
-
+import React from "react";
+import { Icon } from "semantic-ui-react";
 
 // COMPANY: partners, introList, contractRows, employees, execs
 export const company = {
@@ -164,21 +160,6 @@ export const company = {
   }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // CONTACTFORM: subjects
 export const contactForm = {
   subjects: [
@@ -197,21 +178,6 @@ export const contactForm = {
     { key: "13", text: "Dynamics 365", value: "13" }
   ]
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // DYNAMICS365: slides
 export const dynamics365 = {
@@ -249,21 +215,6 @@ export const dynamics365 = {
   ]
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // EXCHANGEONLINE: plans
 export const exchangeOnline = {
   plans: [
@@ -281,21 +232,6 @@ export const exchangeOnline = {
     }
   ]
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // HEADER: locationObj
 export const header = {
@@ -317,21 +253,6 @@ export const header = {
     "/workplace-modernization": "Workplace Modernization"
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // HOME: slides, iconObjects
 export const home = {
@@ -422,21 +343,6 @@ export const home = {
   }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // MICROSOFT365: plans, criteria
 export const microsoft365 = {
   plans: [
@@ -505,191 +411,176 @@ export const microsoft365 = {
   ]
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // OFFICE365: plans, crtieria, altMedia
 export const office365 = {
   plans: [
     {
-        id: 1,
-        Title: "Business Essentials",
-        description:
+      id: 1,
+      Title: "Business Essentials",
+      description:
         "Best for businesses that need business email and other business services. Office apps not included.",
-        Price: "$5.00",
-        "User Maximum": "300",
-        "Office Online": true,
-        "Office Desktop": false,
-        "Office Mobile": false,
-        "Personalized Search": true,
-        "Corporate Video Portal": false,
-        "Enterprise Management": false,
-        "Self-Service Business Intelligence": false,
-        "EDiscovery Center": false,
-        "Compliance and Information Protection": false,
-        oneDrive: true,
-        Stream: true,
-        Exchange: true,
-        Teams: true,
-        Sharepoint: true,
-        Yammer: true,
-        PowerBI: false
+      Price: "$5.00",
+      "User Maximum": "300",
+      "Office Online": true,
+      "Office Desktop": false,
+      "Office Mobile": false,
+      "Personalized Search": true,
+      "Corporate Video Portal": false,
+      "Enterprise Management": false,
+      "Self-Service Business Intelligence": false,
+      "EDiscovery Center": false,
+      "Compliance and Information Protection": false,
+      oneDrive: true,
+      Stream: true,
+      Exchange: true,
+      Teams: true,
+      Sharepoint: true,
+      Yammer: true,
+      PowerBI: false
     },
     {
-        id: 2,
-        Title: "Business",
-        description:
+      id: 2,
+      Title: "Business",
+      description:
         "Best for businesses that need Office apps plus cloud file storage and sharing. Business email not included.",
-        Price: "$8.30",
-        "User Maximum": "300",
-        "Office Online": true,
-        "Office Desktop": true,
-        "Office Mobile": true,
-        "Personalized Search": false,
-        "Corporate Video Portal": false,
-        "Enterprise Management": false,
-        "Self-Service Business Intelligence": false,
-        "EDiscovery Center": false,
-        "Compliance and Information Protection": false,
-        oneDrive: true,
-        Stream: true,
-        Exchange: false,
-        Teams: false,
-        Sharepoint: false,
-        Yammer: false,
-        PowerBI: false
+      Price: "$8.30",
+      "User Maximum": "300",
+      "Office Online": true,
+      "Office Desktop": true,
+      "Office Mobile": true,
+      "Personalized Search": false,
+      "Corporate Video Portal": false,
+      "Enterprise Management": false,
+      "Self-Service Business Intelligence": false,
+      "EDiscovery Center": false,
+      "Compliance and Information Protection": false,
+      oneDrive: true,
+      Stream: true,
+      Exchange: false,
+      Teams: false,
+      Sharepoint: false,
+      Yammer: false,
+      PowerBI: false
     },
     {
-        id: 3,
-        Title: "Business Premium",
-        description:
+      id: 3,
+      Title: "Business Premium",
+      description:
         "Best for businesses that need business email, Office apps, and other business services.",
-        Price: "$12.50",
-        "User Maximum": "300",
-        "Office Online": true,
-        "Office Desktop": true,
-        "Office Mobile": true,
-        "Personalized Search": true,
-        "Corporate Video Portal": false,
-        "Enterprise Management": false,
-        "Self-Service Business Intelligence": false,
-        "EDiscovery Center": false,
-        "Compliance and Information Protection": false,
-        oneDrive: true,
-        Stream: true,
-        Exchange: true,
-        Teams: true,
-        Sharepoint: true,
-        Yammer: true,
-        PowerBI: false
+      Price: "$12.50",
+      "User Maximum": "300",
+      "Office Online": true,
+      "Office Desktop": true,
+      "Office Mobile": true,
+      "Personalized Search": true,
+      "Corporate Video Portal": false,
+      "Enterprise Management": false,
+      "Self-Service Business Intelligence": false,
+      "EDiscovery Center": false,
+      "Compliance and Information Protection": false,
+      oneDrive: true,
+      Stream: true,
+      Exchange: true,
+      Teams: true,
+      Sharepoint: true,
+      Yammer: true,
+      PowerBI: false
     },
     {
-        id: 4,
-        Title: "Pro Plus",
-        description:
+      id: 4,
+      Title: "Pro Plus",
+      description:
         "Office applications plus cloud file-storage and sharing. Business email not included.",
-        Price: "$11.99",
-        "User Maximum": "Unlimited",
-        "Office Online": true,
-        "Office Desktop": true,
-        "Office Mobile": true,
-        "Personalized Search": false,
-        "Corporate Video Portal": false,
-        "Enterprise Management": true,
-        "Self-Service Business Intelligence": true,
-        "EDiscovery Center": false,
-        "Compliance and Information Protection": false,
-        oneDrive: true,
-        Stream: false,
-        Exchange: false,
-        Teams: false,
-        Sharepoint: false,
-        Yammer: false,
-        PowerBI: false
+      Price: "$11.99",
+      "User Maximum": "Unlimited",
+      "Office Online": true,
+      "Office Desktop": true,
+      "Office Mobile": true,
+      "Personalized Search": false,
+      "Corporate Video Portal": false,
+      "Enterprise Management": true,
+      "Self-Service Business Intelligence": true,
+      "EDiscovery Center": false,
+      "Compliance and Information Protection": false,
+      oneDrive: true,
+      Stream: false,
+      Exchange: false,
+      Teams: false,
+      Sharepoint: false,
+      Yammer: false,
+      PowerBI: false
     },
     {
-        id: 5,
-        Title: "E1",
-        description:
+      id: 5,
+      Title: "E1",
+      description:
         "Business services—email, file storage and sharing, Office Online, meetings and IM, and more. Office applications not included.",
-        Price: "$7.99",
-        "User Maximum": "Unlimited",
-        "Office Online": true,
-        "Office Desktop": false,
-        "Office Mobile": false,
-        "Personalized Search": true,
-        "Corporate Video Portal": true,
-        "Enterprise Management": false,
-        "Self-Service Business Intelligence": false,
-        "EDiscovery Center": false,
-        "Compliance and Information Protection": false,
-        oneDrive: true,
-        Stream: true,
-        Exchange: true,
-        Teams: true,
-        Sharepoint: true,
-        Yammer: true,
-        PowerBI: false
+      Price: "$7.99",
+      "User Maximum": "Unlimited",
+      "Office Online": true,
+      "Office Desktop": false,
+      "Office Mobile": false,
+      "Personalized Search": true,
+      "Corporate Video Portal": true,
+      "Enterprise Management": false,
+      "Self-Service Business Intelligence": false,
+      "EDiscovery Center": false,
+      "Compliance and Information Protection": false,
+      oneDrive: true,
+      Stream: true,
+      Exchange: true,
+      Teams: true,
+      Sharepoint: true,
+      Yammer: true,
+      PowerBI: false
     },
     {
-        id: 6,
-        Title: "E3",
-        description:
+      id: 6,
+      Title: "E3",
+      description:
         "All the features of ProPlus and Office 365 E1 plus security and compliance tools, such as legal hold, data loss prevention, and more.",
-        Price: "$19.99",
-        "User Maximum": "Unlimited",
-        "Office Online": true,
-        "Office Desktop": true,
-        "Office Mobile": true,
-        "Personalized Search": true,
-        "Corporate Video Portal": true,
-        "Enterprise Management": true,
-        "Self-Service Business Intelligence": true,
-        "EDiscovery Center": true,
-        "Compliance and Information Protection": true,
-        oneDrive: true,
-        Stream: true,
-        Exchange: true,
-        Teams: true,
-        Sharepoint: true,
-        Yammer: true,
-        PowerBI: false
+      Price: "$19.99",
+      "User Maximum": "Unlimited",
+      "Office Online": true,
+      "Office Desktop": true,
+      "Office Mobile": true,
+      "Personalized Search": true,
+      "Corporate Video Portal": true,
+      "Enterprise Management": true,
+      "Self-Service Business Intelligence": true,
+      "EDiscovery Center": true,
+      "Compliance and Information Protection": true,
+      oneDrive: true,
+      Stream: true,
+      Exchange: true,
+      Teams: true,
+      Sharepoint: true,
+      Yammer: true,
+      PowerBI: false
     },
     {
-        id: 7,
-        Title: "E5",
-        description:
+      id: 7,
+      Title: "E5",
+      description:
         "All the features of Office 365 E3 plus advanced security, analytics, and voice capabilities.",
-        Price: "$34.99",
-        "User Maximum": "Unlimited",
-        "Office Online": true,
-        "Office Desktop": true,
-        "Office Mobile": true,
-        "Personalized Search": true,
-        "Corporate Video Portal": true,
-        "Enterprise Management": true,
-        "Self-Service Business Intelligence": true,
-        "EDiscovery Center": true,
-        "Compliance and Information Protection": true,
-        oneDrive: true,
-        Stream: true,
-        Exchange: true,
-        Teams: true,
-        Sharepoint: true,
-        Yammer: true,
-        PowerBI: true
+      Price: "$34.99",
+      "User Maximum": "Unlimited",
+      "Office Online": true,
+      "Office Desktop": true,
+      "Office Mobile": true,
+      "Personalized Search": true,
+      "Corporate Video Portal": true,
+      "Enterprise Management": true,
+      "Self-Service Business Intelligence": true,
+      "EDiscovery Center": true,
+      "Compliance and Information Protection": true,
+      oneDrive: true,
+      Stream: true,
+      Exchange: true,
+      Teams: true,
+      Sharepoint: true,
+      Yammer: true,
+      PowerBI: true
     }
   ],
   criteria: [
@@ -739,21 +630,6 @@ export const office365 = {
     ]
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // SECURITYOPTIMIZATION: altMedia
 export const securityOptimization = {
@@ -827,21 +703,6 @@ export const securityOptimization = {
     ]
   }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // SOLUTIONS: microsoftColumnData, iconObjects
 export const solutions = {
@@ -930,23 +791,42 @@ export const solutions = {
         "Connect employees through data driven processes"
       ]
     }
-  ]
+  ],
+  altMedia: {
+    images: [
+      require("./assets/imgDivs/data-bi-1.png"),
+      require("./assets/imgDivs/data-bi-2.jpg")
+    ],
+    content: [
+      {
+        title: "We cover the entire spectrum of data solutions, including:",
+        list: [
+          "Consulting and evaluation",
+          "Data structuring and consolidation",
+          "Data Lake Optimization",
+          "Data Cleaning and Mining",
+          "End-to-end operational reporting and automation",
+          "Data visualization",
+          "Descriptive business state analysis",
+          "Advanced Analytics and modeling (ex. Propensity, Clustering, Segmentation, Predictive, Scoring)"
+        ]
+      },
+      {
+        title: "Our team are experts in the following tools and platforms:",
+        list: [
+          "Microsoft Azure (including all services such as text analytics, cognitive services, and others)",
+          "Power BI, Tableau, QuickSite, KNIME Analytics, SAP BusinessObjects, and various other BI visualization software.",
+          "IBM Cognos components",
+          "SAS and SPSS",
+          "Business Objects",
+          "Oracle, Siebel, and Sybase",
+          "Adobe Analytics, IBM TeaLeaf, Webtrends, and Google Analytics",
+          "Social Media Aggregators"
+        ]
+      }
+    ]
+  }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // WORKPLACEMODERNIZATION: altMedia
 export const workplaceModernization = {

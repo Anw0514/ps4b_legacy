@@ -4,9 +4,9 @@ import Slider from "react-slick";
 class Carousel extends Component {
 
   render() {
-    const { slides, show, scroll, width, centered, centerPadding, arrows } = this.props
+    const { slides, show, scroll, width, arrows } = this.props
 
-    const regularSettings = {
+    const settings = {
       infinite: true,
       initialSlide: 0,
       arrows: arrows,
@@ -15,20 +15,6 @@ class Carousel extends Component {
       slidesToShow: show,
       slidesToScroll: scroll
     };
-
-    const centerSettings = {
-      className: "center",
-      centerMode: true,
-      infinite: true,
-      autoplay: true,
-      arrows: arrows,
-      autoplaySpeed: 4000,
-      centerPadding: centerPadding,
-      slidesToShow: 1,
-      speed: 500
-    };
-
-    const settings = centered ? centerSettings : regularSettings
 
     return (
       <div className={width}>
@@ -45,8 +31,6 @@ Carousel.defaultProps = {
   show: 2, 
   scroll: 2, 
   width: "", 
-  centered: false,
-  centerPadding: "50px",
   arrows: false
 }
 
