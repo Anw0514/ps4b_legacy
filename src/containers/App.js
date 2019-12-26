@@ -50,6 +50,10 @@ class App extends Component {
       page,
       dropdown: "",
       subject: subject ? subject : this.state.subject
+    }, () => {
+      if (page !== "/company" && page !== "/solutions") {
+        window.scrollTo(0, 0);
+      }
     });
   };
 

@@ -39,7 +39,7 @@ class Company extends Component {
 
   findAndScroll() {
     if (this.state.section === "about") {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      window.scrollTo(0, 0);
     } else {
       const section = document.getElementById(this.state.section);
       const xPos = this.offset(section) - 60;
