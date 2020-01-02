@@ -44,11 +44,6 @@ export const company = {
       avitar: "samad.jpeg"
     },
     {
-      name: "Sam Ashtar",
-      role: "Software Engineer",
-      avitar: "sam.jpeg"
-    },
-    {
       name: "Andrea Williams",
       role: "Internal Application Developer",
       avitar: "andrea.jpeg"
