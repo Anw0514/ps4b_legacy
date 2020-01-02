@@ -5,7 +5,11 @@
 }
 
 .bg-grey {
-  background-color: #f2f2f2;
+  background-color: #f2f2f2 !important;
+}
+
+.bg-dark-grey {
+  background-color: #b8b8b8 !important;
 }
 
 .bg-light-grey {
@@ -51,6 +55,10 @@
 
 .silver {
   color: #979691 !important;
+}
+
+.black {
+  color: black !important;
 }
 
 

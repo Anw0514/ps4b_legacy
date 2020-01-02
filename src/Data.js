@@ -212,6 +212,206 @@ export const dynamics365 = {
       text:
         "Operate your warehouse, transport your company’s products and control your inventory. Consolidate your shipments to reduce transportation costs. Give your warehouse managers automated workflow tools so they can respond quickly to changing demands in your business. Manage your workforce and streamline your hiring processes to help reduce errors and save time and money."
     }
+  ],
+  tables: [
+    {
+      rows: [
+        [
+          "Marketing",
+          { content: "From $1,500", meta: "Per tenant/month" },
+          { content: "From $750", meta: "Per tenant/month" }
+        ],
+        [
+          "Customer Insights",
+          { content: "From $1,500", meta: "Per tenant/month" },
+          { content: "From $1000", meta: "Per tenant/month" }
+        ],
+        [
+          "Forms Pro",
+          { content: "$100", meta: "Per 2,000 survey responses per tenant/month" }
+        ]
+      ],
+      header: [
+        "Marketing",
+        "Price for organizations without any other Dynamics 365 app",
+        "Price for organizations with qualifying Dynamics 365 app"
+      ]
+    },
+    {
+      rows: [
+        [
+          "Sales Professional",
+          { content: "$65", meta: "Per user/month" },
+          { content: "$20", meta: "Per user/month" }
+        ],
+        [
+          "Sales Enterprise",
+          { content: "$95", meta: "Per user/month" },
+          { content: "$20", meta: "Per user/month" }
+        ],
+        [
+          "Customer Insights",
+          { content: "From $1,500", meta: "Per tenant/month" },
+          { content: "From $1000", meta: "Per tenant/month" }
+        ],
+        [
+          "Microsoft Relationship Sales",
+          { content: "From $130", meta: "Per user/month" }
+        ],
+        [
+          "Sales Insights",
+          { content: "$50", meta: "Per user/month" }
+        ],
+        [
+          "Forms Pro",
+          { content: "$100", meta: "Per 2,000 survey responses per tenant/month" }
+        ]
+      ],
+      header: [
+        "Sales",
+        "Price for user’s first Dynamics 365 app",
+        "Price for user’s subsequent qualifying Dynamics 365 app"
+      ]
+    },
+    {
+      rows: [
+        [
+          "Customer Service Professional",
+          { content: "$50", meta: "Per user/month" },
+          { content: "$20", meta: "Per user/month" }
+        ],
+        [
+          "Customer Service Enterprise",
+          { content: "$95", meta: "Per user/month" },
+          { content: "$20", meta: "Per user/month" }
+        ],
+        [
+          "Customer Service Insights",
+          { content: "$75", meta: "Per user/month" }
+        ],
+        [
+          "Customer Insights",
+          { content: "From $1,500", meta: "Per tenant/month" },
+          { content: "From $1000", meta: "Per tenant/month" }
+        ],
+        [
+          "Forms Pro",
+          { content: "$100", meta: "Per 2,000 survey responses per tenant/month" }
+        ]
+      ],
+      header: [
+        "Customer Service",
+        "Price for user’s first Dynamics 365 app",
+        "Price for user’s subsequent qualifying Dynamics 365 app"
+      ]
+    },
+    {
+      rows: [
+        [
+          "Field Service",
+          { content: "$95", meta: "Per user/month" },
+          { content: "$20", meta: "Per user/month" }
+        ],
+        [
+          "Customer Insights",
+          { content: "From $1,500", meta: "Per tenant/month" },
+          { content: "From $1000", meta: "Per tenant/month" }
+        ],
+        [
+          "Remote Assist",
+          { content: "$65", meta: "Per user/month" },
+          { content: "$20", meta: "Per user/month" }
+        ],
+        [
+          "Guides",
+          { content: "$65", meta: "Per user/month" }
+        ],
+        [
+          "Forms Pro",
+          { content: "$100", meta: "Per 2,000 survey responses per tenant/month" }
+        ]
+      ],
+      header: [
+        "Field Service",
+        "Price for user’s first Dynamics 365 app",
+        "Price for user’s subsequent qualifying Dynamics 365 app"
+      ]
+    },
+    {
+      rows: [
+        [
+          "Finance",
+          { content: "$180", meta: "Per user/month" },
+          { content: "$30", meta: "Per user/month" }
+        ],
+        [
+          "Business Central Essentials",
+          { content: "$70", meta: "Per user/month" }
+        ],
+        [
+          "Business Central Premium",
+          { content: "$100", meta: "Per user/month" }
+        ]
+      ],
+      header: [
+        "Finance",
+        "Price for user’s first Dynamics 365 app",
+        "Price for user’s subsequent qualifying Dynamics 365 app"
+      ]
+    },
+    {
+      rows: [
+        [
+          "Supply Chain Management",
+          { content: "$180", meta: "Per user/month" },
+          { content: "$30", meta: "Per user/month" }
+        ],
+        [
+          "Project Service Automation",
+          { content: "$95", meta: "Per user/month" }
+        ],
+        [
+          "Layout",
+          { content: "$95", meta: "Per user/month" }
+        ],
+        [
+          "Business Central Essentials",
+          { content: "$70", meta: "Per user/month" }
+        ],
+        [
+          "Business Central Premium",
+          { content: "$100", meta: "Per user/month" }
+        ]
+      ],
+      header: [
+        "Operations",
+        "Price for user’s first Dynamics 365 app",
+        "Price for user’s subsequent qualifying Dynamics 365 app"
+      ]
+    },
+    {
+      rows: [
+        [
+          "Retail",
+          { content: "$180", meta: "Per user/month" },
+          { content: "$30", meta: "Per user/month" }
+        ],
+        [
+          "Fraud Protection",
+          { content: "$10,000", meta: "Per tenant/month" }
+        ],
+        [
+          "Customer Insights",
+          { content: "From $1,500", meta: "Per tenant/month" },
+          { content: "From $1000", meta: "Per tenant/month" }
+        ],
+      ],
+      header: [
+        "Retail",
+        "Price for user’s first Dynamics 365 app",
+        "Price for user’s subsequent qualifying Dynamics 365 app"
+      ]
+    }
   ]
 };
 
