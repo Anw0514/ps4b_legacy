@@ -45,7 +45,7 @@ export const company = {
     },
     {
       name: "Andrea Williams",
-      role: "Internal Application Developer",
+      role: "Software Developer",
       avitar: "andrea.jpeg"
     },
     {
