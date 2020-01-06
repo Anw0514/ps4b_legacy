@@ -14,6 +14,12 @@ This is the react app for the Practical Solutions Inc website. Begun by Andrea W
 - [React Slick (the Carousel)](https://react-slick.neostack.com/docs/example/simple-slider)
 - [Click this one when you get too frustrated](https://www.reddit.com/r/wholesomememes/)
 
+## Deployment (Updating Master Properly)
+- Merge from DevMaster
+- npm run build
+- find and replace: build/build => build (should be found in the index.html file)
+- commit and push
+
 ## File Structure (within `src`)
 
 #### `Data.js`
