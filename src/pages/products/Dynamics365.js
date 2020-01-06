@@ -3,11 +3,12 @@ import { Grid } from 'semantic-ui-react'
 import IconParagraph from '../../reusable/IconParagraph'
 import Carousel from '../../reusable/Carousel'
 import { dynamics365 } from '../../Data'
+import ComparisonTableTwo from '../../reusable/ComparisonTableTwo'
 
 class Dynamics365 extends Component {
     render() {
 
-        const { slides } = dynamics365
+        const { slides, tables } = dynamics365
 
         return (
             <div>
@@ -42,6 +43,11 @@ class Dynamics365 extends Component {
                 show={1}
                 scroll={1}
               />
+              { tables.map(table => (
+                <div className="regular-section">
+                  <ComparisonTableTwo header={table.header} rows={table.rows} />
+                </div>
+              )) }
               <div className="filler" />
             </div>
         )

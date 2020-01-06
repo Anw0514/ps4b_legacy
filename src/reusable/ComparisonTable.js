@@ -58,8 +58,7 @@ class ComparisonTable extends Component {
                 <Table className='text-center' basic='very' unstackable celled columns={columns}>
                     <Table.Header>
                         <Table.Row>
-                            <Table.HeaderCell>
-                            </Table.HeaderCell>
+                            <Table.HeaderCell />
                             { items.map(item => {
                                 return (
                                     <Table.HeaderCell>
