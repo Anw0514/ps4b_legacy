@@ -14,11 +14,14 @@ This is the react app for the Practical Solutions Inc website. Begun by Andrea W
 - [React Slick (the Carousel)](https://react-slick.neostack.com/docs/example/simple-slider)
 - [Click this one when you get too frustrated](https://www.reddit.com/r/wholesomememes/)
 
-## Deployment (Updating Master Properly)
-- Merge from DevMaster
-- npm run build
-- find and replace: build/build => build (should be found in the index.html file)
-- commit and push
+## Deployment
+The site is deployed through Azure App Service, and is configured to update on every push to the master branch. There are a few steps that need to be taken to ensure that this goes smoothly.
+1. Make sure you're in the master branch and merge from DevMaster
+    - there's a line in `src/reusable/ContactForm` that should always be commented out in DevMaster but never commented out in master. it's `document.getElementById('form').submit()`
+    - use the command `git merge DevMaster --no-commit` to ensure it doesn't auto-merge for you
+2. `npm run build`
+3. find and replace: `build/build` => `build` (should be found in the index.html file)
+4. commit and push
 
 ## File Structure (within `src`)
 
