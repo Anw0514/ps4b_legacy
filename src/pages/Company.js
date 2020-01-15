@@ -1,11 +1,14 @@
 import React, { Component, Fragment } from 'react'
-import { Image, Grid, Table, Card, Modal } from 'semantic-ui-react'
+import { Image, Grid } from 'semantic-ui-react'
 import SubHeader from '../reusable/SubHeader';
 import ImgDiv from '../reusable/ImgDiv';
 import Carousel from '../reusable/Carousel';
 import LoneParagraph from '../reusable/LoneParagraph';
-import StyledList from '../reusable/StyledList'
 import { company } from '../Data'
+import Careers from './sections/Careers'
+import ContractVehicles from './sections/ContractVehicles';
+import Certifications from './sections/Certifications';
+import OurTeam from './sections/OurTeam';
 
 
 class Company extends Component {
@@ -60,18 +63,6 @@ class Company extends Component {
     });
   };
 
-  buildCard(person) {
-    return (
-      <Card onClick={() => this.toggleModal(person)} fluid>
-        <Image src={require(`../assets/ourteam/${person.image}`)} />
-        <Card.Content className="text-left">
-          <Card.Header>{person.name}</Card.Header>
-          <Card.Meta>{person.role}</Card.Meta>
-        </Card.Content>
-      </Card>
-    );
-  }
-
   buildPartner(partner) {
     return (
       <Grid centered columns={2}>
@@ -106,7 +97,7 @@ class Company extends Component {
   }
 
   render() {
-    const person = this.state.person;
+    const { person, open } = this.state;
 
     const { partners, introList, contractRows, employees, execs } = company;
 
@@ -148,199 +139,12 @@ class Company extends Component {
           />
           <div className="filler" />
         </div>
-        <div id="certifications" className="bg-light-grey">
-          <SubHeader title="Certifications" paddingTop />
-          <div className="hella-narrow-width bg-white lone-paragraph text-left rounded-corners">
-            <p className="drop-cap">
-              PSI embodies a process of continues improvement which drives us to
-              seek industry recognized certifications and credentials.
-            </p>
-            <StyledList
-              indented
-              items={[
-                "2018: Capability Maturity Model Integration (CMMI) Development (DEV) and CMMI Services (SVC) appraisals at maturity level 3",
-                "2018: ISO X000",
-                "2012: Practical Solutions, Inc. (PSI) became a U.S. Small Business Administration (SBA) certified 8(a) Disadvantaged Small Business (DSB) and Economically Disadvantaged Small Business (EDSB)."
-              ]}
-            />
-            <p>
-              Members of our team maintain certifications and continued
-              professional development in their fields along with valuable
-              memberships and positions with outside agencies.
-            </p>
-            <StyledList
-              indented
-              items={[
-                "Project Management Institute (PMI) Staff members certified",
-                "Information Technology Infrastructure Library (ITIL®)",
-                "International Information Systems Security Certification Consortium ((ISC)²)",
-                "TBM Council"
-              ]}
-            />
-          </div>
-          <div id="contractvehicles" className="filler" />
-          <SubHeader title="Contract Vehicles" paddingTop />
-          <Grid stackable className="regular-width" relaxed="very">
-            <Grid.Column stretched width={7}>
-              <Table className="cv-table fluid" celled>
-                <Table.Body>
-                  {contractRows.map(row => {
-                    return (
-                      <Table.Row>
-                        <Table.Cell className="cv-head-cell">
-                          {row[0]}
-                        </Table.Cell>
-                        <Table.Cell>{row[1]}</Table.Cell>
-                      </Table.Row>
-                    );
-                  })}
-                </Table.Body>
-              </Table>
-            </Grid.Column>
-            <Grid.Column stretched width={9}>
-              <Table className="cv-table" celled>
-                <Table.Header>
-                  <Table.Row>
-                    <Table.Cell className="cv-head-cell">SIN</Table.Cell>
-                    <Table.Cell className="cv-head-cell">SIN Title</Table.Cell>
-                    <Table.Cell className="cv-head-cell">NAICS</Table.Cell>
-                  </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                  <Table.Row>
-                    <Table.Cell>132 51</Table.Cell>
-                    <Table.Cell>
-                      Information Technology Professional Services
-                    </Table.Cell>
-                    <Table.Cell>541511, 541512, 541513, 541519</Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell>132 40</Table.Cell>
-                    <Table.Cell>
-                      Cloud Computing Services – SUBJECT TO COOPERATIVE
-                      PURCHASING
-                    </Table.Cell>
-                    <Table.Cell>518210</Table.Cell>
-                  </Table.Row>
-                </Table.Body>
-              </Table>
-              <Table className="cv-table" celled>
-                <Table.Header>
-                  <Table.Row>
-                    <Table.Cell className="cv-head-cell">SIN</Table.Cell>
-                    <Table.Cell className="cv-head-cell">SIN Title</Table.Cell>
-                    <Table.Cell className="cv-head-cell">NAICS</Table.Cell>
-                  </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                  <Table.Row>
-                    <Table.Cell>132 51</Table.Cell>
-                    <Table.Cell>
-                      Information Technology Professional Services
-                    </Table.Cell>
-                    <Table.Cell>541511, 541512, 541513, 541519</Table.Cell>
-                  </Table.Row>
-                  <Table.Row>
-                    <Table.Cell>132 40</Table.Cell>
-                    <Table.Cell>
-                      Cloud Computing Services – SUBJECT TO COOPERATIVE
-                      PURCHASING
-                    </Table.Cell>
-                    <Table.Cell>518210</Table.Cell>
-                  </Table.Row>
-                </Table.Body>
-              </Table>
-            </Grid.Column>
-          </Grid>
-          <div className="filler" />
+        <div className="bg-light-grey">
+          <Certifications />
+          <ContractVehicles contractRows={contractRows} />
         </div>
-        <div id="ourteam" className="bg-white regular-width">
-          <SubHeader title="Our Team" paddingTop marginBottom />
-          <Grid verticalAlign="middle" stackable columns={3}>
-            <Grid.Column width={5}>
-              {this.buildCard(execs.jay, 1)}
-              {this.buildCard(execs.bob, 2)}
-            </Grid.Column>
-            <Grid.Column width={5}>
-              {this.buildCard(execs.nik, 3)}
-              {this.buildCard(execs.dave, 4)}
-            </Grid.Column>
-            <Grid.Column width={6}>
-              <Grid verticalAlign="middle">
-                {employees.map(e => {
-                  return (
-                    <Grid.Row>
-                      <Grid.Column
-                        style={{ objectFit: "contain", paddingRight: "0" }}
-                        width={5}
-                      >
-                        <Image
-                          circular
-                          fluid
-                          src={require(`../assets/ourteam/${e.avitar}`)}
-                        />
-                      </Grid.Column>
-                      <Grid.Column width={11}>
-                        {window.innerWidth > 768 ? (
-                          <div>
-                            <h1 className="fs-2">{e.name}</h1>
-                            <p>{e.role}</p>
-                          </div>
-                        ) : (
-                          <div>
-                            <h3>{e.name}</h3>
-                            <p className="fs-5">{e.role}</p>
-                          </div>
-                        )}
-                      </Grid.Column>
-                    </Grid.Row>
-                  );
-                })}
-              </Grid>
-
-              <Modal
-                closeIcon
-                dimmer="blurring"
-                basic
-                open={this.state.open}
-                onClose={() =>
-                  this.toggleModal({
-                    name: "Jay Hajeer",
-                    role: "I built the ground you walk on",
-                    image: "andrea.jpeg",
-                    bio: "something clearly went wrong"
-                  })
-                }
-              >
-                <Modal.Header>
-                  {person.name} - {person.role}
-                </Modal.Header>
-                <Modal.Content scrolling>
-                  <Modal.Description>
-                    <Image
-                      size="medium"
-                      floated="left"
-                      src={require(`../assets/ourteam/${person.image}`)}
-                    />
-                    {person.bio}
-                  </Modal.Description>
-                </Modal.Content>
-              </Modal>
-            </Grid.Column>
-          </Grid>
-          <div className="filler" />
-        </div>
-        <div id="careers" className="bg-light-grey">
-          <SubHeader title="Careers" paddingTop marginBottom />
-          <ImgDiv
-            image={require("../assets/about/careers.jpg")}
-            paragraphs={[
-              "Practical Solutions, Inc. (PSI) is looking for highly motivated and highly skilled individuals who believe in our mission “Turn Chaos into Order” and are ready for exciting opportunities with a growing company. The PSI team hold themselves to very high standards, both professionally and ethically. All our employees are expected to expand their existing skillset and develop new skills in different areas to support our mission. Each employee prides themselves on their commitment to the company, ability to add value and contribute to our growth and success.",
-              "PSI is eagerly seeking talented, creative, and flexible problem solvers to join our growing team. We continue to expand our internal operations, consulting, and staffing services divisions. PSI is an Equal Opportunity Employer and we are always accepting resumes and actively looking for partners. If you are interested in opportunities at PSI, send in your resume and salary requirements to jobs@ps4b.com."
-            ]}
-          />
-          <div className="filler" />
-        </div>
+        <OurTeam toggleModal={this.toggleModal} open={open} employees={employees} person={person} execs={execs} />
+        <Careers />
       </Fragment>
     );
   }
