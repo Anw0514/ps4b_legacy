@@ -12,6 +12,13 @@ class Home extends Component {
 
       const { slides, iconObjects } = home
 
+      const slideElems = slides.map(slide => (
+        <h6>
+          <Icon className={`${slide.color}`} name="trophy" />
+          {slide.name}
+        </h6>
+      ))
+
         return (
           <div className="page-content">
             <div className="bg-white text-section">
@@ -51,7 +58,7 @@ class Home extends Component {
                 </Grid.Row>
                 <Grid.Row>
                   <Grid.Column width={16} textAlign="center">
-                    <Carousel slides={slides} width="hella-narrow-width" />
+                    <Carousel slides={slideElems} width="hella-narrow-width" />
                     <div className="filler" />
                   </Grid.Column>
                 </Grid.Row>

@@ -451,92 +451,71 @@ export const header = {
 
 // HOME: slides, iconObjects
 export const home = {
-  slides: [
-    <h6>
-      <Icon className="gold" name="trophy" />
-      Cloud Platform
-    </h6>,
-    <h6>
-      <Icon className="gold" name="trophy" />
-      ISV
-    </h6>,
-    <h6>
-      <Icon className="gold" name="trophy" />
-      Data Platform
-    </h6>,
-    <h6>
-      <Icon className="gold" name="trophy" />
-      Azure DevOps
-    </h6>,
-    <h6>
-      <Icon className="gold" name="trophy" />
-      Windows and Devices
-    </h6>,
-    <h6>
-      <Icon className="gold" name="trophy" />
-      Data Analytics
-    </h6>,
-    <h6>
-      <Icon className="silver" name="trophy" />
-      Small and Midmarket Cloud Solutions
-    </h6>
-  ],
+					slides: [
+						{color: 'gold', name: 'Cloud Platform'},
+						{color: 'gold', name: 'ISV'},
+						{color: 'gold', name: 'Data Platform'},
+						{color: 'gold', name: 'Azure DevOps'},
+						{color: 'gold', name: 'Windows and Devices'},
+						{color: 'gold', name: 'Data Analytics'},
+						{color: 'silver', name: 'Small and Midmarket Cloud Solutions'}
+					],
 
-  iconObjects: {
-    1: [
-      {
-        title: "Microsoft Solutions",
-        paragraph:
-          "Design, implement, and support an end-to-end cloud infrastructure.",
-        iconName: "Cloud"
-      },
-      {
-        title: "Cybersecurity",
-        paragraph:
-          "Dedicated to keeping our clients' enterprise data and network secure.",
-        iconName: "Computer-Secure"
-      },
-      {
-        title: "Planning and Strategy",
-        paragraph:
-          "Helping clients with their strategic planning in both business and IT contexts.",
-        iconName: "Idea-2"
-      },
-      {
-        title: "e-Learning",
-        paragraph:
-          "Offering a wide catalog of free and subscription-based online courses.",
-        iconName: "Student-Hat2"
-      }
-    ],
-    2: [
-      {
-        title: "Engineers",
-        paragraph:
-          "Designing and integrating solutions within our clients’ diverse environments.",
-        iconName: "Engineering"
-      },
-      {
-        title: "Consultants",
-        paragraph:
-          "Partnering with our clients to identify their root challenges and help them resolve efficiently.",
-        iconName: "Consulting"
-      },
-      {
-        title: "Analysts",
-        paragraph:
-          "Studying and dissecting quantitative and qualitative data to guide decisions.",
-        iconName: "Monitor-Analytics"
-      },
-      {
-        title: "Strategists",
-        paragraph:
-          "Reconciling our teams’ efforts to develop the ideal roadmap to efficiency and productivity.",
-        iconName: "Tactic"
-      }
-    ]
-  }
-};
+					iconObjects: {
+						1: [
+							{
+								title: 'Microsoft Solutions',
+								paragraph:
+									'Design, implement, and support an end-to-end cloud infrastructure.',
+								iconName: 'Cloud',
+							},
+							{
+								title: 'Cybersecurity',
+								paragraph:
+									"Dedicated to keeping our clients' enterprise data and network secure.",
+								iconName: 'Computer-Secure',
+							},
+							{
+								title: 'Planning and Strategy',
+								paragraph:
+									'Helping clients with their strategic planning in both business and IT contexts.',
+								iconName: 'Idea-2',
+							},
+							{
+								title: 'e-Learning',
+								paragraph:
+									'Offering a wide catalog of free and subscription-based online courses.',
+								iconName: 'Student-Hat2',
+							},
+						],
+						2: [
+							{
+								title: 'Engineers',
+								paragraph:
+									'Designing and integrating solutions within our clients’ diverse environments.',
+								iconName: 'Engineering',
+							},
+							{
+								title: 'Consultants',
+								paragraph:
+									'Partnering with our clients to identify their root challenges and help them resolve efficiently.',
+								iconName: 'Consulting',
+							},
+							{
+								title: 'Analysts',
+								paragraph:
+									'Studying and dissecting quantitative and qualitative data to guide decisions.',
+								iconName: 'Monitor-Analytics',
+							},
+							{
+								title: 'Strategists',
+								paragraph:
+									'Reconciling our teams’ efforts to develop the ideal roadmap to efficiency and productivity.',
+								iconName: 'Tactic',
+							},
+						],
+					},
+				};
 
 // MICROSOFT365: plans, criteria
 export const microsoft365 = {

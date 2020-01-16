@@ -1,7 +1,5 @@
 # Practical Solutions For Business Website
 
-This is the react app for the Practical Solutions Inc website. Begun by Andrea Williams in November of 2019.
-
 ### I actually put effort into making this readme helpful
 *please read it*
 
