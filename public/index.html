@@ -40,5 +40,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="text/javascript" src="https://analytics.clickdimensions.com/ts.js"> </script>
+    
+    <script type="text/javascript">
+      var cdAnalytics = new clickdimensions.Analytics('analytics.clickdimensions.com');
+      cdAnalytics.setAccountKey('aCHtkNlPeNkSCJq38pPwA');
+      cdAnalytics.setDomain('ps4b.com');
+      cdAnalytics.setScore(typeof (cdScore) == "undefined" ? 0 : (cdScore == 0 ? null : cdScore));
+      cdAnalytics.trackPage();
+    </script>
   </body>
 </html>
