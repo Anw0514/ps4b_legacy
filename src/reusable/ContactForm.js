@@ -47,64 +47,65 @@ class ContactForm extends Component {
     render() {
 
       return (
-				<Form
-					id='form'
-					className='text-left padded'
-					action='http://analytics.clickdimensions.com/forms/h/aR0OIOK7EX0eCGJAY8Ne0A'
-				>
-					<Form.Group widths='equal'>
-						<Form.Input
+				<div className='text-left padded'>
+					<Form
+						id='form'
+						action='http://analytics.clickdimensions.com/forms/h/aR0OIOK7EX0eCGJAY8Ne0A'
+					>
+						<Form.Group widths='equal'>
+							<Form.Input
+								fluid
+								id='name'
+								name='name'
+								label='Name'
+								placeholder='Name'
+								onChange={this.handleChange}
+							/>
+							<Form.Input
+								fluid
+								id='phone-number'
+								name='phone-number'
+								label='Phone Number'
+								placeholder='Phone Number'
+								onChange={this.handleChange}
+							/>
+						</Form.Group>
+						<Form.Group widths='equal'>
+							<Form.Input
+								fluid
+								id='email'
+								name='email'
+								label='Email'
+								placeholder='Email'
+								onChange={this.handleChange}
+							/>
+							<Form.Select
+								fluid
+								id='subject'
+								name='subject'
+								onChange={this.handleChange}
+								label='Subject'
+								options={contactForm.subjects}
+								value={this.props.subject}
+								placeholder='Choose a subject'
+							/>
+						</Form.Group>
+						<Form.TextArea
 							fluid
-							id='name'
-							name='name'
-							label='Name'
-							placeholder='Name'
+							id='tell-us-more'
+							name='tell-us-more'
+							label='Tell Us More'
 							onChange={this.handleChange}
 						/>
-						<Form.Input
-							fluid
-							id='phone-number'
-							name='phone-number'
-							label='Phone Number'
-							placeholder='Phone Number'
-							onChange={this.handleChange}
-						/>
-					</Form.Group>
-					<Form.Group widths='equal'>
-						<Form.Input
-							fluid
-							id='email'
-							name='email'
-							label='Email'
-							placeholder='Email'
-							onChange={this.handleChange}
-						/>
-						<Form.Select
-							fluid
-							id='subject'
-							name='subject'
-							onChange={this.handleChange}
-							label='Subject'
-							options={contactForm.subjects}
-							value={this.props.subject}
-							placeholder='Choose a subject'
-						/>
-					</Form.Group>
-					<Form.TextArea
-						fluid
-						id='tell-us-more'
-						name='tell-us-more'
-						label='Tell Us More'
-						onChange={this.handleChange}
-					/>
-					<ReCAPTCHA
-						sitekey='6LdvRscUAAAAAGc-ciLEJnQQ3atePh1I8PiEjs6P'
-						onChange={this.handleCaptcha}
-					/>
-					<Button circular className='bg-blue m-top-1' onClick={this.handleSubmit}>
-						Submit
-					</Button>
-				</Form>
+						<Button circular className='bg-blue m-top-1' onClick={this.handleSubmit}>
+							Submit
+						</Button>
+					</Form>
+          <ReCAPTCHA
+            sitekey='6LdvRscUAAAAAGc-ciLEJnQQ3atePh1I8PiEjs6P'
+            onChange={this.handleCaptcha}
+          />
+				</div>
 			);
     }
 }
