@@ -50,7 +50,8 @@ class ContactForm extends Component {
 				<div className='text-left padded'>
 					<Form
 						id='form'
-						action='http://analytics.clickdimensions.com/forms/h/aR0OIOK7EX0eCGJAY8Ne0A'
+            action='http://analytics.clickdimensions.com/forms/h/aR0OIOK7EX0eCGJAY8Ne0A'
+            method="POST"
 					>
 						<Form.Group widths='equal'>
 							<Form.Input
