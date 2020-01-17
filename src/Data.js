@@ -1,5 +1,4 @@
 import React from "react";
-import { Icon } from "semantic-ui-react";
 
 // COMPANY: partners, introList, contractRows, employees, execs
 export const company = {
