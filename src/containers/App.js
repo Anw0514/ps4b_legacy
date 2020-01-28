@@ -10,7 +10,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import ContactButton from '../reusable/ContactButton';
 import { Modal } from 'semantic-ui-react'
 import ContactForm from '../reusable/ContactForm'
-import PrivacyPolicy from '../constants/PrivacyPolicy';
 
 toast.configure({
   autoClose: 3000,
@@ -27,8 +26,7 @@ class App extends Component {
       mobile: true,
       dropdown: "",
       subject: "",
-      contactModal: false,
-      privacyPolicy: false
+      contactModal: false
     };
   }
 
@@ -80,10 +78,6 @@ class App extends Component {
     this.setState({ contactModal: !this.state.contactModal });
   };
 
-  togglePP = () => {
-    this.setState({ privacyPolicy: !this.state.privacyPolicy });
-  };
-
   submitForm = () => {
     this.setState({ contactModal: false }, () => {
       toast.success("Successfully submitted form");
@@ -96,50 +90,44 @@ class App extends Component {
       mobile,
       dropdown,
       subject,
-      contactModal,
-      privacyPolicy
+      contactModal
     } = this.state;
 
     const noContactButton = page === "/" || page === "/contact";
     return (
-      <Router>
-        <div className="App">
-          <NavBar
-            mobile={mobile}
-            dropdown={dropdown}
-            dropdownNav={this.dropdownNav}
-            closeNav={this.closeNav}
-            goToPage={this.goToPage}
-          />
-          <div onClick={this.closeNav}>
-            {page === "/" ? (
-              <HomeHeader />
-            ) : (
-              <Header page={page} mobile={mobile} />
-            )}
-            <Content
-              changeSubject={this.changeSubject}
-              submitForm={this.submitForm}
-              subject={subject}
-              openModal={this.toggleModal}
-            />
-            <Modal closeIcon open={contactModal} onClose={this.toggleModal}>
-              <Modal.Header content="Contact Us" />
-              <Modal.Content>
-                <ContactForm
-                  subject={subject}
-                  changeSubject={this.changeSubject}
-                  submitForm={this.submitForm}
-                />
-              </Modal.Content>
-            </Modal>
-            <PrivacyPolicy open={privacyPolicy} close={this.togglePP} />
-            {noContactButton ? null : <ContactButton open={this.toggleModal} />}
-            <Footer togglePP={this.togglePP} />
-          </div>
-        </div>
-      </Router>
-    );
+			<Router>
+				<div className='App'>
+					<NavBar
+						mobile={mobile}
+						dropdown={dropdown}
+						dropdownNav={this.dropdownNav}
+						closeNav={this.closeNav}
+						goToPage={this.goToPage}
+					/>
+					<div onClick={this.closeNav}>
+						{page === "/" ? <HomeHeader /> : <Header page={page} mobile={mobile} />}
+						<Content
+							changeSubject={this.changeSubject}
+							submitForm={this.submitForm}
+							subject={subject}
+							openModal={this.toggleModal}
+						/>
+						<Modal closeIcon open={contactModal} onClose={this.toggleModal}>
+							<Modal.Header content='Contact Us' />
+							<Modal.Content>
+								<ContactForm
+									subject={subject}
+									changeSubject={this.changeSubject}
+									submitForm={this.submitForm}
+								/>
+							</Modal.Content>
+						</Modal>
+						{noContactButton ? null : <ContactButton open={this.toggleModal} />}
+						<Footer goToPage={this.goToPage} />
+					</div>
+				</div>
+			</Router>
+		);
   }
 }
 

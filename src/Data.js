@@ -444,7 +444,8 @@ export const header = {
     "/e-learning": "e-Learning",
     "/network-transformation": "Network Transformation",
     "/security-optimization": "Security Optimization",
-    "/workplace-modernization": "Workplace Modernization"
+    "/workplace-modernization": "Workplace Modernization",
+    "/privacy": "Privacy Policy"
   }
 };
 

@@ -1,9 +1,4 @@
 import React, { Component, Fragment } from 'react'
-import { Image, Grid } from 'semantic-ui-react'
-import SubHeader from '../reusable/SubHeader';
-import ImgDiv from '../reusable/ImgDiv';
-import Carousel from '../reusable/Carousel';
-import LoneParagraph from '../reusable/LoneParagraph';
 import { company } from '../Data'
 import Careers from './sections/Careers'
 import ContractVehicles from './sections/ContractVehicles';
