@@ -51,11 +51,13 @@ class Office365 extends Component {
               </div>
               <SubHeader marginTop title="All the Office 365 Plans for Your Business" />
               <div className="wide-section">
-                <Card.Group centered>
-                  { plans.map(plan => this.buildCard(plan)) }
-                </Card.Group>
-                <ComparisonTable criteria={criteria} items={plans} />
-
+                { window.innerWidth < 760 ?
+                  <Card.Group centered>
+                    { plans.map(plan => this.buildCard(plan)) }
+                  </Card.Group>
+                  :
+                  <ComparisonTable criteria={criteria} items={plans} />
+                }
               </div>
             </div>
         )

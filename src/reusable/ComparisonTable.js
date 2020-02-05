@@ -54,7 +54,7 @@ class ComparisonTable extends Component {
         const { items, criteria } = this.props
         const columns = items.length + 1
         return (
-            <Responsive minWidth={768}>
+            <Responsive className="scrollable" minWidth={768}>
                 <Table className='text-center' basic='very' unstackable celled columns={columns}>
                     <Table.Header>
                         <Table.Row>
