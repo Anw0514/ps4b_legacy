@@ -21,8 +21,8 @@ export const company = {
   introList: [
     "PSI serves several federal and commercial agencies of various sizes with administrative, engineering, and management challenges.",
     "PSI maintains a diverse portfolio that includes development, project management, e-Learning, and strategic planning in both business and IT.",
-    "From certified project managers and business analysts to solution architects and developers, we fit the right resources to support clients with their business needs.",
-    "We strategically partner with several industry leaders such as Microsoft, IBM, Oracle, and many more."
+    "From certified project managers and business analysts to solution architects and developers, we prescribe the right resources to support clients with their business needs.",
+    "We strategically partner with several industry leaders, including Microsoft, IBM, Oracle, and many more."
   ],
 
   contractRows: [

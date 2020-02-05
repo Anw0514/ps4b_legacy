@@ -10,7 +10,7 @@ export default class About extends Component {
 				<SubHeader title='Introduction' marginBottom paddingTop />
 				<LoneParagraph
 					text={[
-						'Practical Solutions Inc (PSI) was founded in 1997 by Mr. JayHajeer, who led the development of PSI into a modernhigh-performance global organization that embodies his vision: “We Deliver Practical Solutions”',
+						'Practical Solutions Inc (PSI) was founded in 1997 by Mr. Jay Hajeer. He led the development of PSI, turning it into a modern, high-performance global organization that embodies his vision: “We Deliver Practical Solutions.”',
 					]}
 					list={this.props.introList}
 				/>
@@ -18,11 +18,11 @@ export default class About extends Component {
 				<ImgDiv
 					image={require('../../assets/about/about.jpg')}
 					list={[
-						'Many of our services and products are paired with eLearning so clients get a faster ROI by having a more prepared team following implementation of new solution.',
-						'A lot of companies will offer text book solutions to their customers, we dig in, understand the company, its unique characteristics and provide a solution that is practical and unique.',
-						'Our ongoing Reputation and relationships are more important to us than a quick profit. Our solutions are designed to be sustainable within your organization beyond our relationship.',
+						'Many of our services and products are paired with eLearning, so clients get a faster ROI by having a more prepared team following the implementation of new solution.',
+						'A lot of companies offer textbook solutions to their customers; PSI digs in, understands the customer and their unique characteristics, and provides a solution that is practical and unique.',
+						'Our reputation and relationships are more important to us than a quick profit. Our solutions are designed to be sustainable within your organization beyond our working relationship.',
 						'PSI has a seasoned team with decades of experience, click here to view our team.',
-						'100% US Based team serving global clients.',
+						'100% US-based team serving global clients.',
 					]}
 				/>
 				<div className='filler' />

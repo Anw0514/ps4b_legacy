@@ -9,8 +9,8 @@ export default class Certifications extends Component {
 				<SubHeader title='Certifications' paddingTop />
 				<div className='hella-narrow-width bg-white lone-paragraph text-left rounded-corners'>
 					<p className='drop-cap'>
-						PSI embodies a process of continues improvement which drives us to seek
-						industry recognized certifications and credentials.
+						PSI embodies a process of continues improvement, driving us to continuously seek
+						industry-recognized certifications and credentials.
 					</p>
 					<StyledList
 						indented

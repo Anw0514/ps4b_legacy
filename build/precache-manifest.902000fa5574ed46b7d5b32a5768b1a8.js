@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6292409bae679fb9a72a20ba6794b4d0",
+    "revision": "c2e81a86f62a7b0275550608d2a1a15e",
     "url": "/build/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/build/static/css/2.b979af96.chunk.css"
   },
   {
-    "revision": "f890522e1c14acd8f934",
+    "revision": "3dc94b6a18c682a5d12e",
     "url": "/build/static/css/main.7789247f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/build/static/js/2.ec89dd2f.chunk.js"
   },
   {
-    "revision": "f890522e1c14acd8f934",
-    "url": "/build/static/js/main.ea16bb1c.chunk.js"
+    "revision": "3dc94b6a18c682a5d12e",
+    "url": "/build/static/js/main.27797c6b.chunk.js"
   },
   {
     "revision": "29b68991ff1094d95830",
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b8efe5c04ebda1a12744c8c932d85604",
     "url": "/build/static/media/ISOcert.b8efe5c0.png"
-  },
-  {
-    "revision": "99220b17bae50297cbd3293b150ca1af",
-    "url": "/build/static/media/MSLogoGIFfinal.99220b17.gif"
   },
   {
     "revision": "c4990030be56bc2f59df009a8c8ada17",
