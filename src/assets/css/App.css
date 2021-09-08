@@ -250,21 +250,7 @@ tr {
   margin-top: 10px;
 }
 
-.video-holder {
-  position: absolute;
-  display: block;
-  min-width: 100%;
-  height: auto;
-  left: 0
-}
-
 /*Media Queries */
-
-@media only screen and (max-width: 600px) {
-  .video-holder {
-    min-width: 200%
-  }
-}
 
 @media only screen and (min-width: 770px) {
   p{
